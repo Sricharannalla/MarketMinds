@@ -1,0 +1,1290 @@
+
+============================================================
+Starting MarketMind Model Server with Gemini Flash-Lite
+============================================================
+Model: gemini-2.0-flash-lite
+Batch Size: 25 agents per batch
+Max Agents: 200 per request
+Rate Limits: 30 requests/minute, 200 requests/day
+============================================================
+2025-10-13 04:18:04,233 - INFO - Opening tunnel named: http-5000-eaf1e74d-c84d-429c-bd32-20be0b14d4cf
+2025-10-13 04:18:04,234 - DEBUG - ngrok process starting with PID: 2983
+2025-10-13 04:18:04,245 - INFO - t=2025-10-13T04:18:04+0000 lvl=info msg="no configuration paths supplied"
+2025-10-13 04:18:04,245 - INFO - t=2025-10-13T04:18:04+0000 lvl=info msg="using configuration at default config path" path=/root/.config/ngrok/ngrok.yml
+2025-10-13 04:18:04,245 - INFO - t=2025-10-13T04:18:04+0000 lvl=info msg="open config file" path=/root/.config/ngrok/ngrok.yml err=nil
+2025-10-13 04:18:04,285 - INFO - t=2025-10-13T04:18:04+0000 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4040 allow_hosts=[]
+2025-10-13 04:18:05,009 - INFO - t=2025-10-13T04:18:05+0000 lvl=info msg="client session established" obj=tunnels.session
+2025-10-13 04:18:05,009 - INFO - t=2025-10-13T04:18:05+0000 lvl=info msg="tunnel session started" obj=tunnels.session
+2025-10-13 04:18:05,012 - DEBUG - ngrok process has started with API URL: http://127.0.0.1:4040
+2025-10-13 04:18:05,012 - DEBUG - Monitor thread will be started
+2025-10-13 04:18:05,012 - INFO - t=2025-10-13T04:18:05+0000 lvl=info msg=start pg=/api/tunnels id=e1bdc10be56a08d7
+2025-10-13 04:18:05,012 - INFO - t=2025-10-13T04:18:05+0000 lvl=info msg=end pg=/api/tunnels id=e1bdc10be56a08d7 status=200 dur=265.983µs
+2025-10-13 04:18:05,013 - INFO - t=2025-10-13T04:18:05+0000 lvl=info msg=start pg=/api/tunnels id=6d0d0a85ce9b8d49
+2025-10-13 04:18:05,013 - INFO - t=2025-10-13T04:18:05+0000 lvl=info msg=end pg=/api/tunnels id=6d0d0a85ce9b8d49 status=200 dur=91.859µs
+2025-10-13 04:18:05,014 - INFO - t=2025-10-13T04:18:05+0000 lvl=info msg=start pg=/api/tunnels id=4ecec3418c3b7c49
+2025-10-13 04:18:05,014 - INFO - t=2025-10-13T04:18:05+0000 lvl=info msg=end pg=/api/tunnels id=4ecec3418c3b7c49 status=200 dur=77.655µs
+2025-10-13 04:18:05,014 - DEBUG - Creating tunnel with options: {'name': 'http-5000-eaf1e74d-c84d-429c-bd32-20be0b14d4cf', 'addr': '5000', 'proto': 'http'}
+2025-10-13 04:18:05,014 - DEBUG - Making POST request to http://127.0.0.1:4040/api/tunnels with data: {'name': 'http-5000-eaf1e74d-c84d-429c-bd32-20be0b14d4cf', 'addr': '5000', 'proto': 'http'}
+2025-10-13 04:18:05,015 - INFO - t=2025-10-13T04:18:05+0000 lvl=info msg=start pg=/api/tunnels id=f4c1c24c4ce4f39f
+2025-10-13 04:18:05,244 - INFO - t=2025-10-13T04:18:05+0000 lvl=info msg="started tunnel" obj=tunnels name=http-5000-eaf1e74d-c84d-429c-bd32-20be0b14d4cf addr=http://localhost:5000 url=https://1c1277eade2e.ngrok-free.app
+2025-10-13 04:18:05,244 - INFO - t=2025-10-13T04:18:05+0000 lvl=info msg=end pg=/api/tunnels id=f4c1c24c4ce4f39f status=201 dur=229.28393ms
+2025-10-13 04:18:05,246 - DEBUG - Response 201: {"name":"http-5000-eaf1e74d-c84d-429c-bd32-20be0b14d4cf","ID":"6c0e3288a8d57b09e12355f3262e7fc8","uri":"/api/tunnels/http-5000-eaf1e74d-c84d-429c-bd32-20be0b14d4cf","public_url":"https://1c1277eade2e.ngrok-free.app","proto":"https","config":{"addr":"http://localhost:5000","inspect":true},"metrics":{"conns":{"count":0,"gauge":0,"rate1":0,"rate5":0,"rate15":0,"p50":0,"p90":0,"p95":0,"p99":0},"http":{"count":0,"rate1":0,"rate5":0,"rate15":0,"p50":0,"p90":0,"p95":0,"p99":0}}}
+2025-10-13 04:18:05,246 - INFO - Public URL: https://1c1277eade2e.ngrok-free.app
+2025-10-13 04:18:05,246 - INFO - Update your backend PYTHON_URL to: https://1c1277eade2e.ngrok-free.app
+
+Server is running!
+Endpoints:
+  - POST /predict - Make predictions (batched)
+  - GET  /health  - Health check
+
+Public URL: https://1c1277eade2e.ngrok-free.app
+Update your backend .env with:
+PYTHON_URL=https://1c1277eade2e.ngrok-free.app
+
+Press Ctrl+C to stop
+
+ * Serving Flask app 'model_server_gemini'
+ * Debug mode: off
+2025-10-13 04:18:05,257 - INFO - WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.28.0.12:5000
+2025-10-13 04:18:05,257 - INFO - Press CTRL+C to quit
+2025-10-13 04:18:09,286 - WARNING - t=2025-10-13T04:18:09+0000 lvl=warn msg="failed to check for update" obj=updater err="Post \"https://update.equinox.io/check\": context deadline exceeded"
+2025-10-13 04:18:36,984 - INFO - Received prediction request: 439 agents, 20 products
+2025-10-13 04:18:36,984 - INFO - Processing 439 agents in batches of 25
+Received 439 agents and 20 products - Processing in batches of 25
+2025-10-13 04:18:36,984 - INFO - Received 439 agents and 20 products - Processing in batches of 25
+Processing batch 1/18: agents 1 to 25
+2025-10-13 04:18:36,984 - INFO - t=2025-10-13T04:18:36+0000 lvl=info msg="join connections" obj=join id=d3d73844c462 l=127.0.0.1:5000 r=[2406:b400:d5:b7b9:38a9:3c34:1b61:ccd]:50731
+2025-10-13 04:18:36,984 - INFO - Processing batch 1/18: agents 1 to 25
+Processing 25 agents in single batch
+2025-10-13 04:18:36,985 - INFO - Processing 25 agents in single batch
+Prompt length: 2766 characters
+2025-10-13 04:18:36,985 - DEBUG - Prompt length: 2766 characters
+Making Gemini API call (single attempt)
+2025-10-13 04:18:36,985 - INFO - Making Gemini API call (single attempt)
+Response received. Candidates: 1
+2025-10-13 04:18:42,974 - INFO - Response received. Candidates: 1
+Candidate finish_reason: 1
+2025-10-13 04:18:42,974 - INFO - Candidate finish_reason: 1
+Raw response for 25 agents: Here's the output for each participant, based on the provided data and a simplified model of consume...
+2025-10-13 04:18:42,974 - INFO - Raw response for 25 agents: Here's the output for each participant, based on the provided data and a simplified model of consume...
+[WARNING] Unknown agent_id: Here's the output for each participant, based on the provided data and a simplified model of consumer behavior
+[WARNING] Skipping line without agent_id: 
+[WARNING] Skipping line without agent_id: ```
+[WARNING] Skipping line without agent_id: agent_uacefgj6,buy,P061,0.65,Price is acceptable, quality is close to preference, and BrandX is preferred.
+[WARNING] Skipping line without agent_id: agent_zfe97ge0p,not buy,none,0.20,No BrandA or BrandB products are available at the given price.
+[WARNING] Skipping line without agent_id: agent_r8yt3bxun,not buy,none,0.30,No BrandY or BrandZ products are available at the given price.
+[WARNING] Skipping line without agent_id: agent_i5y7n6hv5,buy,P061,0.55,Price is acceptable, quality is close to preference, and BrandX is preferred.
+[WARNING] Skipping line without agent_id: agent_anu3h0pbm,not buy,none,0.20,No BrandA or BrandB products are available at the given price.
+[WARNING] Skipping line without agent_id: agent_w4sdy3a14,buy,P061,0.50,Price is acceptable, quality is close to preference, and BrandX is preferred.
+[WARNING] Skipping line without agent_id: agent_keur07sr9,not buy,none,0.30,No BrandB or BrandC products are available at the given price.
+[WARNING] Skipping line without agent_id: agent_fnjfk9vs5,not buy,none,0.20,No BrandA or BrandB products are available at the given price.
+[WARNING] Skipping line without agent_id: agent_9y1upuzhn,not buy,none,0.30,No BrandY or BrandZ products are available at the given price.
+[WARNING] Skipping line without agent_id: agent_5i0an93oa,buy,P061,0.55,Price is acceptable, quality is close to preference, and BrandX is preferred.
+[WARNING] Skipping line without agent_id: agent_b7dh9cq79,not buy,none,0.20,No BrandA or BrandB products are available at the given price.
+[WARNING] Skipping line without agent_id: agent_trcfrg117,buy,P061,0.65,Price is acceptable, quality is close to preference, and BrandX is preferred.
+[WARNING] Skipping line without agent_id: agent_ph0y2pt4s,not buy,none,0.30,No BrandB or BrandC products are available at the given price.
+[WARNING] Skipping line without agent_id: agent_9js8cjf3q,not buy,none,0.20,No BrandA or BrandB products are available at the given price.
+[WARNING] Skipping line without agent_id: agent_26yvfbjhf,not buy,none,0.30,No BrandY or BrandZ products are available at the given price.
+[WARNING] Skipping line without agent_id: agent_vhu8a454o,buy,P061,0.55,Price is acceptable, quality is close to preference, and BrandX is preferred.
+[WARNING] Skipping line without agent_id: agent_boxpzx2id,not buy,none,0.20,No BrandA or BrandB products are available at the given price.
+[WARNING] Skipping line without agent_id: agent_nimlz3395,buy,P061,0.50,Price is acceptable, quality is close to preference, and BrandX is preferred.
+[WARNING] Skipping line without agent_id: agent_fcr6p446o,not buy,none,0.30,No BrandB or BrandC products are available at the given price.
+[WARNING] Skipping line without agent_id: agent_inw2zf4l6,not buy,none,0.20,No BrandA or BrandB products are available at the given price.
+[WARNING] Skipping line without agent_id: agent_nveva163h,not buy,none,0.30,No BrandY or BrandZ products are available at the given price.
+[WARNING] Skipping line without agent_id: agent_sznqbnsmw,buy,P061,0.55,Price is acceptable, quality is close to preference, and BrandX is preferred.
+[WARNING] Skipping line without agent_id: agent_znz1qoqfx,not buy,none,0.20,No BrandA or BrandB products are available at the given price.
+[WARNING] Skipping line without agent_id: agent_gf6olww94,buy,P061,0.50,Price is acceptable, quality is close to preference, and BrandX is preferred.
+[WARNING] Skipping line without agent_id: agent_8ju3wxugf,not buy,none,0.30,No BrandB or BrandC products are available at the given price.
+[WARNING] Skipping line without agent_id: ```
+[WARNING] Skipping line without agent_id: 
+[WARNING] No valid decisions parsed from response
+Processing batch 2/18: agents 26 to 50
+2025-10-13 04:18:42,974 - INFO - Processing batch 2/18: agents 26 to 50
+Processing 25 agents in single batch
+2025-10-13 04:18:42,974 - INFO - Processing 25 agents in single batch
+Prompt length: 2767 characters
+2025-10-13 04:18:42,975 - DEBUG - Prompt length: 2767 characters
+Making Gemini API call (single attempt)
+2025-10-13 04:18:42,975 - INFO - Making Gemini API call (single attempt)
+Response received. Candidates: 1
+2025-10-13 04:18:48,189 - INFO - Response received. Candidates: 1
+Candidate finish_reason: 1
+2025-10-13 04:18:48,189 - INFO - Candidate finish_reason: 1
+Raw response for 25 agents: Here's the predicted output for each participant, based on the provided information:
+
+agent_p37efq5y...
+2025-10-13 04:18:48,190 - INFO - Raw response for 25 agents: Here's the predicted output for each participant, based on the provided information:
+
+agent_p37efq5y...
+[WARNING] Unknown agent_id: Here's the predicted output for each participant, based on the provided information
+[WARNING] Skipping line without agent_id: 
+[WARNING] Skipping line without agent_id: agent_p37efq5yw,buy,P061,0.75,Price is low and quality is acceptable. Brand preference for BrandX is considered.
+[WARNING] Skipping line without agent_id: agent_2476vui80,not buy,none,0.00,No BrandY or BrandZ products are available.
+[WARNING] Skipping line without agent_id: agent_3q773f4gv,buy,P061,0.80,Price is low and quality is acceptable. Brand preference for BrandX is considered.
+[WARNING] Skipping line without agent_id: agent_9c6loe0te,not buy,none,0.00,No BrandA or BrandB products are available.
+[WARNING] Skipping line without agent_id: agent_u7sid898b,buy,P061,0.65,Price is low and quality is acceptable. Brand preference for BrandX is considered.
+[WARNING] Skipping line without agent_id: agent_54gayhtur,not buy,none,0.00,No BrandB or BrandC products are available.
+[WARNING] Skipping line without agent_id: agent_qi20151l8,not buy,none,0.00,No BrandA or BrandB products are available.
+[WARNING] Skipping line without agent_id: agent_a1mpkwj61,not buy,none,0.00,No BrandY or BrandZ products are available.
+[WARNING] Skipping line without agent_id: agent_4lbxn39g0,buy,P061,0.80,Price is low and quality is acceptable. Brand preference for BrandX is considered.
+[WARNING] Skipping line without agent_id: agent_14ef4o9k0,not buy,none,0.00,No BrandA or BrandB products are available.
+[WARNING] Skipping line without agent_id: agent_53evpbaw0,buy,P061,0.65,Price is low and quality is acceptable. Brand preference for BrandX is considered.
+[WARNING] Skipping line without agent_id: agent_zsl64zovo,not buy,none,0.00,No BrandB or BrandC products are available.
+[WARNING] Skipping line without agent_id: agent_t2hoi1v2u,not buy,none,0.00,No BrandA or BrandB products are available.
+[WARNING] Skipping line without agent_id: agent_s2msnxi3x,not buy,none,0.00,No BrandY or BrandZ products are available.
+[WARNING] Skipping line without agent_id: agent_uacbyi6xq,buy,P061,0.80,Price is low and quality is acceptable. Brand preference for BrandX is considered.
+[WARNING] Skipping line without agent_id: agent_v4it25u96,not buy,none,0.00,No BrandA or BrandB products are available.
+[WARNING] Skipping line without agent_id: agent_5p5fi2hq8,buy,P061,0.65,Price is low and quality is acceptable. Brand preference for BrandX is considered.
+[WARNING] Skipping line without agent_id: agent_ao7nyormz,not buy,none,0.00,No BrandB or BrandC products are available.
+[WARNING] Skipping line without agent_id: agent_jzn13pr7z,not buy,none,0.00,No BrandA or BrandB products are available.
+[WARNING] Skipping line without agent_id: agent_9xr2n03y5,not buy,none,0.00,No BrandY or BrandZ products are available.
+[WARNING] Skipping line without agent_id: agent_p4acinbnk,buy,P061,0.80,Price is low and quality is acceptable. Brand preference for BrandX is considered.
+[WARNING] Skipping line without agent_id: agent_nqpk0y2kd,not buy,none,0.00,No BrandA or BrandB products are available.
+[WARNING] Skipping line without agent_id: agent_cxddp4zl1,buy,P061,0.65,Price is low and quality is acceptable. Brand preference for BrandX is considered.
+[WARNING] Skipping line without agent_id: agent_lbc4pt351,not buy,none,0.00,No BrandB or BrandC products are available.
+[WARNING] Skipping line without agent_id: agent_aa8q3iybk,not buy,none,0.00,No BrandA or BrandB products are available.
+[WARNING] Skipping line without agent_id: 
+[WARNING] No valid decisions parsed from response
+Processing batch 3/18: agents 51 to 75
+2025-10-13 04:18:48,190 - INFO - Processing batch 3/18: agents 51 to 75
+Processing 25 agents in single batch
+2025-10-13 04:18:48,190 - INFO - Processing 25 agents in single batch
+Prompt length: 2767 characters
+2025-10-13 04:18:48,190 - DEBUG - Prompt length: 2767 characters
+Making Gemini API call (single attempt)
+2025-10-13 04:18:48,190 - INFO - Making Gemini API call (single attempt)
+Response received. Candidates: 1
+2025-10-13 04:18:54,029 - INFO - Response received. Candidates: 1
+Candidate finish_reason: 1
+2025-10-13 04:18:54,029 - INFO - Candidate finish_reason: 1
+Raw response for 25 agents: Here's the output for each participant, based on the provided data and a simplified model of consume...
+2025-10-13 04:18:54,030 - INFO - Raw response for 25 agents: Here's the output for each participant, based on the provided data and a simplified model of consume...
+[WARNING] Skipping line without agent_id: Here's the output for each participant, based on the provided data and a simplified model of consumer behavior. The model considers Price Sensitivity (PS), Quality Preference (QP), and Brand preference.  A higher score indicates a higher likelihood of purchase and satisfaction.  The rationale explains the reasoning.
+[WARNING] Skipping line without agent_id: 
+[WARNING] Skipping line without agent_id: ```
+[WARNING] Skipping line without agent_id: agent_nhcn61j1t,not buy,none,0.0,BrandX not preferred, price too high, and quality is not high enough.
+[WARNING] Skipping line without agent_id: agent_nkmj47t5g,not buy,none,0.0,BrandX preference is low, price is high, and quality is not high enough.
+[WARNING] Skipping line without agent_id: agent_5srnslaa5,not buy,none,0.0,BrandX not preferred, price is high, and quality is not high enough.
+[WARNING] Skipping line without agent_id: agent_g27psfh75,not buy,none,0.0,BrandX preference is low, price is high, and quality is not high enough.
+[WARNING] Skipping line without agent_id: agent_efzbpwmcz,not buy,none,0.0,BrandX not preferred, price is high, and quality is not high enough.
+[WARNING] Skipping line without agent_id: agent_99gsi59gh,not buy,none,0.0,BrandX not preferred, price is high, and quality is not high enough.
+[WARNING] Skipping line without agent_id: agent_kr4w91oon,not buy,none,0.0,BrandX not preferred, price is high, and quality is not high enough.
+[WARNING] Skipping line without agent_id: agent_utbjj6j97,not buy,none,0.0,BrandX preference is low, price is high, and quality is not high enough.
+[WARNING] Skipping line without agent_id: agent_1lufluz0i,not buy,none,0.0,BrandX not preferred, price is high, and quality is not high enough.
+[WARNING] Skipping line without agent_id: agent_vin7s3iog,not buy,none,0.0,BrandX preference is low, price is high, and quality is not high enough.
+[WARNING] Skipping line without agent_id: agent_0a8wym65c,not buy,none,0.0,BrandX not preferred, price is high, and quality is not high enough.
+[WARNING] Skipping line without agent_id: agent_iyy0yiz23,not buy,none,0.0,BrandX not preferred, price is high, and quality is not high enough.
+[WARNING] Skipping line without agent_id: agent_g1serx65x,not buy,none,0.0,BrandX not preferred, price is high, and quality is not high enough.
+[WARNING] Skipping line without agent_id: agent_iro9d2ruq,not buy,none,0.0,BrandX preference is low, price is high, and quality is not high enough.
+[WARNING] Skipping line without agent_id: agent_t0y5h4pvn,not buy,none,0.0,BrandX not preferred, price is high, and quality is not high enough.
+[WARNING] Skipping line without agent_id: agent_hb5ibg4ac,not buy,none,0.0,BrandX preference is low, price is high, and quality is not high enough.
+[WARNING] Skipping line without agent_id: agent_0b57u0yb0,not buy,none,0.0,BrandX not preferred, price is high, and quality is not high enough.
+[WARNING] Skipping line without agent_id: agent_pbxpkaae4,not buy,none,0.0,BrandX not preferred, price is high, and quality is not high enough.
+[WARNING] Skipping line without agent_id: agent_t2mms4ddp,not buy,none,0.0,BrandX not preferred, price is high, and quality is not high enough.
+[WARNING] Skipping line without agent_id: agent_147koadgl,not buy,none,0.0,BrandX preference is low, price is high, and quality is not high enough.
+[WARNING] Skipping line without agent_id: agent_ccnxawddj,not buy,none,0.0,BrandX not preferred, price is high, and quality is not high enough.
+[WARNING] Skipping line without agent_id: agent_32i8l2kai,not buy,none,0.0,BrandX preference is low, price is high, and quality is not high enough.
+[WARNING] Skipping line without agent_id: agent_gl7i004my,not buy,none,0.0,BrandX not preferred, price is high, and quality is not high enough.
+[WARNING] Skipping line without agent_id: agent_x82v949d2,not buy,none,0.0,BrandX not preferred, price is high, and quality is not high enough.
+[WARNING] Skipping line without agent_id: agent_v2c75trjz,not buy,none,0.0,BrandX not preferred, price is high, and quality is not high enough.
+[WARNING] Skipping line without agent_id: ```
+[WARNING] Skipping line without agent_id: 
+[WARNING] No valid decisions parsed from response
+Processing batch 4/18: agents 76 to 100
+2025-10-13 04:18:54,030 - INFO - Processing batch 4/18: agents 76 to 100
+Processing 25 agents in single batch
+2025-10-13 04:18:54,030 - INFO - Processing 25 agents in single batch
+Prompt length: 2767 characters
+2025-10-13 04:18:54,030 - DEBUG - Prompt length: 2767 characters
+Making Gemini API call (single attempt)
+2025-10-13 04:18:54,030 - INFO - Making Gemini API call (single attempt)
+Response received. Candidates: 1
+2025-10-13 04:18:59,461 - INFO - Response received. Candidates: 1
+Candidate finish_reason: 1
+2025-10-13 04:18:59,462 - INFO - Candidate finish_reason: 1
+Raw response for 25 agents: Here's the output for each participant, formatted as requested:
+
+agent_fb87m8r43,buy,P061,0.75,Price...
+2025-10-13 04:18:59,462 - INFO - Raw response for 25 agents: Here's the output for each participant, formatted as requested:
+
+agent_fb87m8r43,buy,P061,0.75,Price...
+[WARNING] Unknown agent_id: Here's the output for each participant, formatted as requested
+[WARNING] Skipping line without agent_id: 
+[WARNING] Skipping line without agent_id: agent_fb87m8r43,buy,P061,0.75,Price is low and BrandX is preferred. Quality is acceptable.
+[WARNING] Skipping line without agent_id: agent_5le0p1122,not buy,none,0.05,Brand preference is low for BrandX, and price is too high.
+[WARNING] Skipping line without agent_id: agent_m3zhhcxfv,buy,P061,0.68,Price is low and BrandX is preferred. Quality is acceptable.
+[WARNING] Skipping line without agent_id: agent_f7yw5ee1y,not buy,none,0.10,Brand preference is low for BrandX, and price is too high.
+[WARNING] Skipping line without agent_id: agent_2l96ah2cj,not buy,none,0.05,Brand preference is low for BrandX, and price is too high.
+[WARNING] Skipping line without agent_id: agent_xklqd34pt,not buy,none,0.15,Brand preference is low for BrandX, and price is too high.
+[WARNING] Skipping line without agent_id: agent_165wmfytq,buy,P061,0.75,Price is low and BrandX is preferred. Quality is acceptable.
+[WARNING] Skipping line without agent_id: agent_6pu522jxa,not buy,none,0.05,Brand preference is low for BrandX, and price is too high.
+[WARNING] Skipping line without agent_id: agent_hq29jlwtu,buy,P061,0.68,Price is low and BrandX is preferred. Quality is acceptable.
+[WARNING] Skipping line without agent_id: agent_70tf8452h,not buy,none,0.10,Brand preference is low for BrandX, and price is too high.
+[WARNING] Skipping line without agent_id: agent_xrbmtlpr9,not buy,none,0.05,Brand preference is low for BrandX, and price is too high.
+[WARNING] Skipping line without agent_id: agent_jpbmp5dvx,not buy,none,0.15,Brand preference is low for BrandX, and price is too high.
+[WARNING] Skipping line without agent_id: agent_krjlozrw0,buy,P061,0.75,Price is low and BrandX is preferred. Quality is acceptable.
+[WARNING] Skipping line without agent_id: agent_zi0wpc0wz,not buy,none,0.05,Brand preference is low for BrandX, and price is too high.
+[WARNING] Skipping line without agent_id: agent_p9yqhru2q,buy,P061,0.68,Price is low and BrandX is preferred. Quality is acceptable.
+[WARNING] Skipping line without agent_id: agent_maynvksbd,not buy,none,0.10,Brand preference is low for BrandX, and price is too high.
+[WARNING] Skipping line without agent_id: agent_liu5qr3hk,not buy,none,0.05,Brand preference is low for BrandX, and price is too high.
+[WARNING] Skipping line without agent_id: agent_98qsmx32m,not buy,none,0.15,Brand preference is low for BrandX, and price is too high.
+[WARNING] Skipping line without agent_id: agent_5kudktm04,buy,P061,0.75,Price is low and BrandX is preferred. Quality is acceptable.
+[WARNING] Skipping line without agent_id: agent_azntzcfma,not buy,none,0.05,Brand preference is low for BrandX, and price is too high.
+[WARNING] Skipping line without agent_id: agent_6qvz3aph4,buy,P061,0.68,Price is low and BrandX is preferred. Quality is acceptable.
+[WARNING] Skipping line without agent_id: agent_5yf5hff81,not buy,none,0.10,Brand preference is low for BrandX, and price is too high.
+[WARNING] Skipping line without agent_id: agent_wfv6oi5kw,not buy,none,0.05,Brand preference is low for BrandX, and price is too high.
+[WARNING] Skipping line without agent_id: agent_liw2y42n8,not buy,none,0.15,Brand preference is low for BrandX, and price is too high.
+[WARNING] Skipping line without agent_id: agent_xvhrvp6mz,buy,P061,0.75,Price is low and BrandX is preferred. Quality is acceptable.
+[WARNING] Skipping line without agent_id: 
+[WARNING] No valid decisions parsed from response
+Processing batch 5/18: agents 101 to 125
+2025-10-13 04:18:59,462 - INFO - Processing batch 5/18: agents 101 to 125
+Processing 25 agents in single batch
+2025-10-13 04:18:59,462 - INFO - Processing 25 agents in single batch
+Prompt length: 2767 characters
+2025-10-13 04:18:59,462 - DEBUG - Prompt length: 2767 characters
+Making Gemini API call (single attempt)
+2025-10-13 04:18:59,462 - INFO - Making Gemini API call (single attempt)
+Response received. Candidates: 1
+2025-10-13 04:19:04,177 - INFO - Response received. Candidates: 1
+Candidate finish_reason: 1
+2025-10-13 04:19:04,177 - INFO - Candidate finish_reason: 1
+Raw response for 25 agents: Here's the predicted output for each participant, based on the provided data:
+
+agent_1e9eccona,not b...
+2025-10-13 04:19:04,177 - INFO - Raw response for 25 agents: Here's the predicted output for each participant, based on the provided data:
+
+agent_1e9eccona,not b...
+[WARNING] Unknown agent_id: Here's the predicted output for each participant, based on the provided data
+[WARNING] Skipping line without agent_id: 
+[WARNING] Skipping line without agent_id: agent_1e9eccona,not buy,none,0.00,Price too high, BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_pu5c32vb5,buy,P061,0.75,Price is acceptable, BrandX is preferred.
+[WARNING] Skipping line without agent_id: agent_2ajbdr57j,not buy,none,0.00,BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_mj5owd05f,not buy,none,0.00,Price too high, BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_14l0nzzw7,not buy,none,0.00,BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_k3f12j1fy,buy,P061,0.70,Price is acceptable, BrandX is preferred.
+[WARNING] Skipping line without agent_id: agent_qb27zu208,not buy,none,0.00,Price too high, BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_gxdo0alz7,buy,P061,0.75,Price is acceptable, BrandX is preferred.
+[WARNING] Skipping line without agent_id: agent_lyv4pcf2i,not buy,none,0.00,BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_zjqf8qnbx,not buy,none,0.00,Price too high, BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_l21nuknj7,not buy,none,0.00,BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_1bpi7mobh,buy,P061,0.70,Price is acceptable, BrandX is preferred.
+[WARNING] Skipping line without agent_id: agent_8pgz4wka9,not buy,none,0.00,Price too high, BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_bomzxv36v,buy,P061,0.75,Price is acceptable, BrandX is preferred.
+[WARNING] Skipping line without agent_id: agent_c3c4sgmbs,not buy,none,0.00,BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_dw70fdkr0,not buy,none,0.00,Price too high, BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_a10xt5m4q,not buy,none,0.00,BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_ik93j372f,buy,P061,0.70,Price is acceptable, BrandX is preferred.
+[WARNING] Skipping line without agent_id: agent_jb1r135ym,not buy,none,0.00,Price too high, BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_bm93nad0a,buy,P061,0.75,Price is acceptable, BrandX is preferred.
+[WARNING] Skipping line without agent_id: agent_igz7aawb0,not buy,none,0.00,BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_z5abxqqke,not buy,none,0.00,Price too high, BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_duo9y16ga,not buy,none,0.00,BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_qi5n5cj3c,buy,P061,0.70,Price is acceptable, BrandX is preferred.
+[WARNING] Skipping line without agent_id: agent_ojjfkzpfn,not buy,none,0.00,Price too high, BrandX not preferred.
+[WARNING] Skipping line without agent_id: 
+[WARNING] No valid decisions parsed from response
+Processing batch 6/18: agents 126 to 150
+2025-10-13 04:19:04,178 - INFO - Processing batch 6/18: agents 126 to 150
+Processing 25 agents in single batch
+2025-10-13 04:19:04,178 - INFO - Processing 25 agents in single batch
+Prompt length: 2767 characters
+2025-10-13 04:19:04,178 - DEBUG - Prompt length: 2767 characters
+Making Gemini API call (single attempt)
+2025-10-13 04:19:04,178 - INFO - Making Gemini API call (single attempt)
+Response received. Candidates: 1
+2025-10-13 04:19:10,577 - INFO - Response received. Candidates: 1
+Candidate finish_reason: 2
+2025-10-13 04:19:10,578 - INFO - Candidate finish_reason: 2
+Gemini blocked by safety filter - switching to alternative model
+2025-10-13 04:19:10,578 - WARNING - Gemini blocked by safety filter - switching to alternative model
+Using OpenAI GPT-3.5-turbo as alternative model
+2025-10-13 04:19:11,343 - INFO - Using OpenAI GPT-3.5-turbo as alternative model
+2025-10-13 04:19:12,061 - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-4952781f-7556-4a16-aeab-5f702e10c738', 'json_data': {'messages': [{'role': 'user', 'content': 'Market Simulation Task\n\nContext: {"product_id":"P1105","brand":"BrandX","price":60,"quality":0.55,"category":"Electronics"}\n\nParticipants (25):\nID:agent_m8owwk0zs|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_couqudr6a|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_nzxw8vn27|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_no3ttfcg8|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_achzco6eq|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_u2wwkeqtl|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_97nm5x2y8|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_1bzkguq7t|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_fq6xg7i04|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_sikmazm9g|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_0mie8bejs|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_rrk4hqxak|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_ym3xil3jh|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_fql7o6zln|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_7jipf7qn3|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_y8sur4p6a|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_a0uhczu95|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_erjmqw25g|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_raq0uy1yp|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_hatmk8coq|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_0up9mknbf|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_9vp86msl2|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_q6v1syom3|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_82eh1jm61|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_fyn8d5967|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\n\nProducts (10):\nID:P061|Brand:BrandX|Price:$15|Quality:0.70\nID:P040|Brand:BrandX|Price:$22|Quality:0.85\nID:P082|Brand:BrandX|Price:$16|Quality:0.70\nID:P103|Brand:BrandX|Price:$17|Quality:0.70\nID:P124|Brand:BrandX|Price:$18|Quality:0.70\nID:P166|Brand:BrandX|Price:$20|Quality:0.70\nID:P250|Brand:BrandX|Price:$20|Quality:0.70\nID:P187|Brand:BrandX|Price:$21|Quality:0.70\nID:P208|Brand:BrandX|Price:$22|Quality:0.70\nID:P229|Brand:BrandX|Price:$23|Quality:0.70\n\nTask: For each participant, predict: buy/not buy, product ID (or none), satisfaction score (0.0-1.0), brief rationale\n\nFormat: participant_id,decision,product_id,score,rationale\nExample: p001,buy,P001,0.85,Quality matches preference\n\nOutput:'}], 'model': 'gpt-3.5-turbo', 'max_tokens': 2000, 'temperature': 0.7}}
+2025-10-13 04:19:12,063 - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2025-10-13 04:19:12,063 - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-10-13 04:19:12,071 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7b8a642adb80>
+2025-10-13 04:19:12,071 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x7b8a64508850> server_hostname='api.openai.com' timeout=5.0
+2025-10-13 04:19:12,078 - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7b8a47fb39b0>
+2025-10-13 04:19:12,078 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-10-13 04:19:12,078 - DEBUG - send_request_headers.complete
+2025-10-13 04:19:12,078 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-10-13 04:19:12,079 - DEBUG - send_request_body.complete
+2025-10-13 04:19:12,079 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-10-13 04:19:12,407 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 429, b'Too Many Requests', [(b'Date', b'Mon, 13 Oct 2025 04:19:12 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Content-Length', b'337'), (b'Connection', b'keep-alive'), (b'vary', b'Origin'), (b'x-request-id', b'req_ae2f1da8a43c4b5f8a637fd29e3cf4a6'), (b'x-envoy-upstream-service-time', b'41'), (b'x-openai-proxy-wasm', b'v0.1'), (b'cf-cache-status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=wWCRs2VeXsJSOqbD33f_abIWRBxc7z9HpfbwEOFMEww-1760329152-1.0.1.1-2Ru90KaQlknqoDP5Ff1idJ0y4CWdtpCA2wDdgoUxBK.9V1221ysLxLEJSqMVlh_21_xlaPzblViN_nYLRDSSr_YIDdrBkUNsooNAekb6.sI; path=/; expires=Mon, 13-Oct-25 04:49:12 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'X-Content-Type-Options', b'nosniff'), (b'Set-Cookie', b'_cfuvid=VA0xUMhvDDj0ajUd43MxOlqgz558SPRkdvjm9yxRQfY-1760329152404-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'98dc09907e72d47b-SIN'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-10-13 04:19:12,408 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-10-13 04:19:12,408 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-10-13 04:19:12,408 - DEBUG - receive_response_body.complete
+2025-10-13 04:19:12,408 - DEBUG - response_closed.started
+2025-10-13 04:19:12,408 - DEBUG - response_closed.complete
+2025-10-13 04:19:12,408 - DEBUG - HTTP Response: POST https://api.openai.com/v1/chat/completions "429 Too Many Requests" Headers([('date', 'Mon, 13 Oct 2025 04:19:12 GMT'), ('content-type', 'application/json; charset=utf-8'), ('content-length', '337'), ('connection', 'keep-alive'), ('vary', 'Origin'), ('x-request-id', 'req_ae2f1da8a43c4b5f8a637fd29e3cf4a6'), ('x-envoy-upstream-service-time', '41'), ('x-openai-proxy-wasm', 'v0.1'), ('cf-cache-status', 'DYNAMIC'), ('set-cookie', '__cf_bm=wWCRs2VeXsJSOqbD33f_abIWRBxc7z9HpfbwEOFMEww-1760329152-1.0.1.1-2Ru90KaQlknqoDP5Ff1idJ0y4CWdtpCA2wDdgoUxBK.9V1221ysLxLEJSqMVlh_21_xlaPzblViN_nYLRDSSr_YIDdrBkUNsooNAekb6.sI; path=/; expires=Mon, 13-Oct-25 04:49:12 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('strict-transport-security', 'max-age=31536000; includeSubDomains; preload'), ('x-content-type-options', 'nosniff'), ('set-cookie', '_cfuvid=VA0xUMhvDDj0ajUd43MxOlqgz558SPRkdvjm9yxRQfY-1760329152404-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('server', 'cloudflare'), ('cf-ray', '98dc09907e72d47b-SIN'), ('alt-svc', 'h3=":443"; ma=86400')])
+2025-10-13 04:19:12,409 - DEBUG - request_id: req_ae2f1da8a43c4b5f8a637fd29e3cf4a6
+2025-10-13 04:19:12,409 - DEBUG - Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/dist-packages/openai/_base_client.py", line 1027, in request
+    response.raise_for_status()
+  File "/usr/local/lib/python3.12/dist-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-10-13 04:19:12,410 - DEBUG - Retrying due to status code 429
+2025-10-13 04:19:12,410 - DEBUG - 2 retries left
+2025-10-13 04:19:12,410 - INFO - Retrying request to /chat/completions in 0.466013 seconds
+2025-10-13 04:19:12,876 - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-4952781f-7556-4a16-aeab-5f702e10c738', 'json_data': {'messages': [{'role': 'user', 'content': 'Market Simulation Task\n\nContext: {"product_id":"P1105","brand":"BrandX","price":60,"quality":0.55,"category":"Electronics"}\n\nParticipants (25):\nID:agent_m8owwk0zs|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_couqudr6a|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_nzxw8vn27|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_no3ttfcg8|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_achzco6eq|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_u2wwkeqtl|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_97nm5x2y8|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_1bzkguq7t|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_fq6xg7i04|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_sikmazm9g|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_0mie8bejs|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_rrk4hqxak|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_ym3xil3jh|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_fql7o6zln|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_7jipf7qn3|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_y8sur4p6a|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_a0uhczu95|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_erjmqw25g|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_raq0uy1yp|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_hatmk8coq|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_0up9mknbf|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_9vp86msl2|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_q6v1syom3|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_82eh1jm61|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_fyn8d5967|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\n\nProducts (10):\nID:P061|Brand:BrandX|Price:$15|Quality:0.70\nID:P040|Brand:BrandX|Price:$22|Quality:0.85\nID:P082|Brand:BrandX|Price:$16|Quality:0.70\nID:P103|Brand:BrandX|Price:$17|Quality:0.70\nID:P124|Brand:BrandX|Price:$18|Quality:0.70\nID:P166|Brand:BrandX|Price:$20|Quality:0.70\nID:P250|Brand:BrandX|Price:$20|Quality:0.70\nID:P187|Brand:BrandX|Price:$21|Quality:0.70\nID:P208|Brand:BrandX|Price:$22|Quality:0.70\nID:P229|Brand:BrandX|Price:$23|Quality:0.70\n\nTask: For each participant, predict: buy/not buy, product ID (or none), satisfaction score (0.0-1.0), brief rationale\n\nFormat: participant_id,decision,product_id,score,rationale\nExample: p001,buy,P001,0.85,Quality matches preference\n\nOutput:'}], 'model': 'gpt-3.5-turbo', 'max_tokens': 2000, 'temperature': 0.7}}
+2025-10-13 04:19:12,877 - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2025-10-13 04:19:12,878 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-10-13 04:19:12,878 - DEBUG - send_request_headers.complete
+2025-10-13 04:19:12,878 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-10-13 04:19:12,878 - DEBUG - send_request_body.complete
+2025-10-13 04:19:12,878 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-10-13 04:19:13,219 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 429, b'Too Many Requests', [(b'Date', b'Mon, 13 Oct 2025 04:19:13 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Content-Length', b'337'), (b'Connection', b'keep-alive'), (b'vary', b'Origin'), (b'x-request-id', b'req_a06b592d30774421a47612de9aa4037e'), (b'x-envoy-upstream-service-time', b'43'), (b'x-openai-proxy-wasm', b'v0.1'), (b'cf-cache-status', b'DYNAMIC'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'X-Content-Type-Options', b'nosniff'), (b'Server', b'cloudflare'), (b'CF-RAY', b'98dc0995794cd47b-SIN'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-10-13 04:19:13,219 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-10-13 04:19:13,219 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-10-13 04:19:13,219 - DEBUG - receive_response_body.complete
+2025-10-13 04:19:13,219 - DEBUG - response_closed.started
+2025-10-13 04:19:13,219 - DEBUG - response_closed.complete
+2025-10-13 04:19:13,219 - DEBUG - HTTP Response: POST https://api.openai.com/v1/chat/completions "429 Too Many Requests" Headers({'date': 'Mon, 13 Oct 2025 04:19:13 GMT', 'content-type': 'application/json; charset=utf-8', 'content-length': '337', 'connection': 'keep-alive', 'vary': 'Origin', 'x-request-id': 'req_a06b592d30774421a47612de9aa4037e', 'x-envoy-upstream-service-time': '43', 'x-openai-proxy-wasm': 'v0.1', 'cf-cache-status': 'DYNAMIC', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'x-content-type-options': 'nosniff', 'server': 'cloudflare', 'cf-ray': '98dc0995794cd47b-SIN', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-10-13 04:19:13,220 - DEBUG - request_id: req_a06b592d30774421a47612de9aa4037e
+2025-10-13 04:19:13,220 - DEBUG - Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/dist-packages/openai/_base_client.py", line 1027, in request
+    response.raise_for_status()
+  File "/usr/local/lib/python3.12/dist-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-10-13 04:19:13,220 - DEBUG - Retrying due to status code 429
+2025-10-13 04:19:13,220 - DEBUG - 1 retry left
+2025-10-13 04:19:13,220 - INFO - Retrying request to /chat/completions in 0.840357 seconds
+2025-10-13 04:19:14,061 - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-4952781f-7556-4a16-aeab-5f702e10c738', 'json_data': {'messages': [{'role': 'user', 'content': 'Market Simulation Task\n\nContext: {"product_id":"P1105","brand":"BrandX","price":60,"quality":0.55,"category":"Electronics"}\n\nParticipants (25):\nID:agent_m8owwk0zs|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_couqudr6a|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_nzxw8vn27|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_no3ttfcg8|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_achzco6eq|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_u2wwkeqtl|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_97nm5x2y8|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_1bzkguq7t|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_fq6xg7i04|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_sikmazm9g|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_0mie8bejs|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_rrk4hqxak|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_ym3xil3jh|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_fql7o6zln|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_7jipf7qn3|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_y8sur4p6a|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_a0uhczu95|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_erjmqw25g|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_raq0uy1yp|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_hatmk8coq|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_0up9mknbf|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_9vp86msl2|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_q6v1syom3|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_82eh1jm61|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_fyn8d5967|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\n\nProducts (10):\nID:P061|Brand:BrandX|Price:$15|Quality:0.70\nID:P040|Brand:BrandX|Price:$22|Quality:0.85\nID:P082|Brand:BrandX|Price:$16|Quality:0.70\nID:P103|Brand:BrandX|Price:$17|Quality:0.70\nID:P124|Brand:BrandX|Price:$18|Quality:0.70\nID:P166|Brand:BrandX|Price:$20|Quality:0.70\nID:P250|Brand:BrandX|Price:$20|Quality:0.70\nID:P187|Brand:BrandX|Price:$21|Quality:0.70\nID:P208|Brand:BrandX|Price:$22|Quality:0.70\nID:P229|Brand:BrandX|Price:$23|Quality:0.70\n\nTask: For each participant, predict: buy/not buy, product ID (or none), satisfaction score (0.0-1.0), brief rationale\n\nFormat: participant_id,decision,product_id,score,rationale\nExample: p001,buy,P001,0.85,Quality matches preference\n\nOutput:'}], 'model': 'gpt-3.5-turbo', 'max_tokens': 2000, 'temperature': 0.7}}
+2025-10-13 04:19:14,062 - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2025-10-13 04:19:14,062 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-10-13 04:19:14,063 - DEBUG - send_request_headers.complete
+2025-10-13 04:19:14,063 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-10-13 04:19:14,063 - DEBUG - send_request_body.complete
+2025-10-13 04:19:14,063 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-10-13 04:19:14,337 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 429, b'Too Many Requests', [(b'Date', b'Mon, 13 Oct 2025 04:19:14 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Content-Length', b'337'), (b'Connection', b'keep-alive'), (b'vary', b'Origin'), (b'x-request-id', b'req_296c66ccda5d922ea83ee7e5d6ef0de2'), (b'x-envoy-upstream-service-time', b'5'), (b'x-openai-proxy-wasm', b'v0.1'), (b'cf-cache-status', b'DYNAMIC'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'X-Content-Type-Options', b'nosniff'), (b'Server', b'cloudflare'), (b'CF-RAY', b'98dc099ceaead47b-SIN'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-10-13 04:19:14,338 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-10-13 04:19:14,338 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-10-13 04:19:14,338 - DEBUG - receive_response_body.complete
+2025-10-13 04:19:14,338 - DEBUG - response_closed.started
+2025-10-13 04:19:14,338 - DEBUG - response_closed.complete
+2025-10-13 04:19:14,338 - DEBUG - HTTP Response: POST https://api.openai.com/v1/chat/completions "429 Too Many Requests" Headers({'date': 'Mon, 13 Oct 2025 04:19:14 GMT', 'content-type': 'application/json; charset=utf-8', 'content-length': '337', 'connection': 'keep-alive', 'vary': 'Origin', 'x-request-id': 'req_296c66ccda5d922ea83ee7e5d6ef0de2', 'x-envoy-upstream-service-time': '5', 'x-openai-proxy-wasm': 'v0.1', 'cf-cache-status': 'DYNAMIC', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'x-content-type-options': 'nosniff', 'server': 'cloudflare', 'cf-ray': '98dc099ceaead47b-SIN', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-10-13 04:19:14,338 - DEBUG - request_id: req_296c66ccda5d922ea83ee7e5d6ef0de2
+2025-10-13 04:19:14,338 - DEBUG - Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/dist-packages/openai/_base_client.py", line 1027, in request
+    response.raise_for_status()
+  File "/usr/local/lib/python3.12/dist-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-10-13 04:19:14,339 - DEBUG - Re-raising status error
+Alternative model failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-10-13 04:19:14,339 - ERROR - Alternative model failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+All AI models failed - this will trigger rule-based fallback
+2025-10-13 04:19:14,339 - INFO - All AI models failed - this will trigger rule-based fallback
+Gemini API call failed: All AI models failed
+2025-10-13 04:19:14,340 - ERROR - Gemini API call failed: All AI models failed
+Switching to alternative model due to Gemini failure
+2025-10-13 04:19:14,340 - INFO - Switching to alternative model due to Gemini failure
+Using OpenAI GPT-3.5-turbo as alternative model
+2025-10-13 04:19:14,340 - INFO - Using OpenAI GPT-3.5-turbo as alternative model
+2025-10-13 04:19:14,414 - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-e77e8d0a-aa4b-4ed4-bf17-8ebf577009c4', 'json_data': {'messages': [{'role': 'user', 'content': 'Market Simulation Task\n\nContext: {"product_id":"P1105","brand":"BrandX","price":60,"quality":0.55,"category":"Electronics"}\n\nParticipants (25):\nID:agent_m8owwk0zs|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_couqudr6a|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_nzxw8vn27|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_no3ttfcg8|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_achzco6eq|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_u2wwkeqtl|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_97nm5x2y8|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_1bzkguq7t|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_fq6xg7i04|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_sikmazm9g|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_0mie8bejs|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_rrk4hqxak|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_ym3xil3jh|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_fql7o6zln|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_7jipf7qn3|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_y8sur4p6a|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_a0uhczu95|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_erjmqw25g|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_raq0uy1yp|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_hatmk8coq|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_0up9mknbf|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_9vp86msl2|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_q6v1syom3|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_82eh1jm61|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_fyn8d5967|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\n\nProducts (10):\nID:P061|Brand:BrandX|Price:$15|Quality:0.70\nID:P040|Brand:BrandX|Price:$22|Quality:0.85\nID:P082|Brand:BrandX|Price:$16|Quality:0.70\nID:P103|Brand:BrandX|Price:$17|Quality:0.70\nID:P124|Brand:BrandX|Price:$18|Quality:0.70\nID:P166|Brand:BrandX|Price:$20|Quality:0.70\nID:P250|Brand:BrandX|Price:$20|Quality:0.70\nID:P187|Brand:BrandX|Price:$21|Quality:0.70\nID:P208|Brand:BrandX|Price:$22|Quality:0.70\nID:P229|Brand:BrandX|Price:$23|Quality:0.70\n\nTask: For each participant, predict: buy/not buy, product ID (or none), satisfaction score (0.0-1.0), brief rationale\n\nFormat: participant_id,decision,product_id,score,rationale\nExample: p001,buy,P001,0.85,Quality matches preference\n\nOutput:'}], 'model': 'gpt-3.5-turbo', 'max_tokens': 2000, 'temperature': 0.7}}
+2025-10-13 04:19:14,415 - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2025-10-13 04:19:14,415 - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-10-13 04:19:14,420 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7b8a47e00710>
+2025-10-13 04:19:14,421 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x7b8a47e47a50> server_hostname='api.openai.com' timeout=5.0
+2025-10-13 04:19:14,429 - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7b8a47e003e0>
+2025-10-13 04:19:14,429 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-10-13 04:19:14,429 - DEBUG - send_request_headers.complete
+2025-10-13 04:19:14,429 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-10-13 04:19:14,429 - DEBUG - send_request_body.complete
+2025-10-13 04:19:14,429 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-10-13 04:19:15,095 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 429, b'Too Many Requests', [(b'Date', b'Mon, 13 Oct 2025 04:19:15 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Content-Length', b'337'), (b'Connection', b'keep-alive'), (b'vary', b'Origin'), (b'x-request-id', b'req_7848014881e945b08cb5274cda065018'), (b'x-envoy-upstream-service-time', b'64'), (b'x-openai-proxy-wasm', b'v0.1'), (b'cf-cache-status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=woUIrPlyFqWTRu9PsWa6GiJqVKKNXoxggLiTfvrXY1Q-1760329155-1.0.1.1-2yQJ4ZPejVZH6Mfewx1v4q0k7EI_RT3FQMr6N06N_TFMzQPpVp9ZgdCPBxBkUMg82LVttCQ7O9hU1CZJgptNarzTezbtwp.WHYtGDhmHtEE; path=/; expires=Mon, 13-Oct-25 04:49:15 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'X-Content-Type-Options', b'nosniff'), (b'Set-Cookie', b'_cfuvid=i6NawR_RZOvbfukh48rTzg_uiAHxdf_pmAUp1.hHlio-1760329155091-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'98dc099f2d2efdbf-SIN'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-10-13 04:19:15,096 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-10-13 04:19:15,096 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-10-13 04:19:15,096 - DEBUG - receive_response_body.complete
+2025-10-13 04:19:15,096 - DEBUG - response_closed.started
+2025-10-13 04:19:15,096 - DEBUG - response_closed.complete
+2025-10-13 04:19:15,096 - DEBUG - HTTP Response: POST https://api.openai.com/v1/chat/completions "429 Too Many Requests" Headers([('date', 'Mon, 13 Oct 2025 04:19:15 GMT'), ('content-type', 'application/json; charset=utf-8'), ('content-length', '337'), ('connection', 'keep-alive'), ('vary', 'Origin'), ('x-request-id', 'req_7848014881e945b08cb5274cda065018'), ('x-envoy-upstream-service-time', '64'), ('x-openai-proxy-wasm', 'v0.1'), ('cf-cache-status', 'DYNAMIC'), ('set-cookie', '__cf_bm=woUIrPlyFqWTRu9PsWa6GiJqVKKNXoxggLiTfvrXY1Q-1760329155-1.0.1.1-2yQJ4ZPejVZH6Mfewx1v4q0k7EI_RT3FQMr6N06N_TFMzQPpVp9ZgdCPBxBkUMg82LVttCQ7O9hU1CZJgptNarzTezbtwp.WHYtGDhmHtEE; path=/; expires=Mon, 13-Oct-25 04:49:15 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('strict-transport-security', 'max-age=31536000; includeSubDomains; preload'), ('x-content-type-options', 'nosniff'), ('set-cookie', '_cfuvid=i6NawR_RZOvbfukh48rTzg_uiAHxdf_pmAUp1.hHlio-1760329155091-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('server', 'cloudflare'), ('cf-ray', '98dc099f2d2efdbf-SIN'), ('alt-svc', 'h3=":443"; ma=86400')])
+2025-10-13 04:19:15,096 - DEBUG - request_id: req_7848014881e945b08cb5274cda065018
+2025-10-13 04:19:15,096 - DEBUG - Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "/content/drive/MyDrive/python_model/inference.py", line 98, in generate_with_alternative_model
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/openai/resources/chat/completions/completions.py", line 1147, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/openai/_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/openai/_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/content/drive/MyDrive/python_model/inference.py", line 72, in rate_limited_generate
+    return generate_with_alternative_model(prompt)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/drive/MyDrive/python_model/inference.py", line 110, in generate_with_alternative_model
+    raise ValueError("All AI models failed")
+ValueError: All AI models failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/dist-packages/openai/_base_client.py", line 1027, in request
+    response.raise_for_status()
+  File "/usr/local/lib/python3.12/dist-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-10-13 04:19:15,102 - DEBUG - Retrying due to status code 429
+2025-10-13 04:19:15,102 - DEBUG - 2 retries left
+2025-10-13 04:19:15,102 - INFO - Retrying request to /chat/completions in 0.407425 seconds
+2025-10-13 04:19:15,510 - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-e77e8d0a-aa4b-4ed4-bf17-8ebf577009c4', 'json_data': {'messages': [{'role': 'user', 'content': 'Market Simulation Task\n\nContext: {"product_id":"P1105","brand":"BrandX","price":60,"quality":0.55,"category":"Electronics"}\n\nParticipants (25):\nID:agent_m8owwk0zs|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_couqudr6a|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_nzxw8vn27|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_no3ttfcg8|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_achzco6eq|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_u2wwkeqtl|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_97nm5x2y8|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_1bzkguq7t|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_fq6xg7i04|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_sikmazm9g|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_0mie8bejs|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_rrk4hqxak|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_ym3xil3jh|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_fql7o6zln|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_7jipf7qn3|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_y8sur4p6a|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_a0uhczu95|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_erjmqw25g|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_raq0uy1yp|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_hatmk8coq|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_0up9mknbf|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_9vp86msl2|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_q6v1syom3|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_82eh1jm61|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_fyn8d5967|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\n\nProducts (10):\nID:P061|Brand:BrandX|Price:$15|Quality:0.70\nID:P040|Brand:BrandX|Price:$22|Quality:0.85\nID:P082|Brand:BrandX|Price:$16|Quality:0.70\nID:P103|Brand:BrandX|Price:$17|Quality:0.70\nID:P124|Brand:BrandX|Price:$18|Quality:0.70\nID:P166|Brand:BrandX|Price:$20|Quality:0.70\nID:P250|Brand:BrandX|Price:$20|Quality:0.70\nID:P187|Brand:BrandX|Price:$21|Quality:0.70\nID:P208|Brand:BrandX|Price:$22|Quality:0.70\nID:P229|Brand:BrandX|Price:$23|Quality:0.70\n\nTask: For each participant, predict: buy/not buy, product ID (or none), satisfaction score (0.0-1.0), brief rationale\n\nFormat: participant_id,decision,product_id,score,rationale\nExample: p001,buy,P001,0.85,Quality matches preference\n\nOutput:'}], 'model': 'gpt-3.5-turbo', 'max_tokens': 2000, 'temperature': 0.7}}
+2025-10-13 04:19:15,511 - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2025-10-13 04:19:15,511 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-10-13 04:19:15,512 - DEBUG - send_request_headers.complete
+2025-10-13 04:19:15,512 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-10-13 04:19:15,512 - DEBUG - send_request_body.complete
+2025-10-13 04:19:15,512 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-10-13 04:19:15,810 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 429, b'Too Many Requests', [(b'Date', b'Mon, 13 Oct 2025 04:19:15 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Content-Length', b'337'), (b'Connection', b'keep-alive'), (b'vary', b'Origin'), (b'x-request-id', b'req_f898d5af2cc14e6f85874e6ceb11d770'), (b'x-envoy-upstream-service-time', b'45'), (b'x-openai-proxy-wasm', b'v0.1'), (b'cf-cache-status', b'DYNAMIC'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'X-Content-Type-Options', b'nosniff'), (b'Server', b'cloudflare'), (b'CF-RAY', b'98dc09a5fb68fdbf-SIN'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-10-13 04:19:15,810 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-10-13 04:19:15,810 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-10-13 04:19:15,810 - DEBUG - receive_response_body.complete
+2025-10-13 04:19:15,810 - DEBUG - response_closed.started
+2025-10-13 04:19:15,810 - DEBUG - response_closed.complete
+2025-10-13 04:19:15,811 - DEBUG - HTTP Response: POST https://api.openai.com/v1/chat/completions "429 Too Many Requests" Headers({'date': 'Mon, 13 Oct 2025 04:19:15 GMT', 'content-type': 'application/json; charset=utf-8', 'content-length': '337', 'connection': 'keep-alive', 'vary': 'Origin', 'x-request-id': 'req_f898d5af2cc14e6f85874e6ceb11d770', 'x-envoy-upstream-service-time': '45', 'x-openai-proxy-wasm': 'v0.1', 'cf-cache-status': 'DYNAMIC', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'x-content-type-options': 'nosniff', 'server': 'cloudflare', 'cf-ray': '98dc09a5fb68fdbf-SIN', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-10-13 04:19:15,811 - DEBUG - request_id: req_f898d5af2cc14e6f85874e6ceb11d770
+2025-10-13 04:19:15,811 - DEBUG - Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "/content/drive/MyDrive/python_model/inference.py", line 98, in generate_with_alternative_model
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/openai/resources/chat/completions/completions.py", line 1147, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/openai/_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/openai/_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/content/drive/MyDrive/python_model/inference.py", line 72, in rate_limited_generate
+    return generate_with_alternative_model(prompt)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/drive/MyDrive/python_model/inference.py", line 110, in generate_with_alternative_model
+    raise ValueError("All AI models failed")
+ValueError: All AI models failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/dist-packages/openai/_base_client.py", line 1027, in request
+    response.raise_for_status()
+  File "/usr/local/lib/python3.12/dist-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-10-13 04:19:15,812 - DEBUG - Retrying due to status code 429
+2025-10-13 04:19:15,812 - DEBUG - 1 retry left
+2025-10-13 04:19:15,812 - INFO - Retrying request to /chat/completions in 0.792638 seconds
+2025-10-13 04:19:16,605 - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-e77e8d0a-aa4b-4ed4-bf17-8ebf577009c4', 'json_data': {'messages': [{'role': 'user', 'content': 'Market Simulation Task\n\nContext: {"product_id":"P1105","brand":"BrandX","price":60,"quality":0.55,"category":"Electronics"}\n\nParticipants (25):\nID:agent_m8owwk0zs|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_couqudr6a|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_nzxw8vn27|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_no3ttfcg8|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_achzco6eq|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_u2wwkeqtl|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_97nm5x2y8|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_1bzkguq7t|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_fq6xg7i04|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_sikmazm9g|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_0mie8bejs|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_rrk4hqxak|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_ym3xil3jh|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_fql7o6zln|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_7jipf7qn3|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_y8sur4p6a|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_a0uhczu95|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_erjmqw25g|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_raq0uy1yp|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_hatmk8coq|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_0up9mknbf|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_9vp86msl2|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_q6v1syom3|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_82eh1jm61|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_fyn8d5967|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\n\nProducts (10):\nID:P061|Brand:BrandX|Price:$15|Quality:0.70\nID:P040|Brand:BrandX|Price:$22|Quality:0.85\nID:P082|Brand:BrandX|Price:$16|Quality:0.70\nID:P103|Brand:BrandX|Price:$17|Quality:0.70\nID:P124|Brand:BrandX|Price:$18|Quality:0.70\nID:P166|Brand:BrandX|Price:$20|Quality:0.70\nID:P250|Brand:BrandX|Price:$20|Quality:0.70\nID:P187|Brand:BrandX|Price:$21|Quality:0.70\nID:P208|Brand:BrandX|Price:$22|Quality:0.70\nID:P229|Brand:BrandX|Price:$23|Quality:0.70\n\nTask: For each participant, predict: buy/not buy, product ID (or none), satisfaction score (0.0-1.0), brief rationale\n\nFormat: participant_id,decision,product_id,score,rationale\nExample: p001,buy,P001,0.85,Quality matches preference\n\nOutput:'}], 'model': 'gpt-3.5-turbo', 'max_tokens': 2000, 'temperature': 0.7}}
+2025-10-13 04:19:16,606 - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2025-10-13 04:19:16,606 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-10-13 04:19:16,607 - DEBUG - send_request_headers.complete
+2025-10-13 04:19:16,607 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-10-13 04:19:16,607 - DEBUG - send_request_body.complete
+2025-10-13 04:19:16,607 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-10-13 04:19:16,865 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 429, b'Too Many Requests', [(b'Date', b'Mon, 13 Oct 2025 04:19:16 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Content-Length', b'337'), (b'Connection', b'keep-alive'), (b'vary', b'Origin'), (b'x-request-id', b'req_fd9d6305d4654a52a09821e79ed9cade'), (b'x-envoy-upstream-service-time', b'4'), (b'x-openai-proxy-wasm', b'v0.1'), (b'cf-cache-status', b'DYNAMIC'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'X-Content-Type-Options', b'nosniff'), (b'Server', b'cloudflare'), (b'CF-RAY', b'98dc09acc9a1fdbf-SIN'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-10-13 04:19:16,866 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-10-13 04:19:16,866 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-10-13 04:19:16,866 - DEBUG - receive_response_body.complete
+2025-10-13 04:19:16,866 - DEBUG - response_closed.started
+2025-10-13 04:19:16,866 - DEBUG - response_closed.complete
+2025-10-13 04:19:16,866 - DEBUG - HTTP Response: POST https://api.openai.com/v1/chat/completions "429 Too Many Requests" Headers({'date': 'Mon, 13 Oct 2025 04:19:16 GMT', 'content-type': 'application/json; charset=utf-8', 'content-length': '337', 'connection': 'keep-alive', 'vary': 'Origin', 'x-request-id': 'req_fd9d6305d4654a52a09821e79ed9cade', 'x-envoy-upstream-service-time': '4', 'x-openai-proxy-wasm': 'v0.1', 'cf-cache-status': 'DYNAMIC', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'x-content-type-options': 'nosniff', 'server': 'cloudflare', 'cf-ray': '98dc09acc9a1fdbf-SIN', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-10-13 04:19:16,866 - DEBUG - request_id: req_fd9d6305d4654a52a09821e79ed9cade
+2025-10-13 04:19:16,866 - DEBUG - Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "/content/drive/MyDrive/python_model/inference.py", line 98, in generate_with_alternative_model
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/openai/resources/chat/completions/completions.py", line 1147, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/openai/_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/openai/_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/content/drive/MyDrive/python_model/inference.py", line 72, in rate_limited_generate
+    return generate_with_alternative_model(prompt)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/drive/MyDrive/python_model/inference.py", line 110, in generate_with_alternative_model
+    raise ValueError("All AI models failed")
+ValueError: All AI models failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/dist-packages/openai/_base_client.py", line 1027, in request
+    response.raise_for_status()
+  File "/usr/local/lib/python3.12/dist-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-10-13 04:19:16,868 - DEBUG - Re-raising status error
+Alternative model failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-10-13 04:19:16,868 - ERROR - Alternative model failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+All AI models failed - this will trigger rule-based fallback
+2025-10-13 04:19:16,868 - INFO - All AI models failed - this will trigger rule-based fallback
+Batch prediction failed: All AI models failed
+2025-10-13 04:19:16,868 - ERROR - Batch prediction failed: All AI models failed
+Using rule-based fallback for this batch
+2025-10-13 04:19:16,868 - INFO - Using rule-based fallback for this batch
+Processing batch 7/18: agents 151 to 175
+2025-10-13 04:19:16,869 - INFO - Processing batch 7/18: agents 151 to 175
+Processing 25 agents in single batch
+2025-10-13 04:19:16,869 - INFO - Processing 25 agents in single batch
+Prompt length: 2767 characters
+2025-10-13 04:19:16,869 - DEBUG - Prompt length: 2767 characters
+Making Gemini API call (single attempt)
+2025-10-13 04:19:16,869 - INFO - Making Gemini API call (single attempt)
+Response received. Candidates: 1
+2025-10-13 04:19:22,489 - INFO - Response received. Candidates: 1
+Candidate finish_reason: 1
+2025-10-13 04:19:22,490 - INFO - Candidate finish_reason: 1
+Raw response for 25 agents: Here's the output for each participant, based on the provided information. The rationale considers t...
+2025-10-13 04:19:22,490 - INFO - Raw response for 25 agents: Here's the output for each participant, based on the provided information. The rationale considers t...
+[WARNING] Skipping line without agent_id: Here's the output for each participant, based on the provided information. The rationale considers the participant's preferences (PS - Price Sensitivity, QP - Quality Preference, ST - Brand Preference) and the available product information.
+[WARNING] Skipping line without agent_id: 
+[WARNING] Skipping line without agent_id: agent_dnhwv9qe4,buy,P061,0.65,Price is acceptable, quality is close to preference, and no strong brand preference.
+[WARNING] Skipping line without agent_id: agent_cli1r3oao,buy,P040,0.75,High quality preference, price is acceptable, and no strong brand preference.
+[WARNING] Skipping line without agent_id: agent_xutl55bft,buy,P061,0.55,Price is acceptable, quality is close to preference, and no strong brand preference.
+[WARNING] Skipping line without agent_id: agent_x7476ucbf,buy,P061,0.60,Price is acceptable, quality is close to preference, and no strong brand preference.
+[WARNING] Skipping line without agent_id: agent_08r7tl7lv,buy,P040,0.75,High quality preference, price is acceptable, and no strong brand preference.
+[WARNING] Skipping line without agent_id: agent_26izynymx,buy,P061,0.60,Price is acceptable, quality is close to preference, and no strong brand preference.
+[WARNING] Skipping line without agent_id: agent_inmn1pa7s,buy,P061,0.65,Price is acceptable, quality is close to preference, and no strong brand preference.
+[WARNING] Skipping line without agent_id: agent_b4yyv4a1s,buy,P040,0.75,High quality preference, price is acceptable, and no strong brand preference.
+[WARNING] Skipping line without agent_id: agent_nxgoi2apb,buy,P061,0.55,Price is acceptable, quality is close to preference, and no strong brand preference.
+[WARNING] Skipping line without agent_id: agent_7suhvx1oa,buy,P061,0.60,Price is acceptable, quality is close to preference, and no strong brand preference.
+[WARNING] Skipping line without agent_id: agent_g42iowxwz,buy,P040,0.75,High quality preference, price is acceptable, and no strong brand preference.
+[WARNING] Skipping line without agent_id: agent_pmc0e3r3a,buy,P061,0.60,Price is acceptable, quality is close to preference, and no strong brand preference.
+[WARNING] Skipping line without agent_id: agent_7coivov81,buy,P061,0.65,Price is acceptable, quality is close to preference, and no strong brand preference.
+[WARNING] Skipping line without agent_id: agent_elxn5i1ve,buy,P040,0.75,High quality preference, price is acceptable, and no strong brand preference.
+[WARNING] Skipping line without agent_id: agent_muys538xw,buy,P061,0.55,Price is acceptable, quality is close to preference, and no strong brand preference.
+[WARNING] Skipping line without agent_id: agent_of27tx6p1,buy,P061,0.60,Price is acceptable, quality is close to preference, and no strong brand preference.
+[WARNING] Skipping line without agent_id: agent_46s1eum0i,buy,P040,0.75,High quality preference, price is acceptable, and no strong brand preference.
+[WARNING] Skipping line without agent_id: agent_8apyraqcu,buy,P061,0.60,Price is acceptable, quality is close to preference, and no strong brand preference.
+[WARNING] Skipping line without agent_id: agent_t06jowrn6,buy,P061,0.65,Price is acceptable, quality is close to preference, and no strong brand preference.
+[WARNING] Skipping line without agent_id: agent_3k3c0r8u9,buy,P040,0.75,High quality preference, price is acceptable, and no strong brand preference.
+[WARNING] Skipping line without agent_id: agent_ygmhvsnoq,buy,P061,0.55,Price is acceptable, quality is close to preference, and no strong brand preference.
+[WARNING] Skipping line without agent_id: agent_suc66zvsx,buy,P061,0.60,Price is acceptable, quality is close to preference, and no strong brand preference.
+[WARNING] Skipping line without agent_id: agent_jz60khqyz,buy,P040,0.75,High quality preference, price is acceptable, and no strong brand preference.
+[WARNING] Skipping line without agent_id: agent_z1ls9p8rr,buy,P061,0.60,Price is acceptable, quality is close to preference, and no strong brand preference.
+[WARNING] Skipping line without agent_id: agent_23nkvrcr8,buy,P061,0.65,Price is acceptable, quality is close to preference, and no strong brand preference.
+[WARNING] Skipping line without agent_id: 
+[WARNING] No valid decisions parsed from response
+Processing batch 8/18: agents 176 to 200
+2025-10-13 04:19:22,490 - INFO - Processing batch 8/18: agents 176 to 200
+Processing 25 agents in single batch
+2025-10-13 04:19:22,490 - INFO - Processing 25 agents in single batch
+Prompt length: 2767 characters
+2025-10-13 04:19:22,490 - DEBUG - Prompt length: 2767 characters
+Making Gemini API call (single attempt)
+2025-10-13 04:19:22,490 - INFO - Making Gemini API call (single attempt)
+Response received. Candidates: 1
+2025-10-13 04:19:27,897 - INFO - Response received. Candidates: 1
+Candidate finish_reason: 1
+2025-10-13 04:19:27,897 - INFO - Candidate finish_reason: 1
+Raw response for 25 agents: Here's the market simulation output, predicting each participant's behavior:
+
+agent_68to7buih,not bu...
+2025-10-13 04:19:27,898 - INFO - Raw response for 25 agents: Here's the market simulation output, predicting each participant's behavior:
+
+agent_68to7buih,not bu...
+[WARNING] Unknown agent_id: Here's the market simulation output, predicting each participant's behavior
+[WARNING] Skipping line without agent_id: 
+[WARNING] Skipping line without agent_id: agent_68to7buih,not buy,none,0.05,Price too high, quality and style are not a priority, and BrandX is not preferred.
+[WARNING] Skipping line without agent_id: agent_873j67tsa,not buy,none,0.15,Price is high, quality is not a priority, and BrandX is not preferred.
+[WARNING] Skipping line without agent_id: agent_f9qq9q0rq,buy,P061,0.60,Price is low, style is a priority, and BrandX is preferred.
+[WARNING] Skipping line without agent_id: agent_mxh90nuyp,not buy,none,0.10,Price is high, quality is a priority, but BrandX is not preferred.
+[WARNING] Skipping line without agent_id: agent_206r2is8i,not buy,none,0.20,Price is high, style and quality are moderate, and BrandX is not a top brand.
+[WARNING] Skipping line without agent_id: agent_3jcgvx82c,not buy,none,0.15,Price is high, style and quality are moderate, and BrandX is not preferred.
+[WARNING] Skipping line without agent_id: agent_3oxd42lu4,not buy,none,0.05,Price too high, quality and style are not a priority, and BrandX is not preferred.
+[WARNING] Skipping line without agent_id: agent_pu5ss8are,not buy,none,0.15,Price is high, quality is not a priority, and BrandX is not preferred.
+[WARNING] Skipping line without agent_id: agent_mk7pg3ajt,buy,P061,0.60,Price is low, style is a priority, and BrandX is preferred.
+[WARNING] Skipping line without agent_id: agent_b68z1qrqy,not buy,none,0.10,Price is high, quality is a priority, but BrandX is not preferred.
+[WARNING] Skipping line without agent_id: agent_9c4anfbpa,not buy,none,0.20,Price is high, style and quality are moderate, and BrandX is not a top brand.
+[WARNING] Skipping line without agent_id: agent_g0fmor9ae,not buy,none,0.15,Price is high, style and quality are moderate, and BrandX is not preferred.
+[WARNING] Skipping line without agent_id: agent_i3qd71iwl,not buy,none,0.05,Price too high, quality and style are not a priority, and BrandX is not preferred.
+[WARNING] Skipping line without agent_id: agent_1wzj1cpxb,not buy,none,0.15,Price is high, quality is not a priority, and BrandX is not preferred.
+[WARNING] Skipping line without agent_id: agent_h3g97pfqp,buy,P061,0.60,Price is low, style is a priority, and BrandX is preferred.
+[WARNING] Skipping line without agent_id: agent_phfhe8b8l,not buy,none,0.10,Price is high, quality is a priority, but BrandX is not preferred.
+[WARNING] Skipping line without agent_id: agent_7gvg1turw,not buy,none,0.20,Price is high, style and quality are moderate, and BrandX is not a top brand.
+[WARNING] Skipping line without agent_id: agent_8m6syk7lu,not buy,none,0.15,Price is high, style and quality are moderate, and BrandX is not preferred.
+[WARNING] Skipping line without agent_id: agent_dy4h94ik2,not buy,none,0.05,Price too high, quality and style are not a priority, and BrandX is not preferred.
+[WARNING] Skipping line without agent_id: agent_lmh7h9ah1,not buy,none,0.15,Price is high, quality is not a priority, and BrandX is not preferred.
+[WARNING] Skipping line without agent_id: agent_7pwl6j332,buy,P061,0.60,Price is low, style is a priority, and BrandX is preferred.
+[WARNING] Skipping line without agent_id: agent_5rscmtc5s,not buy,none,0.10,Price is high, quality is a priority, but BrandX is not preferred.
+[WARNING] Skipping line without agent_id: agent_3au6bde9t,not buy,none,0.20,Price is high, style and quality are moderate, and BrandX is not a top brand.
+[WARNING] Skipping line without agent_id: agent_isyevemr1,not buy,none,0.15,Price is high, style and quality are moderate, and BrandX is not preferred.
+[WARNING] Skipping line without agent_id: agent_nzy7ayjr7,not buy,none,0.05,Price too high, quality and style are not a priority, and BrandX is not preferred.
+[WARNING] Skipping line without agent_id: 
+[WARNING] No valid decisions parsed from response
+Processing batch 9/18: agents 201 to 225
+2025-10-13 04:19:27,898 - INFO - Processing batch 9/18: agents 201 to 225
+Processing 25 agents in single batch
+2025-10-13 04:19:27,898 - INFO - Processing 25 agents in single batch
+Prompt length: 2767 characters
+2025-10-13 04:19:27,898 - DEBUG - Prompt length: 2767 characters
+Making Gemini API call (single attempt)
+2025-10-13 04:19:27,898 - INFO - Making Gemini API call (single attempt)
+Response received. Candidates: 1
+2025-10-13 04:19:33,253 - INFO - Response received. Candidates: 1
+Candidate finish_reason: 1
+2025-10-13 04:19:33,253 - INFO - Candidate finish_reason: 1
+Raw response for 25 agents: Here's the output for each participant, based on the provided information:
+
+agent_11bozndyn,buy,P061...
+2025-10-13 04:19:33,253 - INFO - Raw response for 25 agents: Here's the output for each participant, based on the provided information:
+
+agent_11bozndyn,buy,P061...
+[WARNING] Unknown agent_id: Here's the output for each participant, based on the provided information
+[WARNING] Skipping line without agent_id: 
+[WARNING] Skipping line without agent_id: agent_11bozndyn,buy,P061,0.65,Price is acceptable, and BrandX is preferred, though quality is slightly lower than preferred.
+[WARNING] Skipping line without agent_id: agent_ucfyr1hy5,buy,P061,0.60,Price is acceptable, and BrandX is a secondary brand, but price is a key factor.
+[WARNING] Skipping line without agent_id: agent_iu4s421rl,not buy,none,0.30,No BrandA or BrandB products are available, and price is too high.
+[WARNING] Skipping line without agent_id: agent_no2lozcmg,buy,P061,0.60,Price is acceptable, and BrandX is preferred, though quality is slightly lower than preferred.
+[WARNING] Skipping line without agent_id: agent_ubevy1hy9,not buy,none,0.40,No BrandB or BrandC products are available, and price is too high.
+[WARNING] Skipping line without agent_id: agent_4dbe89nac,not buy,none,0.30,No BrandA or BrandB products are available, and price is too high.
+[WARNING] Skipping line without agent_id: agent_f98q672t0,buy,P061,0.65,Price is acceptable, and BrandX is preferred, though quality is slightly lower than preferred.
+[WARNING] Skipping line without agent_id: agent_uvhb7qrb2,buy,P061,0.60,Price is acceptable, and BrandX is a secondary brand, but price is a key factor.
+[WARNING] Skipping line without agent_id: agent_0m7ytl2cx,not buy,none,0.30,No BrandA or BrandB products are available, and price is too high.
+[WARNING] Skipping line without agent_id: agent_8k5i0h2hv,buy,P061,0.60,Price is acceptable, and BrandX is preferred, though quality is slightly lower than preferred.
+[WARNING] Skipping line without agent_id: agent_7wd2nu6cj,not buy,none,0.40,No BrandB or BrandC products are available, and price is too high.
+[WARNING] Skipping line without agent_id: agent_qpy797gnj,not buy,none,0.30,No BrandA or BrandB products are available, and price is too high.
+[WARNING] Skipping line without agent_id: agent_wlbmyfjps,buy,P061,0.65,Price is acceptable, and BrandX is preferred, though quality is slightly lower than preferred.
+[WARNING] Skipping line without agent_id: agent_nl7ybul69,buy,P061,0.60,Price is acceptable, and BrandX is a secondary brand, but price is a key factor.
+[WARNING] Skipping line without agent_id: agent_o6sefwd9d,not buy,none,0.30,No BrandA or BrandB products are available, and price is too high.
+[WARNING] Skipping line without agent_id: agent_n7dmtzzou,buy,P061,0.60,Price is acceptable, and BrandX is preferred, though quality is slightly lower than preferred.
+[WARNING] Skipping line without agent_id: agent_0v9k436co,not buy,none,0.40,No BrandB or BrandC products are available, and price is too high.
+[WARNING] Skipping line without agent_id: agent_mv6cgm2o7,not buy,none,0.30,No BrandA or BrandB products are available, and price is too high.
+[WARNING] Skipping line without agent_id: agent_vtfs6b5wd,buy,P061,0.65,Price is acceptable, and BrandX is preferred, though quality is slightly lower than preferred.
+[WARNING] Skipping line without agent_id: agent_v64crbszj,buy,P061,0.60,Price is acceptable, and BrandX is a secondary brand, but price is a key factor.
+[WARNING] Skipping line without agent_id: agent_1750wghwf,not buy,none,0.30,No BrandA or BrandB products are available, and price is too high.
+[WARNING] Skipping line without agent_id: agent_j4l1zvwcn,buy,P061,0.60,Price is acceptable, and BrandX is preferred, though quality is slightly lower than preferred.
+[WARNING] Skipping line without agent_id: agent_0v9pta367,not buy,none,0.40,No BrandB or BrandC products are available, and price is too high.
+[WARNING] Skipping line without agent_id: agent_x5isvv064,not buy,none,0.30,No BrandA or BrandB products are available, and price is too high.
+[WARNING] Skipping line without agent_id: agent_fqfbnu277,buy,P061,0.65,Price is acceptable, and BrandX is preferred, though quality is slightly lower than preferred.
+[WARNING] Skipping line without agent_id: 
+[WARNING] No valid decisions parsed from response
+Processing batch 10/18: agents 226 to 250
+2025-10-13 04:19:33,253 - INFO - Processing batch 10/18: agents 226 to 250
+Processing 25 agents in single batch
+2025-10-13 04:19:33,253 - INFO - Processing 25 agents in single batch
+Prompt length: 2767 characters
+2025-10-13 04:19:33,254 - DEBUG - Prompt length: 2767 characters
+Making Gemini API call (single attempt)
+2025-10-13 04:19:33,254 - INFO - Making Gemini API call (single attempt)
+2025-10-13 04:19:33,255 - DEBUG - close.started
+2025-10-13 04:19:33,255 - DEBUG - close.complete
+Response received. Candidates: 1
+2025-10-13 04:19:37,693 - INFO - Response received. Candidates: 1
+Candidate finish_reason: 1
+2025-10-13 04:19:37,693 - INFO - Candidate finish_reason: 1
+Raw response for 25 agents: Here's the predicted output for each participant, based on their preferences and the available produ...
+2025-10-13 04:19:37,693 - INFO - Raw response for 25 agents: Here's the predicted output for each participant, based on their preferences and the available produ...
+[WARNING] Unknown agent_id: Here's the predicted output for each participant, based on their preferences and the available product information
+[WARNING] Skipping line without agent_id: 
+[WARNING] Skipping line without agent_id: agent_pmggtkge3,buy,P040,0.78,Price is acceptable, quality is good, and BrandX is preferred.
+[WARNING] Skipping line without agent_id: agent_xjggf16mk,not buy,none,0.00,No BrandA or BrandB products are available.
+[WARNING] Skipping line without agent_id: agent_3uwqp8crp,buy,P040,0.68,Price is acceptable, quality is good, and BrandX is preferred.
+[WARNING] Skipping line without agent_id: agent_ftcrqv7r2,not buy,none,0.00,No BrandB or BrandC products are available.
+[WARNING] Skipping line without agent_id: agent_t2ppqp0xg,not buy,none,0.00,No BrandA or BrandB products are available.
+[WARNING] Skipping line without agent_id: agent_fbjdd2nvh,not buy,none,0.00,No BrandY or BrandZ products are available.
+[WARNING] Skipping line without agent_id: agent_rpj8szm5b,buy,P040,0.78,Price is acceptable, quality is good, and BrandX is preferred.
+[WARNING] Skipping line without agent_id: agent_vp7x0dalr,not buy,none,0.00,No BrandA or BrandB products are available.
+[WARNING] Skipping line without agent_id: agent_23n8t1i8i,buy,P040,0.68,Price is acceptable, quality is good, and BrandX is preferred.
+[WARNING] Skipping line without agent_id: agent_5lguujhrp,not buy,none,0.00,No BrandB or BrandC products are available.
+[WARNING] Skipping line without agent_id: agent_u01z56qft,not buy,none,0.00,No BrandA or BrandB products are available.
+[WARNING] Skipping line without agent_id: agent_9icd5gcn3,not buy,none,0.00,No BrandY or BrandZ products are available.
+[WARNING] Skipping line without agent_id: agent_937w9u7dp,buy,P040,0.78,Price is acceptable, quality is good, and BrandX is preferred.
+[WARNING] Skipping line without agent_id: agent_1hvykrju1,not buy,none,0.00,No BrandA or BrandB products are available.
+[WARNING] Skipping line without agent_id: agent_pbz11ztyv,buy,P040,0.68,Price is acceptable, quality is good, and BrandX is preferred.
+[WARNING] Skipping line without agent_id: agent_9te05kzf9,not buy,none,0.00,No BrandB or BrandC products are available.
+[WARNING] Skipping line without agent_id: agent_h8eokrdm3,not buy,none,0.00,No BrandA or BrandB products are available.
+[WARNING] Skipping line without agent_id: agent_oza7tj463,not buy,none,0.00,No BrandY or BrandZ products are available.
+[WARNING] Skipping line without agent_id: agent_ke1wnoixu,buy,P040,0.78,Price is acceptable, quality is good, and BrandX is preferred.
+[WARNING] Skipping line without agent_id: agent_9kqusy4yw,not buy,none,0.00,No BrandA or BrandB products are available.
+[WARNING] Skipping line without agent_id: agent_1kdidopwb,buy,P040,0.68,Price is acceptable, quality is good, and BrandX is preferred.
+[WARNING] Skipping line without agent_id: agent_4w7juubb1,not buy,none,0.00,No BrandB or BrandC products are available.
+[WARNING] Skipping line without agent_id: agent_m9hahn5c1,not buy,none,0.00,No BrandA or BrandB products are available.
+[WARNING] Skipping line without agent_id: agent_h2qhj4mgi,not buy,none,0.00,No BrandY or BrandZ products are available.
+[WARNING] Skipping line without agent_id: agent_t6h7cfd02,buy,P040,0.78,Price is acceptable, quality is good, and BrandX is preferred.
+[WARNING] Skipping line without agent_id: 
+[WARNING] No valid decisions parsed from response
+Processing batch 11/18: agents 251 to 275
+2025-10-13 04:19:37,694 - INFO - Processing batch 11/18: agents 251 to 275
+Processing 25 agents in single batch
+2025-10-13 04:19:37,694 - INFO - Processing 25 agents in single batch
+Prompt length: 2767 characters
+2025-10-13 04:19:37,694 - DEBUG - Prompt length: 2767 characters
+Making Gemini API call (single attempt)
+2025-10-13 04:19:37,694 - INFO - Making Gemini API call (single attempt)
+Response received. Candidates: 1
+2025-10-13 04:19:41,560 - INFO - Response received. Candidates: 1
+Candidate finish_reason: 1
+2025-10-13 04:19:41,560 - INFO - Candidate finish_reason: 1
+Raw response for 25 agents: Here's the predicted output for each participant, based on the provided information:
+
+agent_va7nhy7y...
+2025-10-13 04:19:41,560 - INFO - Raw response for 25 agents: Here's the predicted output for each participant, based on the provided information:
+
+agent_va7nhy7y...
+[WARNING] Unknown agent_id: Here's the predicted output for each participant, based on the provided information
+[WARNING] Skipping line without agent_id: 
+[WARNING] Skipping line without agent_id: agent_va7nhy7yj,not buy,none,0.00,Price too high, BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_cn07cmxoq,buy,P061,0.65,Price is low, BrandX is preferred.
+[WARNING] Skipping line without agent_id: agent_eos6xafue,not buy,none,0.00,BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_23vz6e4rv,not buy,none,0.00,BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_qhuqixwa8,not buy,none,0.00,BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_wre5iqjmz,buy,P061,0.60,Price is low, BrandX is preferred.
+[WARNING] Skipping line without agent_id: agent_63s4cyya1,not buy,none,0.00,Price too high, BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_c78ryzhw9,buy,P061,0.65,Price is low, BrandX is preferred.
+[WARNING] Skipping line without agent_id: agent_fxci366no,not buy,none,0.00,BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_ctylcx3jg,not buy,none,0.00,BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_smdiwlo6m,not buy,none,0.00,BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_q1vjjwb6u,buy,P061,0.60,Price is low, BrandX is preferred.
+[WARNING] Skipping line without agent_id: agent_xhzqyg4s5,not buy,none,0.00,Price too high, BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_de4mjpfec,buy,P061,0.65,Price is low, BrandX is preferred.
+[WARNING] Skipping line without agent_id: agent_utopqrax3,not buy,none,0.00,BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_tqucjsu83,not buy,none,0.00,BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_okxvvgh8y,not buy,none,0.00,BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_1gubxn8hl,buy,P061,0.60,Price is low, BrandX is preferred.
+[WARNING] Skipping line without agent_id: agent_rsbua9h1l,not buy,none,0.00,Price too high, BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_t5os5r6xm,buy,P061,0.65,Price is low, BrandX is preferred.
+[WARNING] Skipping line without agent_id: agent_392ky7pt8,not buy,none,0.00,BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_q3whk3t8p,not buy,none,0.00,BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_tyflo8ikf,not buy,none,0.00,BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_ja0f1akjh,buy,P061,0.60,Price is low, BrandX is preferred.
+[WARNING] Skipping line without agent_id: agent_894qltalt,not buy,none,0.00,Price too high, BrandX not preferred.
+[WARNING] Skipping line without agent_id: 
+[WARNING] No valid decisions parsed from response
+Processing batch 12/18: agents 276 to 300
+2025-10-13 04:19:41,561 - INFO - Processing batch 12/18: agents 276 to 300
+Processing 25 agents in single batch
+2025-10-13 04:19:41,561 - INFO - Processing 25 agents in single batch
+Prompt length: 2767 characters
+2025-10-13 04:19:41,561 - DEBUG - Prompt length: 2767 characters
+Making Gemini API call (single attempt)
+2025-10-13 04:19:41,561 - INFO - Making Gemini API call (single attempt)
+Response received. Candidates: 1
+2025-10-13 04:19:45,882 - INFO - Response received. Candidates: 1
+Candidate finish_reason: 1
+2025-10-13 04:19:45,882 - INFO - Candidate finish_reason: 1
+Raw response for 25 agents: Here's the output for each participant, based on the provided information:
+
+agent_q4bwikljo,buy,P061...
+2025-10-13 04:19:45,883 - INFO - Raw response for 25 agents: Here's the output for each participant, based on the provided information:
+
+agent_q4bwikljo,buy,P061...
+[WARNING] Unknown agent_id: Here's the output for each participant, based on the provided information
+[WARNING] Skipping line without agent_id: 
+[WARNING] Skipping line without agent_id: agent_q4bwikljo,buy,P061,0.65,Price is relatively low and quality is decent. Brand preference is BrandX.
+[WARNING] Skipping line without agent_id: agent_exnhompmt,not buy,none,0.35,Brand preference is not BrandX.
+[WARNING] Skipping line without agent_id: agent_zj2qhy41q,not buy,none,0.20,Brand preference is not BrandX.
+[WARNING] Skipping line without agent_id: agent_9nxxymxl9,not buy,none,0.40,Brand preference is not BrandX.
+[WARNING] Skipping line without agent_id: agent_c33nsb369,buy,P061,0.60,Price is relatively low. Brand preference is BrandX.
+[WARNING] Skipping line without agent_id: agent_sq7ybmata,not buy,none,0.20,Brand preference is not BrandX.
+[WARNING] Skipping line without agent_id: agent_q1m3k8njv,buy,P061,0.65,Price is relatively low and quality is decent. Brand preference is BrandX.
+[WARNING] Skipping line without agent_id: agent_w6yc6tkdd,not buy,none,0.35,Brand preference is not BrandX.
+[WARNING] Skipping line without agent_id: agent_z73x3lise,not buy,none,0.20,Brand preference is not BrandX.
+[WARNING] Skipping line without agent_id: agent_fg6logclj,not buy,none,0.40,Brand preference is not BrandX.
+[WARNING] Skipping line without agent_id: agent_h6ox58sk2,buy,P061,0.60,Price is relatively low. Brand preference is BrandX.
+[WARNING] Skipping line without agent_id: agent_sjpwmawqr,not buy,none,0.20,Brand preference is not BrandX.
+[WARNING] Skipping line without agent_id: agent_00cx9h1us,buy,P061,0.65,Price is relatively low and quality is decent. Brand preference is BrandX.
+[WARNING] Skipping line without agent_id: agent_84x1r85bh,not buy,none,0.35,Brand preference is not BrandX.
+[WARNING] Skipping line without agent_id: agent_o6cj4k75g,not buy,none,0.20,Brand preference is not BrandX.
+[WARNING] Skipping line without agent_id: agent_dcbxh2df6,not buy,none,0.40,Brand preference is not BrandX.
+[WARNING] Skipping line without agent_id: agent_1em5s7v1r,buy,P061,0.60,Price is relatively low. Brand preference is BrandX.
+[WARNING] Skipping line without agent_id: agent_jcek4lvrf,not buy,none,0.20,Brand preference is not BrandX.
+[WARNING] Skipping line without agent_id: agent_wba22t1xb,buy,P061,0.65,Price is relatively low and quality is decent. Brand preference is BrandX.
+[WARNING] Skipping line without agent_id: agent_ms44jn0we,not buy,none,0.35,Brand preference is not BrandX.
+[WARNING] Skipping line without agent_id: agent_6knttgyoy,not buy,none,0.20,Brand preference is not BrandX.
+[WARNING] Skipping line without agent_id: agent_1wlnkudb3,not buy,none,0.40,Brand preference is not BrandX.
+[WARNING] Skipping line without agent_id: agent_wcl2gly9a,buy,P061,0.60,Price is relatively low. Brand preference is BrandX.
+[WARNING] Skipping line without agent_id: agent_wtqgdlgun,not buy,none,0.20,Brand preference is not BrandX.
+[WARNING] Skipping line without agent_id: agent_8i4milk9s,buy,P061,0.65,Price is relatively low and quality is decent. Brand preference is BrandX.
+[WARNING] Skipping line without agent_id: 
+[WARNING] No valid decisions parsed from response
+Processing batch 13/18: agents 301 to 325
+2025-10-13 04:19:45,883 - INFO - Processing batch 13/18: agents 301 to 325
+Processing 25 agents in single batch
+2025-10-13 04:19:45,883 - INFO - Processing 25 agents in single batch
+Prompt length: 2767 characters
+2025-10-13 04:19:45,883 - DEBUG - Prompt length: 2767 characters
+Making Gemini API call (single attempt)
+2025-10-13 04:19:45,883 - INFO - Making Gemini API call (single attempt)
+Response received. Candidates: 1
+2025-10-13 04:19:51,897 - INFO - Response received. Candidates: 1
+Candidate finish_reason: 2
+2025-10-13 04:19:51,898 - INFO - Candidate finish_reason: 2
+Gemini blocked by safety filter - switching to alternative model
+2025-10-13 04:19:51,898 - WARNING - Gemini blocked by safety filter - switching to alternative model
+Using OpenAI GPT-3.5-turbo as alternative model
+2025-10-13 04:19:51,898 - INFO - Using OpenAI GPT-3.5-turbo as alternative model
+2025-10-13 04:19:51,972 - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-39f51fb7-83d7-473c-8e1a-735981c7b463', 'json_data': {'messages': [{'role': 'user', 'content': 'Market Simulation Task\n\nContext: {"product_id":"P1105","brand":"BrandX","price":60,"quality":0.55,"category":"Electronics"}\n\nParticipants (25):\nID:agent_jc6kav4uk|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_eudypa0n2|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_qwes0zq12|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_b5xhms94d|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_56o0tmxx9|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_bl85ilzgc|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_hhd6dcfhl|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_blfev3bp1|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_d81b4g2a9|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_zgf764s95|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_dqqlbqyjp|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_ujs7u76oa|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_n9o99wexj|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_sg5pzfsnn|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_b871nei9f|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_vrr0j43k4|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_v0cup7pa8|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_niyxrekie|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_g2oyg62dr|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_sw25zrow5|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_9he7mg4it|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_lcudnspjv|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_fbqgmphqm|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_e6vnw3zrj|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_o6pm9sgsa|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\n\nProducts (10):\nID:P061|Brand:BrandX|Price:$15|Quality:0.70\nID:P040|Brand:BrandX|Price:$22|Quality:0.85\nID:P082|Brand:BrandX|Price:$16|Quality:0.70\nID:P103|Brand:BrandX|Price:$17|Quality:0.70\nID:P124|Brand:BrandX|Price:$18|Quality:0.70\nID:P166|Brand:BrandX|Price:$20|Quality:0.70\nID:P250|Brand:BrandX|Price:$20|Quality:0.70\nID:P187|Brand:BrandX|Price:$21|Quality:0.70\nID:P208|Brand:BrandX|Price:$22|Quality:0.70\nID:P229|Brand:BrandX|Price:$23|Quality:0.70\n\nTask: For each participant, predict: buy/not buy, product ID (or none), satisfaction score (0.0-1.0), brief rationale\n\nFormat: participant_id,decision,product_id,score,rationale\nExample: p001,buy,P001,0.85,Quality matches preference\n\nOutput:'}], 'model': 'gpt-3.5-turbo', 'max_tokens': 2000, 'temperature': 0.7}}
+2025-10-13 04:19:51,973 - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2025-10-13 04:19:51,973 - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-10-13 04:19:51,981 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7b8a640e68a0>
+2025-10-13 04:19:51,982 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x7b8a75d06f50> server_hostname='api.openai.com' timeout=5.0
+2025-10-13 04:19:51,990 - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7b8a47e00650>
+2025-10-13 04:19:51,990 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-10-13 04:19:51,991 - DEBUG - send_request_headers.complete
+2025-10-13 04:19:51,991 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-10-13 04:19:51,991 - DEBUG - send_request_body.complete
+2025-10-13 04:19:51,991 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-10-13 04:19:52,286 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 429, b'Too Many Requests', [(b'Date', b'Mon, 13 Oct 2025 04:19:52 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Content-Length', b'337'), (b'Connection', b'keep-alive'), (b'vary', b'Origin'), (b'x-request-id', b'req_73fba3d488ed4d59b4f52287e84b57ec'), (b'x-envoy-upstream-service-time', b'3'), (b'x-openai-proxy-wasm', b'v0.1'), (b'cf-cache-status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=idfwD0i7p8.I1ABwn_hxSsLNVWRHj7MfxjQeNcMxMeE-1760329192-1.0.1.1-I0U3FAr9lZjCDawByODPRJ6lRmYoiDqFivHZwcJ1Ztss3Tp9ch2cciASChF8EnqoRwT.bkDdCpycVUf5ZEzLINd3fYHsDvr5Jr2xBFqizYg; path=/; expires=Mon, 13-Oct-25 04:49:52 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'X-Content-Type-Options', b'nosniff'), (b'Set-Cookie', b'_cfuvid=OaBKmmcYP6Et6kUBwilaqX355f6C0lwjMUHVEnfT9l0-1760329192283-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'98dc0a89f80f3f74-SIN'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-10-13 04:19:52,287 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-10-13 04:19:52,287 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-10-13 04:19:52,287 - DEBUG - receive_response_body.complete
+2025-10-13 04:19:52,287 - DEBUG - response_closed.started
+2025-10-13 04:19:52,287 - DEBUG - response_closed.complete
+2025-10-13 04:19:52,287 - DEBUG - HTTP Response: POST https://api.openai.com/v1/chat/completions "429 Too Many Requests" Headers([('date', 'Mon, 13 Oct 2025 04:19:52 GMT'), ('content-type', 'application/json; charset=utf-8'), ('content-length', '337'), ('connection', 'keep-alive'), ('vary', 'Origin'), ('x-request-id', 'req_73fba3d488ed4d59b4f52287e84b57ec'), ('x-envoy-upstream-service-time', '3'), ('x-openai-proxy-wasm', 'v0.1'), ('cf-cache-status', 'DYNAMIC'), ('set-cookie', '__cf_bm=idfwD0i7p8.I1ABwn_hxSsLNVWRHj7MfxjQeNcMxMeE-1760329192-1.0.1.1-I0U3FAr9lZjCDawByODPRJ6lRmYoiDqFivHZwcJ1Ztss3Tp9ch2cciASChF8EnqoRwT.bkDdCpycVUf5ZEzLINd3fYHsDvr5Jr2xBFqizYg; path=/; expires=Mon, 13-Oct-25 04:49:52 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('strict-transport-security', 'max-age=31536000; includeSubDomains; preload'), ('x-content-type-options', 'nosniff'), ('set-cookie', '_cfuvid=OaBKmmcYP6Et6kUBwilaqX355f6C0lwjMUHVEnfT9l0-1760329192283-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('server', 'cloudflare'), ('cf-ray', '98dc0a89f80f3f74-SIN'), ('alt-svc', 'h3=":443"; ma=86400')])
+2025-10-13 04:19:52,287 - DEBUG - request_id: req_73fba3d488ed4d59b4f52287e84b57ec
+2025-10-13 04:19:52,287 - DEBUG - Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/dist-packages/openai/_base_client.py", line 1027, in request
+    response.raise_for_status()
+  File "/usr/local/lib/python3.12/dist-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-10-13 04:19:52,288 - DEBUG - Retrying due to status code 429
+2025-10-13 04:19:52,288 - DEBUG - 2 retries left
+2025-10-13 04:19:52,288 - INFO - Retrying request to /chat/completions in 0.404075 seconds
+2025-10-13 04:19:52,692 - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-39f51fb7-83d7-473c-8e1a-735981c7b463', 'json_data': {'messages': [{'role': 'user', 'content': 'Market Simulation Task\n\nContext: {"product_id":"P1105","brand":"BrandX","price":60,"quality":0.55,"category":"Electronics"}\n\nParticipants (25):\nID:agent_jc6kav4uk|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_eudypa0n2|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_qwes0zq12|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_b5xhms94d|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_56o0tmxx9|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_bl85ilzgc|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_hhd6dcfhl|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_blfev3bp1|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_d81b4g2a9|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_zgf764s95|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_dqqlbqyjp|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_ujs7u76oa|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_n9o99wexj|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_sg5pzfsnn|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_b871nei9f|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_vrr0j43k4|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_v0cup7pa8|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_niyxrekie|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_g2oyg62dr|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_sw25zrow5|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_9he7mg4it|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_lcudnspjv|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_fbqgmphqm|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_e6vnw3zrj|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_o6pm9sgsa|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\n\nProducts (10):\nID:P061|Brand:BrandX|Price:$15|Quality:0.70\nID:P040|Brand:BrandX|Price:$22|Quality:0.85\nID:P082|Brand:BrandX|Price:$16|Quality:0.70\nID:P103|Brand:BrandX|Price:$17|Quality:0.70\nID:P124|Brand:BrandX|Price:$18|Quality:0.70\nID:P166|Brand:BrandX|Price:$20|Quality:0.70\nID:P250|Brand:BrandX|Price:$20|Quality:0.70\nID:P187|Brand:BrandX|Price:$21|Quality:0.70\nID:P208|Brand:BrandX|Price:$22|Quality:0.70\nID:P229|Brand:BrandX|Price:$23|Quality:0.70\n\nTask: For each participant, predict: buy/not buy, product ID (or none), satisfaction score (0.0-1.0), brief rationale\n\nFormat: participant_id,decision,product_id,score,rationale\nExample: p001,buy,P001,0.85,Quality matches preference\n\nOutput:'}], 'model': 'gpt-3.5-turbo', 'max_tokens': 2000, 'temperature': 0.7}}
+2025-10-13 04:19:52,693 - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2025-10-13 04:19:52,693 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-10-13 04:19:52,693 - DEBUG - send_request_headers.complete
+2025-10-13 04:19:52,693 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-10-13 04:19:52,694 - DEBUG - send_request_body.complete
+2025-10-13 04:19:52,694 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-10-13 04:19:53,059 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 429, b'Too Many Requests', [(b'Date', b'Mon, 13 Oct 2025 04:19:53 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Content-Length', b'337'), (b'Connection', b'keep-alive'), (b'vary', b'Origin'), (b'x-request-id', b'req_9f14400fa2a844b286109397d6f1a127'), (b'x-envoy-upstream-service-time', b'91'), (b'x-openai-proxy-wasm', b'v0.1'), (b'cf-cache-status', b'DYNAMIC'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'X-Content-Type-Options', b'nosniff'), (b'Server', b'cloudflare'), (b'CF-RAY', b'98dc0a8e5b9d3f74-SIN'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-10-13 04:19:53,060 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-10-13 04:19:53,060 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-10-13 04:19:53,060 - DEBUG - receive_response_body.complete
+2025-10-13 04:19:53,060 - DEBUG - response_closed.started
+2025-10-13 04:19:53,060 - DEBUG - response_closed.complete
+2025-10-13 04:19:53,060 - DEBUG - HTTP Response: POST https://api.openai.com/v1/chat/completions "429 Too Many Requests" Headers({'date': 'Mon, 13 Oct 2025 04:19:53 GMT', 'content-type': 'application/json; charset=utf-8', 'content-length': '337', 'connection': 'keep-alive', 'vary': 'Origin', 'x-request-id': 'req_9f14400fa2a844b286109397d6f1a127', 'x-envoy-upstream-service-time': '91', 'x-openai-proxy-wasm': 'v0.1', 'cf-cache-status': 'DYNAMIC', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'x-content-type-options': 'nosniff', 'server': 'cloudflare', 'cf-ray': '98dc0a8e5b9d3f74-SIN', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-10-13 04:19:53,060 - DEBUG - request_id: req_9f14400fa2a844b286109397d6f1a127
+2025-10-13 04:19:53,060 - DEBUG - Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/dist-packages/openai/_base_client.py", line 1027, in request
+    response.raise_for_status()
+  File "/usr/local/lib/python3.12/dist-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-10-13 04:19:53,061 - DEBUG - Retrying due to status code 429
+2025-10-13 04:19:53,061 - DEBUG - 1 retry left
+2025-10-13 04:19:53,061 - INFO - Retrying request to /chat/completions in 0.797024 seconds
+2025-10-13 04:19:53,858 - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-39f51fb7-83d7-473c-8e1a-735981c7b463', 'json_data': {'messages': [{'role': 'user', 'content': 'Market Simulation Task\n\nContext: {"product_id":"P1105","brand":"BrandX","price":60,"quality":0.55,"category":"Electronics"}\n\nParticipants (25):\nID:agent_jc6kav4uk|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_eudypa0n2|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_qwes0zq12|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_b5xhms94d|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_56o0tmxx9|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_bl85ilzgc|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_hhd6dcfhl|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_blfev3bp1|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_d81b4g2a9|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_zgf764s95|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_dqqlbqyjp|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_ujs7u76oa|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_n9o99wexj|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_sg5pzfsnn|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_b871nei9f|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_vrr0j43k4|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_v0cup7pa8|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_niyxrekie|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_g2oyg62dr|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_sw25zrow5|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_9he7mg4it|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_lcudnspjv|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_fbqgmphqm|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_e6vnw3zrj|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_o6pm9sgsa|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\n\nProducts (10):\nID:P061|Brand:BrandX|Price:$15|Quality:0.70\nID:P040|Brand:BrandX|Price:$22|Quality:0.85\nID:P082|Brand:BrandX|Price:$16|Quality:0.70\nID:P103|Brand:BrandX|Price:$17|Quality:0.70\nID:P124|Brand:BrandX|Price:$18|Quality:0.70\nID:P166|Brand:BrandX|Price:$20|Quality:0.70\nID:P250|Brand:BrandX|Price:$20|Quality:0.70\nID:P187|Brand:BrandX|Price:$21|Quality:0.70\nID:P208|Brand:BrandX|Price:$22|Quality:0.70\nID:P229|Brand:BrandX|Price:$23|Quality:0.70\n\nTask: For each participant, predict: buy/not buy, product ID (or none), satisfaction score (0.0-1.0), brief rationale\n\nFormat: participant_id,decision,product_id,score,rationale\nExample: p001,buy,P001,0.85,Quality matches preference\n\nOutput:'}], 'model': 'gpt-3.5-turbo', 'max_tokens': 2000, 'temperature': 0.7}}
+2025-10-13 04:19:53,859 - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2025-10-13 04:19:53,859 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-10-13 04:19:53,860 - DEBUG - send_request_headers.complete
+2025-10-13 04:19:53,860 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-10-13 04:19:53,860 - DEBUG - send_request_body.complete
+2025-10-13 04:19:53,860 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-10-13 04:19:54,151 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 429, b'Too Many Requests', [(b'Date', b'Mon, 13 Oct 2025 04:19:54 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Content-Length', b'337'), (b'Connection', b'keep-alive'), (b'vary', b'Origin'), (b'x-request-id', b'req_3e4ffa9ef0884312950f47bef9b6521e'), (b'x-envoy-upstream-service-time', b'3'), (b'x-openai-proxy-wasm', b'v0.1'), (b'cf-cache-status', b'DYNAMIC'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'X-Content-Type-Options', b'nosniff'), (b'Server', b'cloudflare'), (b'CF-RAY', b'98dc0a95986e3f74-SIN'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-10-13 04:19:54,152 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-10-13 04:19:54,152 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-10-13 04:19:54,152 - DEBUG - receive_response_body.complete
+2025-10-13 04:19:54,152 - DEBUG - response_closed.started
+2025-10-13 04:19:54,152 - DEBUG - response_closed.complete
+2025-10-13 04:19:54,152 - DEBUG - HTTP Response: POST https://api.openai.com/v1/chat/completions "429 Too Many Requests" Headers({'date': 'Mon, 13 Oct 2025 04:19:54 GMT', 'content-type': 'application/json; charset=utf-8', 'content-length': '337', 'connection': 'keep-alive', 'vary': 'Origin', 'x-request-id': 'req_3e4ffa9ef0884312950f47bef9b6521e', 'x-envoy-upstream-service-time': '3', 'x-openai-proxy-wasm': 'v0.1', 'cf-cache-status': 'DYNAMIC', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'x-content-type-options': 'nosniff', 'server': 'cloudflare', 'cf-ray': '98dc0a95986e3f74-SIN', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-10-13 04:19:54,152 - DEBUG - request_id: req_3e4ffa9ef0884312950f47bef9b6521e
+2025-10-13 04:19:54,152 - DEBUG - Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/dist-packages/openai/_base_client.py", line 1027, in request
+    response.raise_for_status()
+  File "/usr/local/lib/python3.12/dist-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-10-13 04:19:54,153 - DEBUG - Re-raising status error
+Alternative model failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-10-13 04:19:54,153 - ERROR - Alternative model failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+All AI models failed - this will trigger rule-based fallback
+2025-10-13 04:19:54,153 - INFO - All AI models failed - this will trigger rule-based fallback
+Gemini API call failed: All AI models failed
+2025-10-13 04:19:54,153 - ERROR - Gemini API call failed: All AI models failed
+Switching to alternative model due to Gemini failure
+2025-10-13 04:19:54,153 - INFO - Switching to alternative model due to Gemini failure
+Using OpenAI GPT-3.5-turbo as alternative model
+2025-10-13 04:19:54,153 - INFO - Using OpenAI GPT-3.5-turbo as alternative model
+2025-10-13 04:19:54,205 - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-9751fd56-3a36-41d5-a5e8-27dcba5ef291', 'json_data': {'messages': [{'role': 'user', 'content': 'Market Simulation Task\n\nContext: {"product_id":"P1105","brand":"BrandX","price":60,"quality":0.55,"category":"Electronics"}\n\nParticipants (25):\nID:agent_jc6kav4uk|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_eudypa0n2|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_qwes0zq12|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_b5xhms94d|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_56o0tmxx9|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_bl85ilzgc|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_hhd6dcfhl|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_blfev3bp1|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_d81b4g2a9|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_zgf764s95|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_dqqlbqyjp|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_ujs7u76oa|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_n9o99wexj|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_sg5pzfsnn|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_b871nei9f|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_vrr0j43k4|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_v0cup7pa8|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_niyxrekie|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_g2oyg62dr|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_sw25zrow5|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_9he7mg4it|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_lcudnspjv|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_fbqgmphqm|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_e6vnw3zrj|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_o6pm9sgsa|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\n\nProducts (10):\nID:P061|Brand:BrandX|Price:$15|Quality:0.70\nID:P040|Brand:BrandX|Price:$22|Quality:0.85\nID:P082|Brand:BrandX|Price:$16|Quality:0.70\nID:P103|Brand:BrandX|Price:$17|Quality:0.70\nID:P124|Brand:BrandX|Price:$18|Quality:0.70\nID:P166|Brand:BrandX|Price:$20|Quality:0.70\nID:P250|Brand:BrandX|Price:$20|Quality:0.70\nID:P187|Brand:BrandX|Price:$21|Quality:0.70\nID:P208|Brand:BrandX|Price:$22|Quality:0.70\nID:P229|Brand:BrandX|Price:$23|Quality:0.70\n\nTask: For each participant, predict: buy/not buy, product ID (or none), satisfaction score (0.0-1.0), brief rationale\n\nFormat: participant_id,decision,product_id,score,rationale\nExample: p001,buy,P001,0.85,Quality matches preference\n\nOutput:'}], 'model': 'gpt-3.5-turbo', 'max_tokens': 2000, 'temperature': 0.7}}
+2025-10-13 04:19:54,205 - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2025-10-13 04:19:54,206 - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-10-13 04:19:54,209 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7b8a47e2c380>
+2025-10-13 04:19:54,209 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x7b8a47ea5a50> server_hostname='api.openai.com' timeout=5.0
+2025-10-13 04:19:54,215 - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7b8a47e2c4d0>
+2025-10-13 04:19:54,215 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-10-13 04:19:54,215 - DEBUG - send_request_headers.complete
+2025-10-13 04:19:54,215 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-10-13 04:19:54,216 - DEBUG - send_request_body.complete
+2025-10-13 04:19:54,216 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-10-13 04:19:54,932 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 429, b'Too Many Requests', [(b'Date', b'Mon, 13 Oct 2025 04:19:54 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Content-Length', b'337'), (b'Connection', b'keep-alive'), (b'vary', b'Origin'), (b'x-request-id', b'req_5a7c6c8c714840f1be27fbab21b1eca1'), (b'x-envoy-upstream-service-time', b'81'), (b'x-openai-proxy-wasm', b'v0.1'), (b'cf-cache-status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=s5bKFQzY_ljay0yxFGnLMs1saZ5v8qOCxU9cLa_f9rM-1760329194-1.0.1.1-esjW3AVxPZJhqmc_Qpu5O8FHv5wDdau7d8mZvFfZeAm_b.zwD8KhxJrdCB.dLVSlFGf2Mahdo265dYtTvadwM7b0zkTKfOkVGr1GnKgBVIg; path=/; expires=Mon, 13-Oct-25 04:49:54 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'X-Content-Type-Options', b'nosniff'), (b'Set-Cookie', b'_cfuvid=0V24aLzBq2hVlig3pdw4VyL7Onbr1MisyOlB46zh4gk-1760329194928-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'98dc0a97da8b5f6e-SIN'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-10-13 04:19:54,932 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-10-13 04:19:54,932 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-10-13 04:19:54,933 - DEBUG - receive_response_body.complete
+2025-10-13 04:19:54,933 - DEBUG - response_closed.started
+2025-10-13 04:19:54,933 - DEBUG - response_closed.complete
+2025-10-13 04:19:54,933 - DEBUG - HTTP Response: POST https://api.openai.com/v1/chat/completions "429 Too Many Requests" Headers([('date', 'Mon, 13 Oct 2025 04:19:54 GMT'), ('content-type', 'application/json; charset=utf-8'), ('content-length', '337'), ('connection', 'keep-alive'), ('vary', 'Origin'), ('x-request-id', 'req_5a7c6c8c714840f1be27fbab21b1eca1'), ('x-envoy-upstream-service-time', '81'), ('x-openai-proxy-wasm', 'v0.1'), ('cf-cache-status', 'DYNAMIC'), ('set-cookie', '__cf_bm=s5bKFQzY_ljay0yxFGnLMs1saZ5v8qOCxU9cLa_f9rM-1760329194-1.0.1.1-esjW3AVxPZJhqmc_Qpu5O8FHv5wDdau7d8mZvFfZeAm_b.zwD8KhxJrdCB.dLVSlFGf2Mahdo265dYtTvadwM7b0zkTKfOkVGr1GnKgBVIg; path=/; expires=Mon, 13-Oct-25 04:49:54 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('strict-transport-security', 'max-age=31536000; includeSubDomains; preload'), ('x-content-type-options', 'nosniff'), ('set-cookie', '_cfuvid=0V24aLzBq2hVlig3pdw4VyL7Onbr1MisyOlB46zh4gk-1760329194928-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('server', 'cloudflare'), ('cf-ray', '98dc0a97da8b5f6e-SIN'), ('alt-svc', 'h3=":443"; ma=86400')])
+2025-10-13 04:19:54,933 - DEBUG - request_id: req_5a7c6c8c714840f1be27fbab21b1eca1
+2025-10-13 04:19:54,933 - DEBUG - Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "/content/drive/MyDrive/python_model/inference.py", line 98, in generate_with_alternative_model
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/openai/resources/chat/completions/completions.py", line 1147, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/openai/_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/openai/_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/content/drive/MyDrive/python_model/inference.py", line 72, in rate_limited_generate
+    return generate_with_alternative_model(prompt)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/drive/MyDrive/python_model/inference.py", line 110, in generate_with_alternative_model
+    raise ValueError("All AI models failed")
+ValueError: All AI models failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/dist-packages/openai/_base_client.py", line 1027, in request
+    response.raise_for_status()
+  File "/usr/local/lib/python3.12/dist-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-10-13 04:19:54,935 - DEBUG - Retrying due to status code 429
+2025-10-13 04:19:54,935 - DEBUG - 2 retries left
+2025-10-13 04:19:54,935 - INFO - Retrying request to /chat/completions in 0.422484 seconds
+2025-10-13 04:19:55,358 - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-9751fd56-3a36-41d5-a5e8-27dcba5ef291', 'json_data': {'messages': [{'role': 'user', 'content': 'Market Simulation Task\n\nContext: {"product_id":"P1105","brand":"BrandX","price":60,"quality":0.55,"category":"Electronics"}\n\nParticipants (25):\nID:agent_jc6kav4uk|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_eudypa0n2|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_qwes0zq12|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_b5xhms94d|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_56o0tmxx9|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_bl85ilzgc|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_hhd6dcfhl|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_blfev3bp1|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_d81b4g2a9|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_zgf764s95|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_dqqlbqyjp|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_ujs7u76oa|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_n9o99wexj|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_sg5pzfsnn|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_b871nei9f|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_vrr0j43k4|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_v0cup7pa8|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_niyxrekie|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_g2oyg62dr|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_sw25zrow5|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_9he7mg4it|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_lcudnspjv|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_fbqgmphqm|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_e6vnw3zrj|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_o6pm9sgsa|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\n\nProducts (10):\nID:P061|Brand:BrandX|Price:$15|Quality:0.70\nID:P040|Brand:BrandX|Price:$22|Quality:0.85\nID:P082|Brand:BrandX|Price:$16|Quality:0.70\nID:P103|Brand:BrandX|Price:$17|Quality:0.70\nID:P124|Brand:BrandX|Price:$18|Quality:0.70\nID:P166|Brand:BrandX|Price:$20|Quality:0.70\nID:P250|Brand:BrandX|Price:$20|Quality:0.70\nID:P187|Brand:BrandX|Price:$21|Quality:0.70\nID:P208|Brand:BrandX|Price:$22|Quality:0.70\nID:P229|Brand:BrandX|Price:$23|Quality:0.70\n\nTask: For each participant, predict: buy/not buy, product ID (or none), satisfaction score (0.0-1.0), brief rationale\n\nFormat: participant_id,decision,product_id,score,rationale\nExample: p001,buy,P001,0.85,Quality matches preference\n\nOutput:'}], 'model': 'gpt-3.5-turbo', 'max_tokens': 2000, 'temperature': 0.7}}
+2025-10-13 04:19:55,359 - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2025-10-13 04:19:55,359 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-10-13 04:19:55,359 - DEBUG - send_request_headers.complete
+2025-10-13 04:19:55,359 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-10-13 04:19:55,359 - DEBUG - send_request_body.complete
+2025-10-13 04:19:55,359 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-10-13 04:19:55,646 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 429, b'Too Many Requests', [(b'Date', b'Mon, 13 Oct 2025 04:19:55 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Content-Length', b'337'), (b'Connection', b'keep-alive'), (b'vary', b'Origin'), (b'x-request-id', b'req_36b50958b23742d39c0b5e93c3e5379c'), (b'x-envoy-upstream-service-time', b'3'), (b'x-openai-proxy-wasm', b'v0.1'), (b'cf-cache-status', b'DYNAMIC'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'X-Content-Type-Options', b'nosniff'), (b'Server', b'cloudflare'), (b'CF-RAY', b'98dc0a9ef9935f6e-SIN'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-10-13 04:19:55,647 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-10-13 04:19:55,647 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-10-13 04:19:55,647 - DEBUG - receive_response_body.complete
+2025-10-13 04:19:55,647 - DEBUG - response_closed.started
+2025-10-13 04:19:55,647 - DEBUG - response_closed.complete
+2025-10-13 04:19:55,647 - DEBUG - HTTP Response: POST https://api.openai.com/v1/chat/completions "429 Too Many Requests" Headers({'date': 'Mon, 13 Oct 2025 04:19:55 GMT', 'content-type': 'application/json; charset=utf-8', 'content-length': '337', 'connection': 'keep-alive', 'vary': 'Origin', 'x-request-id': 'req_36b50958b23742d39c0b5e93c3e5379c', 'x-envoy-upstream-service-time': '3', 'x-openai-proxy-wasm': 'v0.1', 'cf-cache-status': 'DYNAMIC', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'x-content-type-options': 'nosniff', 'server': 'cloudflare', 'cf-ray': '98dc0a9ef9935f6e-SIN', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-10-13 04:19:55,647 - DEBUG - request_id: req_36b50958b23742d39c0b5e93c3e5379c
+2025-10-13 04:19:55,647 - DEBUG - Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "/content/drive/MyDrive/python_model/inference.py", line 98, in generate_with_alternative_model
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/openai/resources/chat/completions/completions.py", line 1147, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/openai/_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/openai/_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/content/drive/MyDrive/python_model/inference.py", line 72, in rate_limited_generate
+    return generate_with_alternative_model(prompt)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/drive/MyDrive/python_model/inference.py", line 110, in generate_with_alternative_model
+    raise ValueError("All AI models failed")
+ValueError: All AI models failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/dist-packages/openai/_base_client.py", line 1027, in request
+    response.raise_for_status()
+  File "/usr/local/lib/python3.12/dist-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-10-13 04:19:55,649 - DEBUG - Retrying due to status code 429
+2025-10-13 04:19:55,649 - DEBUG - 1 retry left
+2025-10-13 04:19:55,649 - INFO - Retrying request to /chat/completions in 0.831787 seconds
+2025-10-13 04:19:56,481 - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-9751fd56-3a36-41d5-a5e8-27dcba5ef291', 'json_data': {'messages': [{'role': 'user', 'content': 'Market Simulation Task\n\nContext: {"product_id":"P1105","brand":"BrandX","price":60,"quality":0.55,"category":"Electronics"}\n\nParticipants (25):\nID:agent_jc6kav4uk|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_eudypa0n2|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_qwes0zq12|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_b5xhms94d|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_56o0tmxx9|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_bl85ilzgc|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_hhd6dcfhl|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_blfev3bp1|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_d81b4g2a9|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_zgf764s95|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_dqqlbqyjp|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_ujs7u76oa|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_n9o99wexj|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_sg5pzfsnn|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_b871nei9f|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_vrr0j43k4|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_v0cup7pa8|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_niyxrekie|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_g2oyg62dr|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\nID:agent_sw25zrow5|PS:0.30|QP:0.90|ST:0.20|Brands:BrandA(0.70), BrandB(0.20)\nID:agent_9he7mg4it|PS:0.50|QP:0.60|ST:0.50|Brands:BrandY(0.60), BrandZ(0.30)\nID:agent_lcudnspjv|PS:0.80|QP:0.30|ST:0.80|Brands:BrandZ(0.50), BrandX(0.30)\nID:agent_fbqgmphqm|PS:0.40|QP:0.80|ST:0.30|Brands:BrandA(0.60), BrandB(0.30)\nID:agent_e6vnw3zrj|PS:0.60|QP:0.50|ST:0.60|Brands:BrandX(0.40), BrandY(0.40)\nID:agent_o6pm9sgsa|PS:0.70|QP:0.40|ST:0.70|Brands:BrandB(0.50), BrandC(0.30)\n\nProducts (10):\nID:P061|Brand:BrandX|Price:$15|Quality:0.70\nID:P040|Brand:BrandX|Price:$22|Quality:0.85\nID:P082|Brand:BrandX|Price:$16|Quality:0.70\nID:P103|Brand:BrandX|Price:$17|Quality:0.70\nID:P124|Brand:BrandX|Price:$18|Quality:0.70\nID:P166|Brand:BrandX|Price:$20|Quality:0.70\nID:P250|Brand:BrandX|Price:$20|Quality:0.70\nID:P187|Brand:BrandX|Price:$21|Quality:0.70\nID:P208|Brand:BrandX|Price:$22|Quality:0.70\nID:P229|Brand:BrandX|Price:$23|Quality:0.70\n\nTask: For each participant, predict: buy/not buy, product ID (or none), satisfaction score (0.0-1.0), brief rationale\n\nFormat: participant_id,decision,product_id,score,rationale\nExample: p001,buy,P001,0.85,Quality matches preference\n\nOutput:'}], 'model': 'gpt-3.5-turbo', 'max_tokens': 2000, 'temperature': 0.7}}
+2025-10-13 04:19:56,482 - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2025-10-13 04:19:56,482 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-10-13 04:19:56,482 - DEBUG - send_request_headers.complete
+2025-10-13 04:19:56,482 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-10-13 04:19:56,482 - DEBUG - send_request_body.complete
+2025-10-13 04:19:56,482 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-10-13 04:19:56,743 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 429, b'Too Many Requests', [(b'Date', b'Mon, 13 Oct 2025 04:19:56 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Content-Length', b'337'), (b'Connection', b'keep-alive'), (b'vary', b'Origin'), (b'x-request-id', b'req_e808abfb25de41708cbcdf782c47a43e'), (b'x-envoy-upstream-service-time', b'4'), (b'x-openai-proxy-wasm', b'v0.1'), (b'cf-cache-status', b'DYNAMIC'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'X-Content-Type-Options', b'nosniff'), (b'Server', b'cloudflare'), (b'CF-RAY', b'98dc0aa608695f6e-SIN'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-10-13 04:19:56,743 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-10-13 04:19:56,744 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-10-13 04:19:56,744 - DEBUG - receive_response_body.complete
+2025-10-13 04:19:56,744 - DEBUG - response_closed.started
+2025-10-13 04:19:56,744 - DEBUG - response_closed.complete
+2025-10-13 04:19:56,744 - DEBUG - HTTP Response: POST https://api.openai.com/v1/chat/completions "429 Too Many Requests" Headers({'date': 'Mon, 13 Oct 2025 04:19:56 GMT', 'content-type': 'application/json; charset=utf-8', 'content-length': '337', 'connection': 'keep-alive', 'vary': 'Origin', 'x-request-id': 'req_e808abfb25de41708cbcdf782c47a43e', 'x-envoy-upstream-service-time': '4', 'x-openai-proxy-wasm': 'v0.1', 'cf-cache-status': 'DYNAMIC', 'strict-transport-security': 'max-age=31536000; includeSubDomains; preload', 'x-content-type-options': 'nosniff', 'server': 'cloudflare', 'cf-ray': '98dc0aa608695f6e-SIN', 'alt-svc': 'h3=":443"; ma=86400'})
+2025-10-13 04:19:56,744 - DEBUG - request_id: req_e808abfb25de41708cbcdf782c47a43e
+2025-10-13 04:19:56,744 - DEBUG - Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "/content/drive/MyDrive/python_model/inference.py", line 98, in generate_with_alternative_model
+    response = client.chat.completions.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/openai/resources/chat/completions/completions.py", line 1147, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/openai/_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/openai/_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/content/drive/MyDrive/python_model/inference.py", line 72, in rate_limited_generate
+    return generate_with_alternative_model(prompt)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/content/drive/MyDrive/python_model/inference.py", line 110, in generate_with_alternative_model
+    raise ValueError("All AI models failed")
+ValueError: All AI models failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/dist-packages/openai/_base_client.py", line 1027, in request
+    response.raise_for_status()
+  File "/usr/local/lib/python3.12/dist-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2025-10-13 04:19:56,745 - DEBUG - Re-raising status error
+Alternative model failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-10-13 04:19:56,746 - ERROR - Alternative model failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+All AI models failed - this will trigger rule-based fallback
+2025-10-13 04:19:56,746 - INFO - All AI models failed - this will trigger rule-based fallback
+Batch prediction failed: All AI models failed
+2025-10-13 04:19:56,746 - ERROR - Batch prediction failed: All AI models failed
+Using rule-based fallback for this batch
+2025-10-13 04:19:56,746 - INFO - Using rule-based fallback for this batch
+Processing batch 14/18: agents 326 to 350
+2025-10-13 04:19:56,746 - INFO - Processing batch 14/18: agents 326 to 350
+Processing 25 agents in single batch
+2025-10-13 04:19:56,746 - INFO - Processing 25 agents in single batch
+Prompt length: 2767 characters
+2025-10-13 04:19:56,747 - DEBUG - Prompt length: 2767 characters
+Making Gemini API call (single attempt)
+2025-10-13 04:19:56,747 - INFO - Making Gemini API call (single attempt)
+Response received. Candidates: 1
+2025-10-13 04:20:02,371 - INFO - Response received. Candidates: 1
+Candidate finish_reason: 1
+2025-10-13 04:20:02,372 - INFO - Candidate finish_reason: 1
+Raw response for 25 agents: Here's the output of the market simulation, predicting each participant's behavior:
+
+agent_p00whoqll...
+2025-10-13 04:20:02,372 - INFO - Raw response for 25 agents: Here's the output of the market simulation, predicting each participant's behavior:
+
+agent_p00whoqll...
+[WARNING] Unknown agent_id: Here's the output of the market simulation, predicting each participant's behavior
+[WARNING] Skipping line without agent_id: 
+[WARNING] Skipping line without agent_id: agent_p00whoqll,buy,P061,0.75,Price is low and quality is acceptable, and the agent has a preference for BrandA.
+[WARNING] Skipping line without agent_id: agent_wwjjvcioo,not buy,none,0.30,Price is too high for the agent's price sensitivity, and the agent prefers BrandY.
+[WARNING] Skipping line without agent_id: agent_fohsdp99o,buy,P061,0.70,Price is low and the agent has a preference for BrandX.
+[WARNING] Skipping line without agent_id: agent_j104w1z2f,buy,P061,0.75,Price is low and quality is acceptable, and the agent has a preference for BrandA.
+[WARNING] Skipping line without agent_id: agent_8c37ewhde,buy,P061,0.65,Price is low and the agent has a preference for BrandX.
+[WARNING] Skipping line without agent_id: agent_xoobo1cho,not buy,none,0.30,Price is too high for the agent's price sensitivity, and the agent prefers BrandB.
+[WARNING] Skipping line without agent_id: agent_vkqa8c2ab,buy,P061,0.75,Price is low and quality is acceptable, and the agent has a preference for BrandA.
+[WARNING] Skipping line without agent_id: agent_qq7df4unn,not buy,none,0.30,Price is too high for the agent's price sensitivity, and the agent prefers BrandY.
+[WARNING] Skipping line without agent_id: agent_4nmmbrfx5,buy,P061,0.70,Price is low and the agent has a preference for BrandX.
+[WARNING] Skipping line without agent_id: agent_g3ubyhfne,buy,P061,0.75,Price is low and quality is acceptable, and the agent has a preference for BrandA.
+[WARNING] Skipping line without agent_id: agent_g10yvt1xg,buy,P061,0.65,Price is low and the agent has a preference for BrandX.
+[WARNING] Skipping line without agent_id: agent_c4k97ao2z,not buy,none,0.30,Price is too high for the agent's price sensitivity, and the agent prefers BrandB.
+[WARNING] Skipping line without agent_id: agent_crbki1h05,buy,P061,0.75,Price is low and quality is acceptable, and the agent has a preference for BrandA.
+[WARNING] Skipping line without agent_id: agent_opn04yztg,not buy,none,0.30,Price is too high for the agent's price sensitivity, and the agent prefers BrandY.
+[WARNING] Skipping line without agent_id: agent_1otzbd010,buy,P061,0.70,Price is low and the agent has a preference for BrandX.
+[WARNING] Skipping line without agent_id: agent_4m3lamvie,buy,P061,0.75,Price is low and quality is acceptable, and the agent has a preference for BrandA.
+[WARNING] Skipping line without agent_id: agent_3evmgexf9,buy,P061,0.65,Price is low and the agent has a preference for BrandX.
+[WARNING] Skipping line without agent_id: agent_7itww49a7,not buy,none,0.30,Price is too high for the agent's price sensitivity, and the agent prefers BrandB.
+[WARNING] Skipping line without agent_id: agent_9o2a21na6,buy,P061,0.75,Price is low and quality is acceptable, and the agent has a preference for BrandA.
+[WARNING] Skipping line without agent_id: agent_dtri7lzv7,not buy,none,0.30,Price is too high for the agent's price sensitivity, and the agent prefers BrandY.
+[WARNING] Skipping line without agent_id: agent_f2mi14cub,buy,P061,0.70,Price is low and the agent has a preference for BrandX.
+[WARNING] Skipping line without agent_id: agent_38eul64n3,buy,P061,0.75,Price is low and quality is acceptable, and the agent has a preference for BrandA.
+[WARNING] Skipping line without agent_id: agent_6uylumcxu,buy,P061,0.65,Price is low and the agent has a preference for BrandX.
+[WARNING] Skipping line without agent_id: agent_rjqd0tiel,not buy,none,0.30,Price is too high for the agent's price sensitivity, and the agent prefers BrandB.
+[WARNING] Skipping line without agent_id: agent_779o4oza9,buy,P061,0.75,Price is low and quality is acceptable, and the agent has a preference for BrandA.
+[WARNING] Skipping line without agent_id: 
+[WARNING] No valid decisions parsed from response
+Processing batch 15/18: agents 351 to 375
+2025-10-13 04:20:02,372 - INFO - Processing batch 15/18: agents 351 to 375
+Processing 25 agents in single batch
+2025-10-13 04:20:02,373 - INFO - Processing 25 agents in single batch
+Prompt length: 2767 characters
+2025-10-13 04:20:02,373 - DEBUG - Prompt length: 2767 characters
+Making Gemini API call (single attempt)
+2025-10-13 04:20:02,373 - INFO - Making Gemini API call (single attempt)
+2025-10-13 04:20:02,374 - DEBUG - close.started
+2025-10-13 04:20:02,375 - DEBUG - close.complete
+2025-10-13 04:20:02,375 - DEBUG - close.started
+2025-10-13 04:20:02,375 - DEBUG - close.complete
+Response received. Candidates: 1
+2025-10-13 04:20:06,767 - INFO - Response received. Candidates: 1
+Candidate finish_reason: 1
+2025-10-13 04:20:06,767 - INFO - Candidate finish_reason: 1
+Raw response for 25 agents: Here's the predicted output for each participant, based on the provided information. The rationale c...
+2025-10-13 04:20:06,767 - INFO - Raw response for 25 agents: Here's the predicted output for each participant, based on the provided information. The rationale c...
+[WARNING] Skipping line without agent_id: Here's the predicted output for each participant, based on the provided information. The rationale considers the participant's preferences (PS - Price Sensitivity, QP - Quality Preference, ST - Service Tolerance, Brands) and the available product information.
+[WARNING] Skipping line without agent_id: 
+[WARNING] Skipping line without agent_id: agent_0febhx7s3,not buy,none,0.0,Price too high, BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_e3pz0luxn,not buy,none,0.0,Price too high, BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_v1ftqn4sj,not buy,none,0.0,BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_vxyiss0x4,buy,P061,0.65,Price is acceptable, BrandX is preferred.
+[WARNING] Skipping line without agent_id: agent_l5bxlc2j4,not buy,none,0.0,BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_ge0jud8e5,not buy,none,0.0,BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_miw45mdyl,not buy,none,0.0,Price too high, BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_5b5u0k6za,not buy,none,0.0,Price too high, BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_8y9s0orhy,not buy,none,0.0,BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_7d3hc2ste,buy,P061,0.65,Price is acceptable, BrandX is preferred.
+[WARNING] Skipping line without agent_id: agent_6j46i6s9c,not buy,none,0.0,BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_7hp6v4sp7,not buy,none,0.0,BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_81t1n8ig8,not buy,none,0.0,Price too high, BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_j4up0oi44,not buy,none,0.0,Price too high, BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_90qngxqjt,not buy,none,0.0,BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_t8lhf03g2,buy,P061,0.65,Price is acceptable, BrandX is preferred.
+[WARNING] Skipping line without agent_id: agent_18d6yglj8,not buy,none,0.0,BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_rqbzoyr55,not buy,none,0.0,BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_c14gmmsmk,not buy,none,0.0,Price too high, BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_9z2tn4rkk,not buy,none,0.0,Price too high, BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_e36zh16ab,not buy,none,0.0,BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_6snjfjx0t,buy,P061,0.65,Price is acceptable, BrandX is preferred.
+[WARNING] Skipping line without agent_id: agent_uqlf1wkjt,not buy,none,0.0,BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_9q8mw5cwo,not buy,none,0.0,BrandX not preferred.
+[WARNING] Skipping line without agent_id: agent_j04nmp531,not buy,none,0.0,Price too high, BrandX not preferred.
+[WARNING] Skipping line without agent_id: 
+[WARNING] No valid decisions parsed from response
+Processing batch 16/18: agents 376 to 400
+2025-10-13 04:20:06,767 - INFO - Processing batch 16/18: agents 376 to 400
+Processing 25 agents in single batch
+2025-10-13 04:20:06,767 - INFO - Processing 25 agents in single batch
+Prompt length: 2767 characters
+2025-10-13 04:20:06,768 - DEBUG - Prompt length: 2767 characters
+Making Gemini API call (single attempt)
+2025-10-13 04:20:06,768 - INFO - Making Gemini API call (single attempt)
+Response received. Candidates: 1
+2025-10-13 04:20:11,762 - INFO - Response received. Candidates: 1
+Candidate finish_reason: 1
+2025-10-13 04:20:11,762 - INFO - Candidate finish_reason: 1
+Raw response for 25 agents: Here's the predicted output for each participant, based on the provided data:
+
+agent_9a2rms138,buy,P...
+2025-10-13 04:20:11,762 - INFO - Raw response for 25 agents: Here's the predicted output for each participant, based on the provided data:
+
+agent_9a2rms138,buy,P...
+[WARNING] Unknown agent_id: Here's the predicted output for each participant, based on the provided data
+[WARNING] Skipping line without agent_id: 
+[WARNING] Skipping line without agent_id: agent_9a2rms138,buy,P061,0.75,Price is low and BrandX is preferred, despite lower quality.
+[WARNING] Skipping line without agent_id: agent_opq983k1z,not buy,none,0.35,Brand preference is low for BrandX, and price is high relative to perceived quality.
+[WARNING] Skipping line without agent_id: agent_h6oeuskhb,buy,P061,0.60,BrandX is preferred, and the price is relatively low.
+[WARNING] Skipping line without agent_id: agent_v0njuojdm,not buy,none,0.40,Brand preference is low for BrandX, and price is high relative to perceived quality.
+[WARNING] Skipping line without agent_id: agent_wsyo3y2pc,not buy,none,0.30,Brand preference is low for BrandX, and price is high relative to perceived quality.
+[WARNING] Skipping line without agent_id: agent_hu60qdldd,not buy,none,0.40,Brand preference is low for BrandX, and price is high relative to perceived quality.
+[WARNING] Skipping line without agent_id: agent_ii07qh83a,buy,P061,0.75,Price is low and BrandX is preferred, despite lower quality.
+[WARNING] Skipping line without agent_id: agent_usgm8wqqs,not buy,none,0.35,Brand preference is low for BrandX, and price is high relative to perceived quality.
+[WARNING] Skipping line without agent_id: agent_68ea5fj1f,buy,P061,0.60,BrandX is preferred, and the price is relatively low.
+[WARNING] Skipping line without agent_id: agent_9vnkepnnk,not buy,none,0.40,Brand preference is low for BrandX, and price is high relative to perceived quality.
+[WARNING] Skipping line without agent_id: agent_eowo4ctd0,not buy,none,0.30,Brand preference is low for BrandX, and price is high relative to perceived quality.
+[WARNING] Skipping line without agent_id: agent_b7nzq62p0,not buy,none,0.40,Brand preference is low for BrandX, and price is high relative to perceived quality.
+[WARNING] Skipping line without agent_id: agent_p8vt21inf,buy,P061,0.75,Price is low and BrandX is preferred, despite lower quality.
+[WARNING] Skipping line without agent_id: agent_q98p53inz,not buy,none,0.35,Brand preference is low for BrandX, and price is high relative to perceived quality.
+[WARNING] Skipping line without agent_id: agent_i87car2f7,buy,P061,0.60,BrandX is preferred, and the price is relatively low.
+[WARNING] Skipping line without agent_id: agent_7483qlvd2,not buy,none,0.40,Brand preference is low for BrandX, and price is high relative to perceived quality.
+[WARNING] Skipping line without agent_id: agent_dfb5ga89t,not buy,none,0.30,Brand preference is low for BrandX, and price is high relative to perceived quality.
+[WARNING] Skipping line without agent_id: agent_5s4zhulin,not buy,none,0.40,Brand preference is low for BrandX, and price is high relative to perceived quality.
+[WARNING] Skipping line without agent_id: agent_yf09zth68,buy,P061,0.75,Price is low and BrandX is preferred, despite lower quality.
+[WARNING] Skipping line without agent_id: agent_98s6cye4q,not buy,none,0.35,Brand preference is low for BrandX, and price is high relative to perceived quality.
+[WARNING] Skipping line without agent_id: agent_2l0jw6jdh,buy,P061,0.60,BrandX is preferred, and the price is relatively low.
+[WARNING] Skipping line without agent_id: agent_9jp77iblx,not buy,none,0.40,Brand preference is low for BrandX, and price is high relative to perceived quality.
+[WARNING] Skipping line without agent_id: agent_tsogo1o88,not buy,none,0.30,Brand preference is low for BrandX, and price is high relative to perceived quality.
+[WARNING] Skipping line without agent_id: agent_l7wwfuav7,not buy,none,0.40,Brand preference is low for BrandX, and price is high relative to perceived quality.
+[WARNING] Skipping line without agent_id: agent_vdiv6eem1,buy,P061,0.75,Price is low and BrandX is preferred, despite lower quality.
+[WARNING] Skipping line without agent_id: 
+[WARNING] No valid decisions parsed from response
+Processing batch 17/18: agents 401 to 425
+2025-10-13 04:20:11,762 - INFO - Processing batch 17/18: agents 401 to 425
+Processing 25 agents in single batch
+2025-10-13 04:20:11,762 - INFO - Processing 25 agents in single batch
+Prompt length: 2767 characters
+2025-10-13 04:20:11,762 - DEBUG - Prompt length: 2767 characters
+Making Gemini API call (single attempt)
+2025-10-13 04:20:11,762 - INFO - Making Gemini API call (single attempt)
+Exception ignored in atexit callback: <bound method finalize._exitfunc of <class 'weakref.finalize'>>
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/weakref.py", line 656, in _exitfunc
+2025-10-13 04:20:15,943 - INFO - t=2025-10-13T04:20:15+0000 lvl=info msg="received stop request" obj=app stopReq="{err:<nil> restart:false}"
+    pending = cls._select_for_exit()
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/weakref.py", line 638, in _select_for_exit
+    L.sort(key=lambda item:item[1].index)
+  File "/usr/lib/python3.12/weakref.py", line 638, in <lambda>
+    L.sort(key=lambda item:item[1].index)
+
+KeyboardInterrupt: 
+2025-10-13 04:20:16,114 - DEBUG - close.started
+2025-10-13 04:20:16,114 - DEBUG - close.complete

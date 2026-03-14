@@ -1,0 +1,100 @@
+# ==========================================
+# MarketMind Global .gitignore
+# ==========================================
+
+# ------------------------------------------
+# Environment Variables & Secrets (CRITICAL)
+# ------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.cert
+
+# ------------------------------------------
+# Node.js & Frontend (Vite / React)
+# ------------------------------------------
+node_modules/
+dist/
+dist-ssr/
+build/
+coverage/
+.npm/
+
+# Package Manager Locks (Optional: some prefer to track these, but we keep them out based on your existing file)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+bun.lockb
+
+# ------------------------------------------
+# Python & AI Models
+# ------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+python_model/
+.pytest_cache/
+
+# ------------------------------------------
+# Logs & Temporary Files
+# ------------------------------------------
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+backend_logs/
+model_server_logs/
+errors/
+*.tmp
+*.temp
+*.cache
+.cache/
+
+# ------------------------------------------
+# OS Generated Files
+# ------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# ------------------------------------------
+# Editors & IDEs
+# ------------------------------------------
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ------------------------------------------
+# Data & Jupyter Notebooks
+# ------------------------------------------
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+
+# ------------------------------------------
+# Project Specific Exclusions
+# ------------------------------------------
+marketmind.png
+CLUSTERING_IMPLEMENTATION_SUMMARY.md
+python_model2/models/gemini/inference_backup_*.py

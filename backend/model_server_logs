@@ -1,0 +1,1028 @@
+2025-10-14 13:55:21,244 - DEBUG - [PARSER] Mapped agent agent_hkan2sfgw -> buy
+2025-10-14 13:55:21,244 - DEBUG - [PARSER] Mapped agent agent_wcxmb3shm -> buy
+2025-10-14 13:55:21,245 - WARNING - [PARSER] No decision for agent agent_eswm9e41j, using default
+2025-10-14 13:55:21,245 - WARNING - [PARSER] No decision for agent agent_1fsdmjcfh, using default
+2025-10-14 13:55:21,246 - WARNING - [PARSER] No decision for agent agent_x34ca8dyw, using default
+2025-10-14 13:55:21,247 - WARNING - [PARSER] No decision for agent agent_gon7q4gmb, using default
+2025-10-14 13:55:21,247 - INFO - [PARSER] Final result: 75 decisions for 75 agents
+2025-10-14 13:55:21,248 - INFO - [PARSER] Summary: 71 buy, 4 skip, avg satisfaction: 0.828
+Processing cluster 1 with 73 agents
+2025-10-14 13:55:21,248 - INFO - Processing cluster 1 with 73 agents
+Prompt for cluster (first 300 chars): CONSUMER BEHAVIOR PREDICTION TASK
+
+MARKET CONTEXT: {"product_id":"P007","brand":"BrandA","price":52,"quality":0.9,"category":"Clothing"}
+
+CONSUMER CLUSTER:
+- Size: 73 consumers
+- Profile: price-insensitive, quality-focused, brand-loyal, high-budget
+- Avg Price Sensitivity: 0.35
+- Avg Quality Prefere...
+2025-10-14 13:55:21,250 - DEBUG - Prompt for cluster (first 300 chars): CONSUMER BEHAVIOR PREDICTION TASK
+
+MARKET CONTEXT: {"product_id":"P007","brand":"BrandA","price":52,"quality":0.9,"category":"Clothing"}
+
+CONSUMER CLUSTER:
+- Size: 73 consumers
+- Profile: price-insensitive, quality-focused, brand-loyal, high-budget
+- Avg Price Sensitivity: 0.35
+- Avg Quality Prefere...
+Making Gemini API call
+2025-10-14 13:55:21,251 - INFO - Making Gemini API call
+Response received. Candidates: 1
+2025-10-14 13:55:24,812 - INFO - Response received. Candidates: 1
+Candidate finish_reason: 1
+2025-10-14 13:55:24,813 - INFO - Candidate finish_reason: 1
+Raw response for cluster (73 agents): buy,P060,0.92
+buy,P060,0.91
+buy,P060,0.93
+buy,P068,0.90
+buy,P060,0.94
+buy,P068,0.91
+buy,P060,0.92
+buy,P068,0.93
+buy,P060,0.91
+buy,P068,0.92
+buy,P060,0.94
+buy,P068,0.91
+buy,P060,0.93
+buy,P068,0.92
+buy,...
+2025-10-14 13:55:24,815 - INFO - Raw response for cluster (73 agents): buy,P060,0.92
+buy,P060,0.91
+buy,P060,0.93
+buy,P068,0.90
+buy,P060,0.94
+buy,P068,0.91
+buy,P060,0.92
+buy,P068,0.93
+buy,P060,0.91
+buy,P068,0.92
+buy,P060,0.94
+buy,P068,0.91
+buy,P060,0.93
+buy,P068,0.92
+buy,...
+2025-10-14 13:55:24,818 - INFO - [PARSER] Processing 70 output lines for 73 agents
+2025-10-14 13:55:24,818 - INFO - [PARSER] Valid product IDs: ['P060', 'P081', 'P089', 'P068', 'P123']...
+2025-10-14 13:55:24,819 - DEBUG - [PARSER] Line 1: buy, P060, 0.920
+2025-10-14 13:55:24,819 - DEBUG - [PARSER] Line 2: buy, P060, 0.910
+2025-10-14 13:55:24,820 - DEBUG - [PARSER] Line 3: buy, P060, 0.930
+2025-10-14 13:55:24,820 - DEBUG - [PARSER] Line 4: buy, P068, 0.900
+2025-10-14 13:55:24,821 - DEBUG - [PARSER] Line 5: buy, P060, 0.940
+2025-10-14 13:55:24,821 - DEBUG - [PARSER] Line 6: buy, P068, 0.910
+2025-10-14 13:55:24,822 - DEBUG - [PARSER] Line 7: buy, P060, 0.920
+2025-10-14 13:55:24,823 - DEBUG - [PARSER] Line 8: buy, P068, 0.930
+2025-10-14 13:55:24,823 - DEBUG - [PARSER] Line 9: buy, P060, 0.910
+2025-10-14 13:55:24,824 - DEBUG - [PARSER] Line 10: buy, P068, 0.920
+2025-10-14 13:55:24,824 - DEBUG - [PARSER] Line 11: buy, P060, 0.940
+2025-10-14 13:55:24,825 - DEBUG - [PARSER] Line 12: buy, P068, 0.910
+2025-10-14 13:55:24,825 - DEBUG - [PARSER] Line 13: buy, P060, 0.930
+2025-10-14 13:55:24,826 - DEBUG - [PARSER] Line 14: buy, P068, 0.920
+2025-10-14 13:55:24,826 - DEBUG - [PARSER] Line 15: buy, P060, 0.910
+2025-10-14 13:55:24,827 - DEBUG - [PARSER] Line 16: buy, P068, 0.930
+2025-10-14 13:55:24,827 - DEBUG - [PARSER] Line 17: buy, P060, 0.920
+2025-10-14 13:55:24,828 - DEBUG - [PARSER] Line 18: buy, P068, 0.910
+2025-10-14 13:55:24,828 - DEBUG - [PARSER] Line 19: buy, P060, 0.940
+2025-10-14 13:55:24,829 - DEBUG - [PARSER] Line 20: buy, P068, 0.920
+2025-10-14 13:55:24,829 - DEBUG - [PARSER] Line 21: buy, P060, 0.910
+2025-10-14 13:55:24,830 - DEBUG - [PARSER] Line 22: buy, P068, 0.930
+2025-10-14 13:55:24,830 - DEBUG - [PARSER] Line 23: buy, P060, 0.920
+2025-10-14 13:55:24,831 - DEBUG - [PARSER] Line 24: buy, P068, 0.910
+2025-10-14 13:55:24,831 - DEBUG - [PARSER] Line 25: buy, P060, 0.940
+2025-10-14 13:55:24,831 - DEBUG - [PARSER] Line 26: buy, P068, 0.920
+2025-10-14 13:55:24,832 - DEBUG - [PARSER] Line 27: buy, P060, 0.910
+2025-10-14 13:55:24,832 - DEBUG - [PARSER] Line 28: buy, P068, 0.930
+2025-10-14 13:55:24,833 - DEBUG - [PARSER] Line 29: buy, P060, 0.920
+2025-10-14 13:55:24,833 - DEBUG - [PARSER] Line 30: buy, P068, 0.910
+2025-10-14 13:55:24,834 - DEBUG - [PARSER] Line 31: buy, P060, 0.940
+2025-10-14 13:55:24,834 - DEBUG - [PARSER] Line 32: buy, P068, 0.920
+2025-10-14 13:55:24,835 - DEBUG - [PARSER] Line 33: buy, P060, 0.910
+2025-10-14 13:55:24,835 - DEBUG - [PARSER] Line 34: buy, P068, 0.930
+2025-10-14 13:55:24,836 - DEBUG - [PARSER] Line 35: buy, P060, 0.920
+2025-10-14 13:55:24,836 - DEBUG - [PARSER] Line 36: buy, P068, 0.910
+2025-10-14 13:55:24,837 - DEBUG - [PARSER] Line 37: buy, P060, 0.940
+2025-10-14 13:55:24,837 - DEBUG - [PARSER] Line 38: buy, P068, 0.920
+2025-10-14 13:55:24,838 - DEBUG - [PARSER] Line 39: buy, P060, 0.910
+2025-10-14 13:55:24,838 - DEBUG - [PARSER] Line 40: buy, P068, 0.930
+2025-10-14 13:55:24,839 - DEBUG - [PARSER] Line 41: buy, P060, 0.920
+2025-10-14 13:55:24,840 - DEBUG - [PARSER] Line 42: buy, P068, 0.910
+2025-10-14 13:55:24,840 - DEBUG - [PARSER] Line 43: buy, P060, 0.940
+2025-10-14 13:55:24,841 - DEBUG - [PARSER] Line 44: buy, P068, 0.920
+2025-10-14 13:55:24,841 - DEBUG - [PARSER] Line 45: buy, P060, 0.910
+2025-10-14 13:55:24,842 - DEBUG - [PARSER] Line 46: buy, P068, 0.930
+2025-10-14 13:55:24,842 - DEBUG - [PARSER] Line 47: buy, P060, 0.920
+2025-10-14 13:55:24,843 - DEBUG - [PARSER] Line 48: buy, P068, 0.910
+2025-10-14 13:55:24,843 - DEBUG - [PARSER] Line 49: buy, P060, 0.940
+2025-10-14 13:55:24,843 - DEBUG - [PARSER] Line 50: buy, P068, 0.920
+2025-10-14 13:55:24,844 - DEBUG - [PARSER] Line 51: buy, P060, 0.910
+2025-10-14 13:55:24,844 - DEBUG - [PARSER] Line 52: buy, P068, 0.930
+2025-10-14 13:55:24,845 - DEBUG - [PARSER] Line 53: buy, P060, 0.920
+2025-10-14 13:55:24,846 - DEBUG - [PARSER] Line 54: buy, P068, 0.910
+2025-10-14 13:55:24,846 - DEBUG - [PARSER] Line 55: buy, P060, 0.940
+2025-10-14 13:55:24,847 - DEBUG - [PARSER] Line 56: buy, P068, 0.920
+2025-10-14 13:55:24,847 - DEBUG - [PARSER] Line 57: buy, P060, 0.910
+2025-10-14 13:55:24,848 - DEBUG - [PARSER] Line 58: buy, P068, 0.930
+2025-10-14 13:55:24,848 - DEBUG - [PARSER] Line 59: buy, P060, 0.920
+2025-10-14 13:55:24,849 - DEBUG - [PARSER] Line 60: buy, P068, 0.910
+2025-10-14 13:55:24,850 - DEBUG - [PARSER] Line 61: buy, P060, 0.940
+2025-10-14 13:55:24,850 - DEBUG - [PARSER] Line 62: buy, P068, 0.920
+2025-10-14 13:55:24,851 - DEBUG - [PARSER] Line 63: buy, P060, 0.910
+2025-10-14 13:55:24,851 - DEBUG - [PARSER] Line 64: buy, P068, 0.930
+2025-10-14 13:55:24,852 - DEBUG - [PARSER] Line 65: buy, P060, 0.920
+2025-10-14 13:55:24,852 - DEBUG - [PARSER] Line 66: buy, P068, 0.910
+2025-10-14 13:55:24,853 - DEBUG - [PARSER] Line 67: buy, P060, 0.940
+2025-10-14 13:55:24,854 - DEBUG - [PARSER] Line 68: buy, P068, 0.920
+2025-10-14 13:55:24,855 - DEBUG - [PARSER] Line 69: buy, P060, 0.910
+2025-10-14 13:55:24,855 - DEBUG - [PARSER] Line 70: buy, P068, 0.930
+2025-10-14 13:55:24,856 - INFO - [PARSER] Successfully parsed 70 decisions from 70 lines
+2025-10-14 13:55:24,857 - DEBUG - [PARSER] Mapped agent agent_zfe97ge0p -> buy
+2025-10-14 13:55:24,858 - DEBUG - [PARSER] Mapped agent agent_fnjfk9vs5 -> buy
+2025-10-14 13:55:24,858 - DEBUG - [PARSER] Mapped agent agent_9js8cjf3q -> buy
+2025-10-14 13:55:24,859 - DEBUG - [PARSER] Mapped agent agent_inw2zf4l6 -> buy
+2025-10-14 13:55:24,860 - DEBUG - [PARSER] Mapped agent agent_p37efq5yw -> buy
+2025-10-14 13:55:24,860 - DEBUG - [PARSER] Mapped agent agent_qi20151l8 -> buy
+2025-10-14 13:55:24,861 - DEBUG - [PARSER] Mapped agent agent_t2hoi1v2u -> buy
+2025-10-14 13:55:24,861 - DEBUG - [PARSER] Mapped agent agent_jzn13pr7z -> buy
+2025-10-14 13:55:24,862 - DEBUG - [PARSER] Mapped agent agent_aa8q3iybk -> buy
+2025-10-14 13:55:24,862 - DEBUG - [PARSER] Mapped agent agent_99gsi59gh -> buy
+2025-10-14 13:55:24,863 - DEBUG - [PARSER] Mapped agent agent_iyy0yiz23 -> buy
+2025-10-14 13:55:24,863 - DEBUG - [PARSER] Mapped agent agent_pbxpkaae4 -> buy
+2025-10-14 13:55:24,864 - DEBUG - [PARSER] Mapped agent agent_x82v949d2 -> buy
+2025-10-14 13:55:24,864 - DEBUG - [PARSER] Mapped agent agent_2l96ah2cj -> buy
+2025-10-14 13:55:24,865 - DEBUG - [PARSER] Mapped agent agent_xrbmtlpr9 -> buy
+2025-10-14 13:55:24,865 - DEBUG - [PARSER] Mapped agent agent_liu5qr3hk -> buy
+2025-10-14 13:55:24,866 - DEBUG - [PARSER] Mapped agent agent_wfv6oi5kw -> buy
+2025-10-14 13:55:24,866 - DEBUG - [PARSER] Mapped agent agent_mj5owd05f -> buy
+2025-10-14 13:55:24,867 - DEBUG - [PARSER] Mapped agent agent_zjqf8qnbx -> buy
+2025-10-14 13:55:24,867 - DEBUG - [PARSER] Mapped agent agent_dw70fdkr0 -> buy
+2025-10-14 13:55:24,868 - DEBUG - [PARSER] Mapped agent agent_z5abxqqke -> buy
+2025-10-14 13:55:24,868 - DEBUG - [PARSER] Mapped agent agent_nzxw8vn27 -> buy
+2025-10-14 13:55:24,869 - DEBUG - [PARSER] Mapped agent agent_fq6xg7i04 -> buy
+2025-10-14 13:55:24,869 - DEBUG - [PARSER] Mapped agent agent_7jipf7qn3 -> buy
+2025-10-14 13:55:24,870 - DEBUG - [PARSER] Mapped agent agent_0up9mknbf -> buy
+2025-10-14 13:55:24,870 - DEBUG - [PARSER] Mapped agent agent_cli1r3oao -> buy
+2025-10-14 13:55:24,871 - DEBUG - [PARSER] Mapped agent agent_b4yyv4a1s -> buy
+2025-10-14 13:55:24,871 - DEBUG - [PARSER] Mapped agent agent_elxn5i1ve -> buy
+2025-10-14 13:55:24,872 - DEBUG - [PARSER] Mapped agent agent_3k3c0r8u9 -> buy
+2025-10-14 13:55:24,872 - DEBUG - [PARSER] Mapped agent agent_68to7buih -> buy
+2025-10-14 13:55:24,873 - DEBUG - [PARSER] Mapped agent agent_3oxd42lu4 -> buy
+2025-10-14 13:55:24,873 - DEBUG - [PARSER] Mapped agent agent_i3qd71iwl -> buy
+2025-10-14 13:55:24,874 - DEBUG - [PARSER] Mapped agent agent_dy4h94ik2 -> buy
+2025-10-14 13:55:24,875 - DEBUG - [PARSER] Mapped agent agent_nzy7ayjr7 -> buy
+2025-10-14 13:55:24,875 - DEBUG - [PARSER] Mapped agent agent_4dbe89nac -> buy
+2025-10-14 13:55:24,875 - DEBUG - [PARSER] Mapped agent agent_qpy797gnj -> buy
+2025-10-14 13:55:24,876 - DEBUG - [PARSER] Mapped agent agent_mv6cgm2o7 -> buy
+2025-10-14 13:55:24,877 - DEBUG - [PARSER] Mapped agent agent_x5isvv064 -> buy
+2025-10-14 13:55:24,877 - DEBUG - [PARSER] Mapped agent agent_t2ppqp0xg -> buy
+2025-10-14 13:55:24,877 - DEBUG - [PARSER] Mapped agent agent_u01z56qft -> buy
+2025-10-14 13:55:24,878 - DEBUG - [PARSER] Mapped agent agent_h8eokrdm3 -> buy
+2025-10-14 13:55:24,878 - DEBUG - [PARSER] Mapped agent agent_m9hahn5c1 -> buy
+2025-10-14 13:55:24,879 - DEBUG - [PARSER] Mapped agent agent_23vz6e4rv -> buy
+2025-10-14 13:55:24,879 - DEBUG - [PARSER] Mapped agent agent_ctylcx3jg -> buy
+2025-10-14 13:55:24,879 - DEBUG - [PARSER] Mapped agent agent_tqucjsu83 -> buy
+2025-10-14 13:55:24,880 - DEBUG - [PARSER] Mapped agent agent_q3whk3t8p -> buy
+2025-10-14 13:55:24,881 - DEBUG - [PARSER] Mapped agent agent_zj2qhy41q -> buy
+2025-10-14 13:55:24,881 - DEBUG - [PARSER] Mapped agent agent_z73x3lise -> buy
+2025-10-14 13:55:24,882 - DEBUG - [PARSER] Mapped agent agent_o6cj4k75g -> buy
+2025-10-14 13:55:24,882 - DEBUG - [PARSER] Mapped agent agent_6knttgyoy -> buy
+2025-10-14 13:55:24,883 - DEBUG - [PARSER] Mapped agent agent_eudypa0n2 -> buy
+2025-10-14 13:55:24,883 - DEBUG - [PARSER] Mapped agent agent_blfev3bp1 -> buy
+2025-10-14 13:55:24,884 - DEBUG - [PARSER] Mapped agent agent_sg5pzfsnn -> buy
+2025-10-14 13:55:24,884 - DEBUG - [PARSER] Mapped agent agent_sw25zrow5 -> buy
+2025-10-14 13:55:24,885 - DEBUG - [PARSER] Mapped agent agent_p00whoqll -> buy
+2025-10-14 13:55:24,885 - DEBUG - [PARSER] Mapped agent agent_vkqa8c2ab -> buy
+2025-10-14 13:55:24,886 - DEBUG - [PARSER] Mapped agent agent_crbki1h05 -> buy
+2025-10-14 13:55:24,886 - DEBUG - [PARSER] Mapped agent agent_9o2a21na6 -> buy
+2025-10-14 13:55:24,887 - DEBUG - [PARSER] Mapped agent agent_779o4oza9 -> buy
+2025-10-14 13:55:24,887 - DEBUG - [PARSER] Mapped agent agent_ge0jud8e5 -> buy
+2025-10-14 13:55:24,888 - DEBUG - [PARSER] Mapped agent agent_7hp6v4sp7 -> buy
+2025-10-14 13:55:24,888 - DEBUG - [PARSER] Mapped agent agent_rqbzoyr55 -> buy
+2025-10-14 13:55:24,889 - DEBUG - [PARSER] Mapped agent agent_9q8mw5cwo -> buy
+2025-10-14 13:55:24,889 - DEBUG - [PARSER] Mapped agent agent_wsyo3y2pc -> buy
+2025-10-14 13:55:24,890 - DEBUG - [PARSER] Mapped agent agent_eowo4ctd0 -> buy
+2025-10-14 13:55:24,890 - DEBUG - [PARSER] Mapped agent agent_dfb5ga89t -> buy
+2025-10-14 13:55:24,891 - DEBUG - [PARSER] Mapped agent agent_tsogo1o88 -> buy
+2025-10-14 13:55:24,891 - DEBUG - [PARSER] Mapped agent agent_dxz3lxyai -> buy
+2025-10-14 13:55:24,892 - DEBUG - [PARSER] Mapped agent agent_xah9cf394 -> buy
+2025-10-14 13:55:24,892 - DEBUG - [PARSER] Mapped agent agent_p30tsxn2g -> buy
+2025-10-14 13:55:24,893 - WARNING - [PARSER] No decision for agent agent_ig7voaazc, using default
+2025-10-14 13:55:24,893 - WARNING - [PARSER] No decision for agent agent_b9h05xvmv, using default
+2025-10-14 13:55:24,894 - WARNING - [PARSER] No decision for agent agent_0g9b220x8, using default
+2025-10-14 13:55:24,895 - INFO - [PARSER] Final result: 73 decisions for 73 agents
+2025-10-14 13:55:24,896 - INFO - [PARSER] Summary: 70 buy, 3 skip, avg satisfaction: 0.884
+Processing cluster 6 with 74 agents
+2025-10-14 13:55:24,896 - INFO - Processing cluster 6 with 74 agents
+Prompt for cluster (first 300 chars): CONSUMER BEHAVIOR PREDICTION TASK
+
+MARKET CONTEXT: {"product_id":"P007","brand":"BrandA","price":52,"quality":0.9,"category":"Clothing"}
+
+CONSUMER CLUSTER:
+- Size: 74 consumers
+- Profile: highly price-sensitive, less quality-concerned, highly flexible with alternatives, high-budget
+- Avg Price Sensi...
+2025-10-14 13:55:24,897 - DEBUG - Prompt for cluster (first 300 chars): CONSUMER BEHAVIOR PREDICTION TASK
+
+MARKET CONTEXT: {"product_id":"P007","brand":"BrandA","price":52,"quality":0.9,"category":"Clothing"}
+
+CONSUMER CLUSTER:
+- Size: 74 consumers
+- Profile: highly price-sensitive, less quality-concerned, highly flexible with alternatives, high-budget
+- Avg Price Sensi...
+Making Gemini API call
+2025-10-14 13:55:24,898 - INFO - Making Gemini API call
+Response received. Candidates: 1
+2025-10-14 13:55:30,315 - INFO - Response received. Candidates: 1
+Candidate finish_reason: 1
+2025-10-14 13:55:30,316 - INFO - Candidate finish_reason: 1
+Raw response for cluster (74 agents): buy,P060,0.82
+buy,P060,0.81
+buy,P060,0.83
+buy,P060,0.80
+buy,P060,0.84
+buy,P060,0.81
+buy,P060,0.82
+buy,P060,0.80
+buy,P060,0.83
+buy,P060,0.81
+buy,P060,0.82
+buy,P060,0.80
+buy,P060,0.84
+buy,P060,0.81
+buy,...
+2025-10-14 13:55:30,317 - INFO - Raw response for cluster (74 agents): buy,P060,0.82
+buy,P060,0.81
+buy,P060,0.83
+buy,P060,0.80
+buy,P060,0.84
+buy,P060,0.81
+buy,P060,0.82
+buy,P060,0.80
+buy,P060,0.83
+buy,P060,0.81
+buy,P060,0.82
+buy,P060,0.80
+buy,P060,0.84
+buy,P060,0.81
+buy,...
+2025-10-14 13:55:30,319 - INFO - [PARSER] Processing 70 output lines for 74 agents
+2025-10-14 13:55:30,319 - INFO - [PARSER] Valid product IDs: ['P060', 'P081', 'P089', 'P068', 'P123']...
+2025-10-14 13:55:30,320 - DEBUG - [PARSER] Line 1: buy, P060, 0.820
+2025-10-14 13:55:30,321 - DEBUG - [PARSER] Line 2: buy, P060, 0.810
+2025-10-14 13:55:30,321 - DEBUG - [PARSER] Line 3: buy, P060, 0.830
+2025-10-14 13:55:30,322 - DEBUG - [PARSER] Line 4: buy, P060, 0.800
+2025-10-14 13:55:30,322 - DEBUG - [PARSER] Line 5: buy, P060, 0.840
+2025-10-14 13:55:30,323 - DEBUG - [PARSER] Line 6: buy, P060, 0.810
+2025-10-14 13:55:30,323 - DEBUG - [PARSER] Line 7: buy, P060, 0.820
+2025-10-14 13:55:30,324 - DEBUG - [PARSER] Line 8: buy, P060, 0.800
+2025-10-14 13:55:30,325 - DEBUG - [PARSER] Line 9: buy, P060, 0.830
+2025-10-14 13:55:30,325 - DEBUG - [PARSER] Line 10: buy, P060, 0.810
+2025-10-14 13:55:30,326 - DEBUG - [PARSER] Line 11: buy, P060, 0.820
+2025-10-14 13:55:30,327 - DEBUG - [PARSER] Line 12: buy, P060, 0.800
+2025-10-14 13:55:30,327 - DEBUG - [PARSER] Line 13: buy, P060, 0.840
+2025-10-14 13:55:30,328 - DEBUG - [PARSER] Line 14: buy, P060, 0.810
+2025-10-14 13:55:30,328 - DEBUG - [PARSER] Line 15: buy, P060, 0.820
+2025-10-14 13:55:30,329 - DEBUG - [PARSER] Line 16: buy, P060, 0.800
+2025-10-14 13:55:30,330 - DEBUG - [PARSER] Line 17: buy, P060, 0.830
+2025-10-14 13:55:30,330 - DEBUG - [PARSER] Line 18: buy, P060, 0.810
+2025-10-14 13:55:30,331 - DEBUG - [PARSER] Line 19: buy, P060, 0.820
+2025-10-14 13:55:30,331 - DEBUG - [PARSER] Line 20: buy, P060, 0.800
+2025-10-14 13:55:30,332 - DEBUG - [PARSER] Line 21: buy, P060, 0.840
+2025-10-14 13:55:30,332 - DEBUG - [PARSER] Line 22: buy, P060, 0.810
+2025-10-14 13:55:30,333 - DEBUG - [PARSER] Line 23: buy, P060, 0.820
+2025-10-14 13:55:30,333 - DEBUG - [PARSER] Line 24: buy, P060, 0.800
+2025-10-14 13:55:30,334 - DEBUG - [PARSER] Line 25: buy, P060, 0.830
+2025-10-14 13:55:30,334 - DEBUG - [PARSER] Line 26: buy, P060, 0.810
+2025-10-14 13:55:30,335 - DEBUG - [PARSER] Line 27: buy, P060, 0.820
+2025-10-14 13:55:30,336 - DEBUG - [PARSER] Line 28: buy, P060, 0.800
+2025-10-14 13:55:30,336 - DEBUG - [PARSER] Line 29: buy, P060, 0.840
+2025-10-14 13:55:30,337 - DEBUG - [PARSER] Line 30: buy, P060, 0.810
+2025-10-14 13:55:30,337 - DEBUG - [PARSER] Line 31: buy, P060, 0.820
+2025-10-14 13:55:30,338 - DEBUG - [PARSER] Line 32: buy, P060, 0.800
+2025-10-14 13:55:30,338 - DEBUG - [PARSER] Line 33: buy, P060, 0.830
+2025-10-14 13:55:30,339 - DEBUG - [PARSER] Line 34: buy, P060, 0.810
+2025-10-14 13:55:30,339 - DEBUG - [PARSER] Line 35: buy, P060, 0.820
+2025-10-14 13:55:30,340 - DEBUG - [PARSER] Line 36: buy, P060, 0.800
+2025-10-14 13:55:30,341 - DEBUG - [PARSER] Line 37: buy, P060, 0.840
+2025-10-14 13:55:30,341 - DEBUG - [PARSER] Line 38: buy, P060, 0.810
+2025-10-14 13:55:30,342 - DEBUG - [PARSER] Line 39: buy, P060, 0.820
+2025-10-14 13:55:30,342 - DEBUG - [PARSER] Line 40: buy, P060, 0.800
+2025-10-14 13:55:30,343 - DEBUG - [PARSER] Line 41: buy, P060, 0.830
+2025-10-14 13:55:30,343 - DEBUG - [PARSER] Line 42: buy, P060, 0.810
+2025-10-14 13:55:30,344 - DEBUG - [PARSER] Line 43: buy, P060, 0.820
+2025-10-14 13:55:30,345 - DEBUG - [PARSER] Line 44: buy, P060, 0.800
+2025-10-14 13:55:30,345 - DEBUG - [PARSER] Line 45: buy, P060, 0.840
+2025-10-14 13:55:30,346 - DEBUG - [PARSER] Line 46: buy, P060, 0.810
+2025-10-14 13:55:30,346 - DEBUG - [PARSER] Line 47: buy, P060, 0.820
+2025-10-14 13:55:30,347 - DEBUG - [PARSER] Line 48: buy, P060, 0.800
+2025-10-14 13:55:30,347 - DEBUG - [PARSER] Line 49: buy, P060, 0.830
+2025-10-14 13:55:30,348 - DEBUG - [PARSER] Line 50: buy, P060, 0.810
+2025-10-14 13:55:30,348 - DEBUG - [PARSER] Line 51: buy, P060, 0.820
+2025-10-14 13:55:30,349 - DEBUG - [PARSER] Line 52: buy, P060, 0.800
+2025-10-14 13:55:30,350 - DEBUG - [PARSER] Line 53: buy, P060, 0.840
+2025-10-14 13:55:30,350 - DEBUG - [PARSER] Line 54: buy, P060, 0.810
+2025-10-14 13:55:30,351 - DEBUG - [PARSER] Line 55: buy, P060, 0.820
+2025-10-14 13:55:30,352 - DEBUG - [PARSER] Line 56: buy, P060, 0.800
+2025-10-14 13:55:30,352 - DEBUG - [PARSER] Line 57: buy, P060, 0.830
+2025-10-14 13:55:30,353 - DEBUG - [PARSER] Line 58: buy, P060, 0.810
+2025-10-14 13:55:30,353 - DEBUG - [PARSER] Line 59: buy, P060, 0.820
+2025-10-14 13:55:30,354 - DEBUG - [PARSER] Line 60: buy, P060, 0.800
+2025-10-14 13:55:30,354 - DEBUG - [PARSER] Line 61: buy, P060, 0.840
+2025-10-14 13:55:30,355 - DEBUG - [PARSER] Line 62: buy, P060, 0.810
+2025-10-14 13:55:30,356 - DEBUG - [PARSER] Line 63: buy, P060, 0.820
+2025-10-14 13:55:30,356 - DEBUG - [PARSER] Line 64: buy, P060, 0.800
+2025-10-14 13:55:30,357 - DEBUG - [PARSER] Line 65: buy, P060, 0.830
+2025-10-14 13:55:30,357 - DEBUG - [PARSER] Line 66: buy, P060, 0.810
+2025-10-14 13:55:30,358 - DEBUG - [PARSER] Line 67: buy, P060, 0.820
+2025-10-14 13:55:30,358 - DEBUG - [PARSER] Line 68: buy, P060, 0.800
+2025-10-14 13:55:30,359 - DEBUG - [PARSER] Line 69: buy, P060, 0.840
+2025-10-14 13:55:30,359 - DEBUG - [PARSER] Line 70: buy, P060, 0.810
+2025-10-14 13:55:30,360 - INFO - [PARSER] Successfully parsed 70 decisions from 70 lines
+2025-10-14 13:55:30,360 - DEBUG - [PARSER] Mapped agent agent_i5y7n6hv5 -> buy
+2025-10-14 13:55:30,361 - DEBUG - [PARSER] Mapped agent agent_keur07sr9 -> buy
+2025-10-14 13:55:30,362 - DEBUG - [PARSER] Mapped agent agent_5i0an93oa -> buy
+2025-10-14 13:55:30,362 - DEBUG - [PARSER] Mapped agent agent_vhu8a454o -> buy
+2025-10-14 13:55:30,362 - DEBUG - [PARSER] Mapped agent agent_sznqbnsmw -> buy
+2025-10-14 13:55:30,363 - DEBUG - [PARSER] Mapped agent agent_3q773f4gv -> buy
+2025-10-14 13:55:30,364 - DEBUG - [PARSER] Mapped agent agent_4lbxn39g0 -> buy
+2025-10-14 13:55:30,364 - DEBUG - [PARSER] Mapped agent agent_uacbyi6xq -> buy
+2025-10-14 13:55:30,364 - DEBUG - [PARSER] Mapped agent agent_p4acinbnk -> buy
+2025-10-14 13:55:30,365 - DEBUG - [PARSER] Mapped agent agent_nkmj47t5g -> buy
+2025-10-14 13:55:30,365 - DEBUG - [PARSER] Mapped agent agent_utbjj6j97 -> buy
+2025-10-14 13:55:30,365 - DEBUG - [PARSER] Mapped agent agent_iro9d2ruq -> buy
+2025-10-14 13:55:30,366 - DEBUG - [PARSER] Mapped agent agent_147koadgl -> buy
+2025-10-14 13:55:30,366 - DEBUG - [PARSER] Mapped agent agent_fb87m8r43 -> buy
+2025-10-14 13:55:30,367 - DEBUG - [PARSER] Mapped agent agent_165wmfytq -> buy
+2025-10-14 13:55:30,367 - DEBUG - [PARSER] Mapped agent agent_krjlozrw0 -> buy
+2025-10-14 13:55:30,368 - DEBUG - [PARSER] Mapped agent agent_5kudktm04 -> buy
+2025-10-14 13:55:30,368 - DEBUG - [PARSER] Mapped agent agent_xvhrvp6mz -> buy
+2025-10-14 13:55:30,369 - DEBUG - [PARSER] Mapped agent agent_k3f12j1fy -> buy
+2025-10-14 13:55:30,369 - DEBUG - [PARSER] Mapped agent agent_1bpi7mobh -> buy
+2025-10-14 13:55:30,370 - DEBUG - [PARSER] Mapped agent agent_ik93j372f -> buy
+2025-10-14 13:55:30,370 - DEBUG - [PARSER] Mapped agent agent_qi5n5cj3c -> buy
+2025-10-14 13:55:30,371 - DEBUG - [PARSER] Mapped agent agent_achzco6eq -> buy
+2025-10-14 13:55:30,371 - DEBUG - [PARSER] Mapped agent agent_0mie8bejs -> buy
+2025-10-14 13:55:30,372 - DEBUG - [PARSER] Mapped agent agent_a0uhczu95 -> buy
+2025-10-14 13:55:30,372 - DEBUG - [PARSER] Mapped agent agent_q6v1syom3 -> buy
+2025-10-14 13:55:30,373 - DEBUG - [PARSER] Mapped agent agent_x7476ucbf -> buy
+2025-10-14 13:55:30,373 - DEBUG - [PARSER] Mapped agent agent_7suhvx1oa -> buy
+2025-10-14 13:55:30,374 - DEBUG - [PARSER] Mapped agent agent_of27tx6p1 -> buy
+2025-10-14 13:55:30,374 - DEBUG - [PARSER] Mapped agent agent_suc66zvsx -> buy
+2025-10-14 13:55:30,375 - DEBUG - [PARSER] Mapped agent agent_f9qq9q0rq -> buy
+2025-10-14 13:55:30,375 - DEBUG - [PARSER] Mapped agent agent_mk7pg3ajt -> buy
+2025-10-14 13:55:30,376 - DEBUG - [PARSER] Mapped agent agent_h3g97pfqp -> buy
+2025-10-14 13:55:30,376 - DEBUG - [PARSER] Mapped agent agent_7pwl6j332 -> buy
+2025-10-14 13:55:30,377 - DEBUG - [PARSER] Mapped agent agent_ucfyr1hy5 -> buy
+2025-10-14 13:55:30,377 - DEBUG - [PARSER] Mapped agent agent_uvhb7qrb2 -> buy
+2025-10-14 13:55:30,378 - DEBUG - [PARSER] Mapped agent agent_nl7ybul69 -> buy
+2025-10-14 13:55:30,378 - DEBUG - [PARSER] Mapped agent agent_v64crbszj -> buy
+2025-10-14 13:55:30,379 - DEBUG - [PARSER] Mapped agent agent_pmggtkge3 -> buy
+2025-10-14 13:55:30,379 - DEBUG - [PARSER] Mapped agent agent_rpj8szm5b -> buy
+2025-10-14 13:55:30,380 - DEBUG - [PARSER] Mapped agent agent_937w9u7dp -> buy
+2025-10-14 13:55:30,381 - DEBUG - [PARSER] Mapped agent agent_ke1wnoixu -> buy
+2025-10-14 13:55:30,381 - DEBUG - [PARSER] Mapped agent agent_t6h7cfd02 -> buy
+2025-10-14 13:55:30,382 - DEBUG - [PARSER] Mapped agent agent_wre5iqjmz -> buy
+2025-10-14 13:55:30,382 - DEBUG - [PARSER] Mapped agent agent_q1vjjwb6u -> buy
+2025-10-14 13:55:30,383 - DEBUG - [PARSER] Mapped agent agent_1gubxn8hl -> buy
+2025-10-14 13:55:30,383 - DEBUG - [PARSER] Mapped agent agent_ja0f1akjh -> buy
+2025-10-14 13:55:30,384 - DEBUG - [PARSER] Mapped agent agent_c33nsb369 -> buy
+2025-10-14 13:55:30,384 - DEBUG - [PARSER] Mapped agent agent_h6ox58sk2 -> buy
+2025-10-14 13:55:30,385 - DEBUG - [PARSER] Mapped agent agent_1em5s7v1r -> buy
+2025-10-14 13:55:30,385 - DEBUG - [PARSER] Mapped agent agent_wcl2gly9a -> buy
+2025-10-14 13:55:30,385 - DEBUG - [PARSER] Mapped agent agent_b5xhms94d -> buy
+2025-10-14 13:55:30,386 - DEBUG - [PARSER] Mapped agent agent_zgf764s95 -> buy
+2025-10-14 13:55:30,386 - DEBUG - [PARSER] Mapped agent agent_vrr0j43k4 -> buy
+2025-10-14 13:55:30,387 - DEBUG - [PARSER] Mapped agent agent_lcudnspjv -> buy
+2025-10-14 13:55:30,387 - DEBUG - [PARSER] Mapped agent agent_fohsdp99o -> buy
+2025-10-14 13:55:30,388 - DEBUG - [PARSER] Mapped agent agent_4nmmbrfx5 -> buy
+2025-10-14 13:55:30,388 - DEBUG - [PARSER] Mapped agent agent_1otzbd010 -> buy
+2025-10-14 13:55:30,389 - DEBUG - [PARSER] Mapped agent agent_f2mi14cub -> buy
+2025-10-14 13:55:30,389 - DEBUG - [PARSER] Mapped agent agent_e3pz0luxn -> buy
+2025-10-14 13:55:30,390 - DEBUG - [PARSER] Mapped agent agent_5b5u0k6za -> buy
+2025-10-14 13:55:30,390 - DEBUG - [PARSER] Mapped agent agent_j4up0oi44 -> buy
+2025-10-14 13:55:30,391 - DEBUG - [PARSER] Mapped agent agent_9z2tn4rkk -> buy
+2025-10-14 13:55:30,392 - DEBUG - [PARSER] Mapped agent agent_9a2rms138 -> buy
+2025-10-14 13:55:30,392 - DEBUG - [PARSER] Mapped agent agent_ii07qh83a -> buy
+2025-10-14 13:55:30,393 - DEBUG - [PARSER] Mapped agent agent_p8vt21inf -> buy
+2025-10-14 13:55:30,393 - DEBUG - [PARSER] Mapped agent agent_yf09zth68 -> buy
+2025-10-14 13:55:30,394 - DEBUG - [PARSER] Mapped agent agent_vdiv6eem1 -> buy
+2025-10-14 13:55:30,394 - DEBUG - [PARSER] Mapped agent agent_354fekted -> buy
+2025-10-14 13:55:30,395 - DEBUG - [PARSER] Mapped agent agent_ze0ls2kzq -> buy
+2025-10-14 13:55:30,395 - WARNING - [PARSER] No decision for agent agent_lmu9b3zr5, using default
+2025-10-14 13:55:30,396 - WARNING - [PARSER] No decision for agent agent_keo7c87iw, using default
+2025-10-14 13:55:30,396 - WARNING - [PARSER] No decision for agent agent_1e28xjc0l, using default
+2025-10-14 13:55:30,397 - WARNING - [PARSER] No decision for agent agent_ztrc0n4es, using default
+2025-10-14 13:55:30,397 - INFO - [PARSER] Final result: 74 decisions for 74 agents
+2025-10-14 13:55:30,398 - INFO - [PARSER] Summary: 70 buy, 4 skip, avg satisfaction: 0.772
+Processing cluster 3 with 73 agents
+2025-10-14 13:55:30,401 - INFO - Processing cluster 3 with 73 agents
+Prompt for cluster (first 300 chars): CONSUMER BEHAVIOR PREDICTION TASK
+
+MARKET CONTEXT: {"product_id":"P007","brand":"BrandA","price":52,"quality":0.9,"category":"Clothing"}
+
+CONSUMER CLUSTER:
+- Size: 73 consumers
+- Profile: price-insensitive, quality-focused, brand-loyal, high-budget
+- Avg Price Sensitivity: 0.35
+- Avg Quality Prefere...
+2025-10-14 13:55:30,402 - DEBUG - Prompt for cluster (first 300 chars): CONSUMER BEHAVIOR PREDICTION TASK
+
+MARKET CONTEXT: {"product_id":"P007","brand":"BrandA","price":52,"quality":0.9,"category":"Clothing"}
+
+CONSUMER CLUSTER:
+- Size: 73 consumers
+- Profile: price-insensitive, quality-focused, brand-loyal, high-budget
+- Avg Price Sensitivity: 0.35
+- Avg Quality Prefere...
+Making Gemini API call
+2025-10-14 13:55:30,403 - INFO - Making Gemini API call
+Response received. Candidates: 1
+2025-10-14 13:55:35,240 - INFO - Response received. Candidates: 1
+Candidate finish_reason: 1
+2025-10-14 13:55:35,241 - INFO - Candidate finish_reason: 1
+Raw response for cluster (73 agents): buy,P060,0.92
+buy,P068,0.91
+buy,P081,0.91
+buy,P047,0.88
+buy,P089,0.88
+buy,P102,0.88
+buy,P025,0.85
+buy,P110,0.85
+buy,P060,0.92
+buy,P068,0.91
+buy,P081,0.91
+buy,P047,0.88
+buy,P089,0.88
+buy,P102,0.88
+buy,...
+2025-10-14 13:55:35,242 - INFO - Raw response for cluster (73 agents): buy,P060,0.92
+buy,P068,0.91
+buy,P081,0.91
+buy,P047,0.88
+buy,P089,0.88
+buy,P102,0.88
+buy,P025,0.85
+buy,P110,0.85
+buy,P060,0.92
+buy,P068,0.91
+buy,P081,0.91
+buy,P047,0.88
+buy,P089,0.88
+buy,P102,0.88
+buy,...
+2025-10-14 13:55:35,243 - INFO - [PARSER] Processing 70 output lines for 73 agents
+2025-10-14 13:55:35,244 - INFO - [PARSER] Valid product IDs: ['P060', 'P081', 'P089', 'P068', 'P123']...
+2025-10-14 13:55:35,244 - DEBUG - [PARSER] Line 1: buy, P060, 0.920
+2025-10-14 13:55:35,244 - DEBUG - [PARSER] Line 2: buy, P068, 0.910
+2025-10-14 13:55:35,245 - DEBUG - [PARSER] Line 3: buy, P081, 0.910
+2025-10-14 13:55:35,245 - DEBUG - [PARSER] Line 4: buy, P047, 0.880
+2025-10-14 13:55:35,245 - DEBUG - [PARSER] Line 5: buy, P089, 0.880
+2025-10-14 13:55:35,245 - DEBUG - [PARSER] Line 6: buy, P102, 0.880
+2025-10-14 13:55:35,246 - DEBUG - [PARSER] Line 7: buy, P025, 0.850
+2025-10-14 13:55:35,248 - DEBUG - [PARSER] Line 8: buy, P110, 0.850
+2025-10-14 13:55:35,248 - DEBUG - [PARSER] Line 9: buy, P060, 0.920
+2025-10-14 13:55:35,249 - DEBUG - [PARSER] Line 10: buy, P068, 0.910
+2025-10-14 13:55:35,249 - DEBUG - [PARSER] Line 11: buy, P081, 0.910
+2025-10-14 13:55:35,249 - DEBUG - [PARSER] Line 12: buy, P047, 0.880
+2025-10-14 13:55:35,250 - DEBUG - [PARSER] Line 13: buy, P089, 0.880
+2025-10-14 13:55:35,250 - DEBUG - [PARSER] Line 14: buy, P102, 0.880
+2025-10-14 13:55:35,251 - DEBUG - [PARSER] Line 15: buy, P025, 0.850
+2025-10-14 13:55:35,251 - DEBUG - [PARSER] Line 16: buy, P110, 0.850
+2025-10-14 13:55:35,252 - DEBUG - [PARSER] Line 17: buy, P060, 0.920
+2025-10-14 13:55:35,252 - DEBUG - [PARSER] Line 18: buy, P068, 0.910
+2025-10-14 13:55:35,252 - DEBUG - [PARSER] Line 19: buy, P081, 0.910
+2025-10-14 13:55:35,252 - DEBUG - [PARSER] Line 20: buy, P047, 0.880
+2025-10-14 13:55:35,253 - DEBUG - [PARSER] Line 21: buy, P089, 0.880
+2025-10-14 13:55:35,253 - DEBUG - [PARSER] Line 22: buy, P102, 0.880
+2025-10-14 13:55:35,254 - DEBUG - [PARSER] Line 23: buy, P025, 0.850
+2025-10-14 13:55:35,254 - DEBUG - [PARSER] Line 24: buy, P110, 0.850
+2025-10-14 13:55:35,254 - DEBUG - [PARSER] Line 25: buy, P060, 0.920
+2025-10-14 13:55:35,255 - DEBUG - [PARSER] Line 26: buy, P068, 0.910
+2025-10-14 13:55:35,256 - DEBUG - [PARSER] Line 27: buy, P081, 0.910
+2025-10-14 13:55:35,256 - DEBUG - [PARSER] Line 28: buy, P047, 0.880
+2025-10-14 13:55:35,257 - DEBUG - [PARSER] Line 29: buy, P089, 0.880
+2025-10-14 13:55:35,257 - DEBUG - [PARSER] Line 30: buy, P102, 0.880
+2025-10-14 13:55:35,258 - DEBUG - [PARSER] Line 31: buy, P025, 0.850
+2025-10-14 13:55:35,258 - DEBUG - [PARSER] Line 32: buy, P110, 0.850
+2025-10-14 13:55:35,258 - DEBUG - [PARSER] Line 33: buy, P060, 0.920
+2025-10-14 13:55:35,259 - DEBUG - [PARSER] Line 34: buy, P068, 0.910
+2025-10-14 13:55:35,259 - DEBUG - [PARSER] Line 35: buy, P081, 0.910
+2025-10-14 13:55:35,260 - DEBUG - [PARSER] Line 36: buy, P047, 0.880
+2025-10-14 13:55:35,260 - DEBUG - [PARSER] Line 37: buy, P089, 0.880
+2025-10-14 13:55:35,260 - DEBUG - [PARSER] Line 38: buy, P102, 0.880
+2025-10-14 13:55:35,261 - DEBUG - [PARSER] Line 39: buy, P025, 0.850
+2025-10-14 13:55:35,261 - DEBUG - [PARSER] Line 40: buy, P110, 0.850
+2025-10-14 13:55:35,262 - DEBUG - [PARSER] Line 41: buy, P060, 0.920
+2025-10-14 13:55:35,262 - DEBUG - [PARSER] Line 42: buy, P068, 0.910
+2025-10-14 13:55:35,263 - DEBUG - [PARSER] Line 43: buy, P081, 0.910
+2025-10-14 13:55:35,263 - DEBUG - [PARSER] Line 44: buy, P047, 0.880
+2025-10-14 13:55:35,264 - DEBUG - [PARSER] Line 45: buy, P089, 0.880
+2025-10-14 13:55:35,264 - DEBUG - [PARSER] Line 46: buy, P102, 0.880
+2025-10-14 13:55:35,265 - DEBUG - [PARSER] Line 47: buy, P025, 0.850
+2025-10-14 13:55:35,265 - DEBUG - [PARSER] Line 48: buy, P110, 0.850
+2025-10-14 13:55:35,266 - DEBUG - [PARSER] Line 49: buy, P060, 0.920
+2025-10-14 13:55:35,266 - DEBUG - [PARSER] Line 50: buy, P068, 0.910
+2025-10-14 13:55:35,266 - DEBUG - [PARSER] Line 51: buy, P081, 0.910
+2025-10-14 13:55:35,267 - DEBUG - [PARSER] Line 52: buy, P047, 0.880
+2025-10-14 13:55:35,267 - DEBUG - [PARSER] Line 53: buy, P089, 0.880
+2025-10-14 13:55:35,268 - DEBUG - [PARSER] Line 54: buy, P102, 0.880
+2025-10-14 13:55:35,268 - DEBUG - [PARSER] Line 55: buy, P025, 0.850
+2025-10-14 13:55:35,268 - DEBUG - [PARSER] Line 56: buy, P110, 0.850
+2025-10-14 13:55:35,268 - DEBUG - [PARSER] Line 57: buy, P060, 0.920
+2025-10-14 13:55:35,269 - DEBUG - [PARSER] Line 58: buy, P068, 0.910
+2025-10-14 13:55:35,269 - DEBUG - [PARSER] Line 59: buy, P081, 0.910
+2025-10-14 13:55:35,269 - DEBUG - [PARSER] Line 60: buy, P047, 0.880
+2025-10-14 13:55:35,270 - DEBUG - [PARSER] Line 61: buy, P089, 0.880
+2025-10-14 13:55:35,270 - DEBUG - [PARSER] Line 62: buy, P102, 0.880
+2025-10-14 13:55:35,271 - DEBUG - [PARSER] Line 63: buy, P025, 0.850
+2025-10-14 13:55:35,271 - DEBUG - [PARSER] Line 64: buy, P110, 0.850
+2025-10-14 13:55:35,271 - DEBUG - [PARSER] Line 65: buy, P060, 0.920
+2025-10-14 13:55:35,272 - DEBUG - [PARSER] Line 66: buy, P068, 0.910
+2025-10-14 13:55:35,272 - DEBUG - [PARSER] Line 67: buy, P081, 0.910
+2025-10-14 13:55:35,273 - DEBUG - [PARSER] Line 68: buy, P047, 0.880
+2025-10-14 13:55:35,273 - DEBUG - [PARSER] Line 69: buy, P089, 0.880
+2025-10-14 13:55:35,273 - DEBUG - [PARSER] Line 70: buy, P102, 0.880
+2025-10-14 13:55:35,274 - INFO - [PARSER] Successfully parsed 70 decisions from 70 lines
+2025-10-14 13:55:35,274 - DEBUG - [PARSER] Mapped agent agent_anu3h0pbm -> buy
+2025-10-14 13:55:35,274 - DEBUG - [PARSER] Mapped agent agent_trcfrg117 -> buy
+2025-10-14 13:55:35,275 - DEBUG - [PARSER] Mapped agent agent_boxpzx2id -> buy
+2025-10-14 13:55:35,275 - DEBUG - [PARSER] Mapped agent agent_znz1qoqfx -> buy
+2025-10-14 13:55:35,275 - DEBUG - [PARSER] Mapped agent agent_9c6loe0te -> buy
+2025-10-14 13:55:35,276 - DEBUG - [PARSER] Mapped agent agent_14ef4o9k0 -> buy
+2025-10-14 13:55:35,276 - DEBUG - [PARSER] Mapped agent agent_v4it25u96 -> buy
+2025-10-14 13:55:35,277 - DEBUG - [PARSER] Mapped agent agent_nqpk0y2kd -> buy
+2025-10-14 13:55:35,277 - DEBUG - [PARSER] Mapped agent agent_5srnslaa5 -> buy
+2025-10-14 13:55:35,277 - DEBUG - [PARSER] Mapped agent agent_1lufluz0i -> buy
+2025-10-14 13:55:35,278 - DEBUG - [PARSER] Mapped agent agent_t0y5h4pvn -> buy
+2025-10-14 13:55:35,278 - DEBUG - [PARSER] Mapped agent agent_ccnxawddj -> buy
+2025-10-14 13:55:35,279 - DEBUG - [PARSER] Mapped agent agent_5le0p1122 -> buy
+2025-10-14 13:55:35,279 - DEBUG - [PARSER] Mapped agent agent_6pu522jxa -> buy
+2025-10-14 13:55:35,279 - DEBUG - [PARSER] Mapped agent agent_zi0wpc0wz -> buy
+2025-10-14 13:55:35,280 - DEBUG - [PARSER] Mapped agent agent_azntzcfma -> buy
+2025-10-14 13:55:35,280 - DEBUG - [PARSER] Mapped agent agent_1e9eccona -> buy
+2025-10-14 13:55:35,280 - DEBUG - [PARSER] Mapped agent agent_qb27zu208 -> buy
+2025-10-14 13:55:35,281 - DEBUG - [PARSER] Mapped agent agent_8pgz4wka9 -> buy
+2025-10-14 13:55:35,281 - DEBUG - [PARSER] Mapped agent agent_jb1r135ym -> buy
+2025-10-14 13:55:35,282 - DEBUG - [PARSER] Mapped agent agent_ojjfkzpfn -> buy
+2025-10-14 13:55:35,282 - DEBUG - [PARSER] Mapped agent agent_u2wwkeqtl -> buy
+2025-10-14 13:55:35,282 - DEBUG - [PARSER] Mapped agent agent_rrk4hqxak -> buy
+2025-10-14 13:55:35,283 - DEBUG - [PARSER] Mapped agent agent_erjmqw25g -> buy
+2025-10-14 13:55:35,283 - DEBUG - [PARSER] Mapped agent agent_82eh1jm61 -> buy
+2025-10-14 13:55:35,284 - DEBUG - [PARSER] Mapped agent agent_08r7tl7lv -> buy
+2025-10-14 13:55:35,284 - DEBUG - [PARSER] Mapped agent agent_g42iowxwz -> buy
+2025-10-14 13:55:35,284 - DEBUG - [PARSER] Mapped agent agent_46s1eum0i -> buy
+2025-10-14 13:55:35,285 - DEBUG - [PARSER] Mapped agent agent_jz60khqyz -> buy
+2025-10-14 13:55:35,285 - DEBUG - [PARSER] Mapped agent agent_mxh90nuyp -> buy
+2025-10-14 13:55:35,285 - DEBUG - [PARSER] Mapped agent agent_b68z1qrqy -> buy
+2025-10-14 13:55:35,286 - DEBUG - [PARSER] Mapped agent agent_phfhe8b8l -> buy
+2025-10-14 13:55:35,286 - DEBUG - [PARSER] Mapped agent agent_5rscmtc5s -> buy
+2025-10-14 13:55:35,286 - DEBUG - [PARSER] Mapped agent agent_iu4s421rl -> buy
+2025-10-14 13:55:35,287 - DEBUG - [PARSER] Mapped agent agent_0m7ytl2cx -> buy
+2025-10-14 13:55:35,287 - DEBUG - [PARSER] Mapped agent agent_o6sefwd9d -> buy
+2025-10-14 13:55:35,288 - DEBUG - [PARSER] Mapped agent agent_1750wghwf -> buy
+2025-10-14 13:55:35,288 - DEBUG - [PARSER] Mapped agent agent_xjggf16mk -> buy
+2025-10-14 13:55:35,288 - DEBUG - [PARSER] Mapped agent agent_vp7x0dalr -> buy
+2025-10-14 13:55:35,289 - DEBUG - [PARSER] Mapped agent agent_1hvykrju1 -> buy
+2025-10-14 13:55:35,289 - DEBUG - [PARSER] Mapped agent agent_9kqusy4yw -> buy
+2025-10-14 13:55:35,289 - DEBUG - [PARSER] Mapped agent agent_va7nhy7yj -> buy
+2025-10-14 13:55:35,290 - DEBUG - [PARSER] Mapped agent agent_63s4cyya1 -> buy
+2025-10-14 13:55:35,290 - DEBUG - [PARSER] Mapped agent agent_xhzqyg4s5 -> buy
+2025-10-14 13:55:35,290 - DEBUG - [PARSER] Mapped agent agent_rsbua9h1l -> buy
+2025-10-14 13:55:35,291 - DEBUG - [PARSER] Mapped agent agent_894qltalt -> buy
+2025-10-14 13:55:35,291 - DEBUG - [PARSER] Mapped agent agent_sq7ybmata -> buy
+2025-10-14 13:55:35,292 - DEBUG - [PARSER] Mapped agent agent_sjpwmawqr -> buy
+2025-10-14 13:55:35,292 - DEBUG - [PARSER] Mapped agent agent_jcek4lvrf -> buy
+2025-10-14 13:55:35,293 - DEBUG - [PARSER] Mapped agent agent_wtqgdlgun -> buy
+2025-10-14 13:55:35,294 - DEBUG - [PARSER] Mapped agent agent_56o0tmxx9 -> buy
+2025-10-14 13:55:35,294 - DEBUG - [PARSER] Mapped agent agent_dqqlbqyjp -> buy
+2025-10-14 13:55:35,295 - DEBUG - [PARSER] Mapped agent agent_v0cup7pa8 -> buy
+2025-10-14 13:55:35,295 - DEBUG - [PARSER] Mapped agent agent_fbqgmphqm -> buy
+2025-10-14 13:55:35,296 - DEBUG - [PARSER] Mapped agent agent_j104w1z2f -> buy
+2025-10-14 13:55:35,296 - DEBUG - [PARSER] Mapped agent agent_g3ubyhfne -> buy
+2025-10-14 13:55:35,297 - DEBUG - [PARSER] Mapped agent agent_4m3lamvie -> buy
+2025-10-14 13:55:35,297 - DEBUG - [PARSER] Mapped agent agent_38eul64n3 -> buy
+2025-10-14 13:55:35,297 - DEBUG - [PARSER] Mapped agent agent_v1ftqn4sj -> buy
+2025-10-14 13:55:35,298 - DEBUG - [PARSER] Mapped agent agent_8y9s0orhy -> buy
+2025-10-14 13:55:35,298 - DEBUG - [PARSER] Mapped agent agent_90qngxqjt -> buy
+2025-10-14 13:55:35,299 - DEBUG - [PARSER] Mapped agent agent_e36zh16ab -> buy
+2025-10-14 13:55:35,299 - DEBUG - [PARSER] Mapped agent agent_opq983k1z -> buy
+2025-10-14 13:55:35,299 - DEBUG - [PARSER] Mapped agent agent_usgm8wqqs -> buy
+2025-10-14 13:55:35,300 - DEBUG - [PARSER] Mapped agent agent_q98p53inz -> buy
+2025-10-14 13:55:35,300 - DEBUG - [PARSER] Mapped agent agent_98s6cye4q -> buy
+2025-10-14 13:55:35,301 - DEBUG - [PARSER] Mapped agent agent_nitq0k76l -> buy
+2025-10-14 13:55:35,301 - DEBUG - [PARSER] Mapped agent agent_94jl2b0lq -> buy
+2025-10-14 13:55:35,301 - DEBUG - [PARSER] Mapped agent agent_epkp3zsjv -> buy
+2025-10-14 13:55:35,302 - DEBUG - [PARSER] Mapped agent agent_jrfr80a1k -> buy
+2025-10-14 13:55:35,302 - WARNING - [PARSER] No decision for agent agent_8ffl8nym4, using default
+2025-10-14 13:55:35,302 - WARNING - [PARSER] No decision for agent agent_29t7af4ue, using default
+2025-10-14 13:55:35,303 - WARNING - [PARSER] No decision for agent agent_73v3pev7g, using default
+2025-10-14 13:55:35,303 - INFO - [PARSER] Final result: 73 decisions for 73 agents
+2025-10-14 13:55:35,303 - INFO - [PARSER] Summary: 70 buy, 3 skip, avg satisfaction: 0.850
+Processing cluster 4 with 72 agents
+2025-10-14 13:55:35,304 - INFO - Processing cluster 4 with 72 agents
+Prompt for cluster (first 300 chars): CONSUMER BEHAVIOR PREDICTION TASK
+
+MARKET CONTEXT: {"product_id":"P007","brand":"BrandA","price":52,"quality":0.9,"category":"Clothing"}
+
+CONSUMER CLUSTER:
+- Size: 72 consumers
+- Profile: moderately price-sensitive, balanced quality preference, moderately flexible, high-budget
+- Avg Price Sensitivit...
+2025-10-14 13:55:35,304 - DEBUG - Prompt for cluster (first 300 chars): CONSUMER BEHAVIOR PREDICTION TASK
+
+MARKET CONTEXT: {"product_id":"P007","brand":"BrandA","price":52,"quality":0.9,"category":"Clothing"}
+
+CONSUMER CLUSTER:
+- Size: 72 consumers
+- Profile: moderately price-sensitive, balanced quality preference, moderately flexible, high-budget
+- Avg Price Sensitivit...
+Making Gemini API call
+2025-10-14 13:55:35,305 - INFO - Making Gemini API call
+Response received. Candidates: 1
+2025-10-14 13:55:40,760 - INFO - Response received. Candidates: 1
+Candidate finish_reason: 1
+2025-10-14 13:55:40,762 - INFO - Candidate finish_reason: 1
+Raw response for cluster (72 agents): buy,P060,0.78
+buy,P060,0.77
+buy,P060,0.76
+buy,P060,0.75
+buy,P060,0.74
+buy,P060,0.73
+buy,P060,0.72
+buy,P060,0.71
+buy,P060,0.70
+buy,P060,0.69
+buy,P060,0.68
+buy,P060,0.67
+buy,P060,0.66
+buy,P060,0.65
+buy,...
+2025-10-14 13:55:40,763 - INFO - Raw response for cluster (72 agents): buy,P060,0.78
+buy,P060,0.77
+buy,P060,0.76
+buy,P060,0.75
+buy,P060,0.74
+buy,P060,0.73
+buy,P060,0.72
+buy,P060,0.71
+buy,P060,0.70
+buy,P060,0.69
+buy,P060,0.68
+buy,P060,0.67
+buy,P060,0.66
+buy,P060,0.65
+buy,...
+2025-10-14 13:55:40,764 - INFO - [PARSER] Processing 72 output lines for 72 agents
+2025-10-14 13:55:40,765 - INFO - [PARSER] Valid product IDs: ['P060', 'P081', 'P089', 'P068', 'P123']...
+2025-10-14 13:55:40,765 - DEBUG - [PARSER] Line 1: buy, P060, 0.780
+2025-10-14 13:55:40,766 - DEBUG - [PARSER] Line 2: buy, P060, 0.770
+2025-10-14 13:55:40,767 - DEBUG - [PARSER] Line 3: buy, P060, 0.760
+2025-10-14 13:55:40,767 - DEBUG - [PARSER] Line 4: buy, P060, 0.750
+2025-10-14 13:55:40,768 - DEBUG - [PARSER] Line 5: buy, P060, 0.740
+2025-10-14 13:55:40,769 - DEBUG - [PARSER] Line 6: buy, P060, 0.730
+2025-10-14 13:55:40,769 - DEBUG - [PARSER] Line 7: buy, P060, 0.720
+2025-10-14 13:55:40,770 - DEBUG - [PARSER] Line 8: buy, P060, 0.710
+2025-10-14 13:55:40,771 - DEBUG - [PARSER] Line 9: buy, P060, 0.700
+2025-10-14 13:55:40,771 - DEBUG - [PARSER] Line 10: buy, P060, 0.690
+2025-10-14 13:55:40,772 - DEBUG - [PARSER] Line 11: buy, P060, 0.680
+2025-10-14 13:55:40,772 - DEBUG - [PARSER] Line 12: buy, P060, 0.670
+2025-10-14 13:55:40,773 - DEBUG - [PARSER] Line 13: buy, P060, 0.660
+2025-10-14 13:55:40,774 - DEBUG - [PARSER] Line 14: buy, P060, 0.650
+2025-10-14 13:55:40,774 - DEBUG - [PARSER] Line 15: buy, P060, 0.640
+2025-10-14 13:55:40,775 - DEBUG - [PARSER] Line 16: buy, P060, 0.630
+2025-10-14 13:55:40,775 - DEBUG - [PARSER] Line 17: buy, P060, 0.620
+2025-10-14 13:55:40,776 - DEBUG - [PARSER] Line 18: buy, P060, 0.610
+2025-10-14 13:55:40,776 - DEBUG - [PARSER] Line 19: buy, P060, 0.600
+2025-10-14 13:55:40,777 - DEBUG - [PARSER] Line 20: buy, P060, 0.590
+2025-10-14 13:55:40,778 - DEBUG - [PARSER] Line 21: buy, P060, 0.580
+2025-10-14 13:55:40,778 - DEBUG - [PARSER] Line 22: buy, P060, 0.570
+2025-10-14 13:55:40,778 - DEBUG - [PARSER] Line 23: buy, P060, 0.560
+2025-10-14 13:55:40,779 - DEBUG - [PARSER] Line 24: buy, P060, 0.550
+2025-10-14 13:55:40,779 - DEBUG - [PARSER] Line 25: buy, P060, 0.540
+2025-10-14 13:55:40,780 - DEBUG - [PARSER] Line 26: buy, P060, 0.530
+2025-10-14 13:55:40,780 - DEBUG - [PARSER] Line 27: buy, P060, 0.520
+2025-10-14 13:55:40,781 - DEBUG - [PARSER] Line 28: buy, P060, 0.510
+2025-10-14 13:55:40,781 - DEBUG - [PARSER] Line 29: buy, P060, 0.500
+2025-10-14 13:55:40,782 - DEBUG - [PARSER] Line 30: buy, P060, 0.490
+2025-10-14 13:55:40,782 - DEBUG - [PARSER] Line 31: buy, P068, 0.780
+2025-10-14 13:55:40,783 - DEBUG - [PARSER] Line 32: buy, P068, 0.770
+2025-10-14 13:55:40,784 - DEBUG - [PARSER] Line 33: buy, P068, 0.760
+2025-10-14 13:55:40,784 - DEBUG - [PARSER] Line 34: buy, P068, 0.750
+2025-10-14 13:55:40,784 - DEBUG - [PARSER] Line 35: buy, P068, 0.740
+2025-10-14 13:55:40,785 - DEBUG - [PARSER] Line 36: buy, P068, 0.730
+2025-10-14 13:55:40,785 - DEBUG - [PARSER] Line 37: buy, P068, 0.720
+2025-10-14 13:55:40,786 - DEBUG - [PARSER] Line 38: buy, P068, 0.710
+2025-10-14 13:55:40,786 - DEBUG - [PARSER] Line 39: buy, P068, 0.700
+2025-10-14 13:55:40,787 - DEBUG - [PARSER] Line 40: buy, P068, 0.690
+2025-10-14 13:55:40,787 - DEBUG - [PARSER] Line 41: buy, P068, 0.680
+2025-10-14 13:55:40,788 - DEBUG - [PARSER] Line 42: buy, P068, 0.670
+2025-10-14 13:55:40,788 - DEBUG - [PARSER] Line 43: buy, P068, 0.660
+2025-10-14 13:55:40,789 - DEBUG - [PARSER] Line 44: buy, P068, 0.650
+2025-10-14 13:55:40,789 - DEBUG - [PARSER] Line 45: buy, P068, 0.640
+2025-10-14 13:55:40,790 - DEBUG - [PARSER] Line 46: buy, P068, 0.630
+2025-10-14 13:55:40,790 - DEBUG - [PARSER] Line 47: buy, P068, 0.620
+2025-10-14 13:55:40,791 - DEBUG - [PARSER] Line 48: buy, P068, 0.610
+2025-10-14 13:55:40,791 - DEBUG - [PARSER] Line 49: buy, P068, 0.600
+2025-10-14 13:55:40,792 - DEBUG - [PARSER] Line 50: buy, P068, 0.590
+2025-10-14 13:55:40,792 - DEBUG - [PARSER] Line 51: buy, P068, 0.580
+2025-10-14 13:55:40,793 - DEBUG - [PARSER] Line 52: buy, P068, 0.570
+2025-10-14 13:55:40,794 - DEBUG - [PARSER] Line 53: buy, P068, 0.560
+2025-10-14 13:55:40,794 - DEBUG - [PARSER] Line 54: buy, P068, 0.550
+2025-10-14 13:55:40,795 - DEBUG - [PARSER] Line 55: buy, P068, 0.540
+2025-10-14 13:55:40,795 - DEBUG - [PARSER] Line 56: buy, P068, 0.530
+2025-10-14 13:55:40,795 - DEBUG - [PARSER] Line 57: buy, P068, 0.520
+2025-10-14 13:55:40,796 - DEBUG - [PARSER] Line 58: buy, P068, 0.510
+2025-10-14 13:55:40,796 - DEBUG - [PARSER] Line 59: buy, P068, 0.500
+2025-10-14 13:55:40,797 - DEBUG - [PARSER] Line 60: buy, P068, 0.490
+2025-10-14 13:55:40,797 - DEBUG - [PARSER] Line 61: not buy, None, 0.000
+2025-10-14 13:55:40,798 - DEBUG - [PARSER] Line 62: not buy, None, 0.000
+2025-10-14 13:55:40,799 - DEBUG - [PARSER] Line 63: not buy, None, 0.000
+2025-10-14 13:55:40,799 - DEBUG - [PARSER] Line 64: not buy, None, 0.000
+2025-10-14 13:55:40,800 - DEBUG - [PARSER] Line 65: not buy, None, 0.000
+2025-10-14 13:55:40,800 - DEBUG - [PARSER] Line 66: not buy, None, 0.000
+2025-10-14 13:55:40,801 - DEBUG - [PARSER] Line 67: not buy, None, 0.000
+2025-10-14 13:55:40,801 - DEBUG - [PARSER] Line 68: not buy, None, 0.000
+2025-10-14 13:55:40,802 - DEBUG - [PARSER] Line 69: not buy, None, 0.000
+2025-10-14 13:55:40,803 - DEBUG - [PARSER] Line 70: not buy, None, 0.000
+2025-10-14 13:55:40,803 - DEBUG - [PARSER] Line 71: not buy, None, 0.000
+2025-10-14 13:55:40,804 - DEBUG - [PARSER] Line 72: not buy, None, 0.000
+2025-10-14 13:55:40,804 - INFO - [PARSER] Successfully parsed 72 decisions from 72 lines
+2025-10-14 13:55:40,805 - DEBUG - [PARSER] Mapped agent agent_9y1upuzhn -> buy
+2025-10-14 13:55:40,805 - DEBUG - [PARSER] Mapped agent agent_26yvfbjhf -> buy
+2025-10-14 13:55:40,806 - DEBUG - [PARSER] Mapped agent agent_nveva163h -> buy
+2025-10-14 13:55:40,807 - DEBUG - [PARSER] Mapped agent agent_2476vui80 -> buy
+2025-10-14 13:55:40,808 - DEBUG - [PARSER] Mapped agent agent_a1mpkwj61 -> buy
+2025-10-14 13:55:40,808 - DEBUG - [PARSER] Mapped agent agent_s2msnxi3x -> buy
+2025-10-14 13:55:40,809 - DEBUG - [PARSER] Mapped agent agent_9xr2n03y5 -> buy
+2025-10-14 13:55:40,809 - DEBUG - [PARSER] Mapped agent agent_nhcn61j1t -> buy
+2025-10-14 13:55:40,810 - DEBUG - [PARSER] Mapped agent agent_kr4w91oon -> buy
+2025-10-14 13:55:40,811 - DEBUG - [PARSER] Mapped agent agent_g1serx65x -> buy
+2025-10-14 13:55:40,811 - DEBUG - [PARSER] Mapped agent agent_t2mms4ddp -> buy
+2025-10-14 13:55:40,812 - DEBUG - [PARSER] Mapped agent agent_v2c75trjz -> buy
+2025-10-14 13:55:40,812 - DEBUG - [PARSER] Mapped agent agent_xklqd34pt -> buy
+2025-10-14 13:55:40,812 - DEBUG - [PARSER] Mapped agent agent_jpbmp5dvx -> buy
+2025-10-14 13:55:40,813 - DEBUG - [PARSER] Mapped agent agent_98qsmx32m -> buy
+2025-10-14 13:55:40,813 - DEBUG - [PARSER] Mapped agent agent_liw2y42n8 -> buy
+2025-10-14 13:55:40,813 - DEBUG - [PARSER] Mapped agent agent_14l0nzzw7 -> buy
+2025-10-14 13:55:40,813 - DEBUG - [PARSER] Mapped agent agent_l21nuknj7 -> buy
+2025-10-14 13:55:40,814 - DEBUG - [PARSER] Mapped agent agent_a10xt5m4q -> buy
+2025-10-14 13:55:40,814 - DEBUG - [PARSER] Mapped agent agent_duo9y16ga -> buy
+2025-10-14 13:55:40,815 - DEBUG - [PARSER] Mapped agent agent_no3ttfcg8 -> buy
+2025-10-14 13:55:40,815 - DEBUG - [PARSER] Mapped agent agent_sikmazm9g -> buy
+2025-10-14 13:55:40,816 - DEBUG - [PARSER] Mapped agent agent_y8sur4p6a -> buy
+2025-10-14 13:55:40,816 - DEBUG - [PARSER] Mapped agent agent_9vp86msl2 -> buy
+2025-10-14 13:55:40,817 - DEBUG - [PARSER] Mapped agent agent_xutl55bft -> buy
+2025-10-14 13:55:40,817 - DEBUG - [PARSER] Mapped agent agent_nxgoi2apb -> buy
+2025-10-14 13:55:40,818 - DEBUG - [PARSER] Mapped agent agent_muys538xw -> buy
+2025-10-14 13:55:40,819 - DEBUG - [PARSER] Mapped agent agent_ygmhvsnoq -> buy
+2025-10-14 13:55:40,819 - DEBUG - [PARSER] Mapped agent agent_873j67tsa -> buy
+2025-10-14 13:55:40,820 - DEBUG - [PARSER] Mapped agent agent_pu5ss8are -> buy
+2025-10-14 13:55:40,820 - DEBUG - [PARSER] Mapped agent agent_1wzj1cpxb -> buy
+2025-10-14 13:55:40,821 - DEBUG - [PARSER] Mapped agent agent_lmh7h9ah1 -> buy
+2025-10-14 13:55:40,821 - DEBUG - [PARSER] Mapped agent agent_11bozndyn -> buy
+2025-10-14 13:55:40,822 - DEBUG - [PARSER] Mapped agent agent_f98q672t0 -> buy
+2025-10-14 13:55:40,822 - DEBUG - [PARSER] Mapped agent agent_wlbmyfjps -> buy
+2025-10-14 13:55:40,823 - DEBUG - [PARSER] Mapped agent agent_vtfs6b5wd -> buy
+2025-10-14 13:55:40,823 - DEBUG - [PARSER] Mapped agent agent_fqfbnu277 -> buy
+2025-10-14 13:55:40,823 - DEBUG - [PARSER] Mapped agent agent_fbjdd2nvh -> buy
+2025-10-14 13:55:40,824 - DEBUG - [PARSER] Mapped agent agent_9icd5gcn3 -> buy
+2025-10-14 13:55:40,824 - DEBUG - [PARSER] Mapped agent agent_oza7tj463 -> buy
+2025-10-14 13:55:40,825 - DEBUG - [PARSER] Mapped agent agent_h2qhj4mgi -> buy
+2025-10-14 13:55:40,825 - DEBUG - [PARSER] Mapped agent agent_qhuqixwa8 -> buy
+2025-10-14 13:55:40,826 - DEBUG - [PARSER] Mapped agent agent_smdiwlo6m -> buy
+2025-10-14 13:55:40,826 - DEBUG - [PARSER] Mapped agent agent_okxvvgh8y -> buy
+2025-10-14 13:55:40,827 - DEBUG - [PARSER] Mapped agent agent_tyflo8ikf -> buy
+2025-10-14 13:55:40,827 - DEBUG - [PARSER] Mapped agent agent_9nxxymxl9 -> buy
+2025-10-14 13:55:40,828 - DEBUG - [PARSER] Mapped agent agent_fg6logclj -> buy
+2025-10-14 13:55:40,829 - DEBUG - [PARSER] Mapped agent agent_dcbxh2df6 -> buy
+2025-10-14 13:55:40,829 - DEBUG - [PARSER] Mapped agent agent_1wlnkudb3 -> buy
+2025-10-14 13:55:40,830 - DEBUG - [PARSER] Mapped agent agent_qwes0zq12 -> buy
+2025-10-14 13:55:40,830 - DEBUG - [PARSER] Mapped agent agent_d81b4g2a9 -> buy
+2025-10-14 13:55:40,831 - DEBUG - [PARSER] Mapped agent agent_b871nei9f -> buy
+2025-10-14 13:55:40,831 - DEBUG - [PARSER] Mapped agent agent_9he7mg4it -> buy
+2025-10-14 13:55:40,832 - DEBUG - [PARSER] Mapped agent agent_wwjjvcioo -> buy
+2025-10-14 13:55:40,833 - DEBUG - [PARSER] Mapped agent agent_qq7df4unn -> buy
+2025-10-14 13:55:40,833 - DEBUG - [PARSER] Mapped agent agent_opn04yztg -> buy
+2025-10-14 13:55:40,834 - DEBUG - [PARSER] Mapped agent agent_dtri7lzv7 -> buy
+2025-10-14 13:55:40,834 - DEBUG - [PARSER] Mapped agent agent_0febhx7s3 -> buy
+2025-10-14 13:55:40,835 - DEBUG - [PARSER] Mapped agent agent_miw45mdyl -> buy
+2025-10-14 13:55:40,835 - DEBUG - [PARSER] Mapped agent agent_81t1n8ig8 -> buy
+2025-10-14 13:55:40,835 - DEBUG - [PARSER] Mapped agent agent_c14gmmsmk -> not buy
+2025-10-14 13:55:40,836 - DEBUG - [PARSER] Mapped agent agent_j04nmp531 -> not buy
+2025-10-14 13:55:40,837 - DEBUG - [PARSER] Mapped agent agent_hu60qdldd -> not buy
+2025-10-14 13:55:40,837 - DEBUG - [PARSER] Mapped agent agent_b7nzq62p0 -> not buy
+2025-10-14 13:55:40,838 - DEBUG - [PARSER] Mapped agent agent_5s4zhulin -> not buy
+2025-10-14 13:55:40,838 - DEBUG - [PARSER] Mapped agent agent_l7wwfuav7 -> not buy
+2025-10-14 13:55:40,839 - DEBUG - [PARSER] Mapped agent agent_ai40gyvz0 -> not buy
+2025-10-14 13:55:40,839 - DEBUG - [PARSER] Mapped agent agent_j4etkwzfb -> not buy
+2025-10-14 13:55:40,839 - DEBUG - [PARSER] Mapped agent agent_fdfvptih5 -> not buy
+2025-10-14 13:55:40,840 - DEBUG - [PARSER] Mapped agent agent_6qmbcxxyp -> not buy
+2025-10-14 13:55:40,840 - DEBUG - [PARSER] Mapped agent agent_m32ax9kir -> not buy
+2025-10-14 13:55:40,840 - DEBUG - [PARSER] Mapped agent agent_b22vnbrfn -> not buy
+2025-10-14 13:55:40,841 - INFO - [PARSER] Final result: 72 decisions for 72 agents
+2025-10-14 13:55:40,841 - INFO - [PARSER] Summary: 60 buy, 12 skip, avg satisfaction: 0.529
+Processing cluster 0 with 72 agents
+2025-10-14 13:55:40,844 - INFO - Processing cluster 0 with 72 agents
+Prompt for cluster (first 300 chars): CONSUMER BEHAVIOR PREDICTION TASK
+
+MARKET CONTEXT: {"product_id":"P007","brand":"BrandA","price":52,"quality":0.9,"category":"Clothing"}
+
+CONSUMER CLUSTER:
+- Size: 72 consumers
+- Profile: highly price-sensitive, less quality-concerned, highly flexible with alternatives, high-budget
+- Avg Price Sensi...
+2025-10-14 13:55:40,845 - DEBUG - Prompt for cluster (first 300 chars): CONSUMER BEHAVIOR PREDICTION TASK
+
+MARKET CONTEXT: {"product_id":"P007","brand":"BrandA","price":52,"quality":0.9,"category":"Clothing"}
+
+CONSUMER CLUSTER:
+- Size: 72 consumers
+- Profile: highly price-sensitive, less quality-concerned, highly flexible with alternatives, high-budget
+- Avg Price Sensi...
+Making Gemini API call
+2025-10-14 13:55:40,846 - INFO - Making Gemini API call
+Response received. Candidates: 1
+2025-10-14 13:55:44,294 - INFO - Response received. Candidates: 1
+Candidate finish_reason: 1
+2025-10-14 13:55:44,296 - INFO - Candidate finish_reason: 1
+Raw response for cluster (72 agents): buy,P060,0.88
+buy,P060,0.87
+buy,P060,0.89
+buy,P060,0.86
+buy,P060,0.85
+buy,P060,0.90
+buy,P060,0.84
+buy,P060,0.91
+buy,P060,0.83
+buy,P060,0.92
+buy,P060,0.82
+buy,P060,0.93
+buy,P060,0.81
+buy,P060,0.94
+buy,...
+2025-10-14 13:55:44,297 - INFO - Raw response for cluster (72 agents): buy,P060,0.88
+buy,P060,0.87
+buy,P060,0.89
+buy,P060,0.86
+buy,P060,0.85
+buy,P060,0.90
+buy,P060,0.84
+buy,P060,0.91
+buy,P060,0.83
+buy,P060,0.92
+buy,P060,0.82
+buy,P060,0.93
+buy,P060,0.81
+buy,P060,0.94
+buy,...
+2025-10-14 13:55:44,298 - INFO - [PARSER] Processing 68 output lines for 72 agents
+2025-10-14 13:55:44,298 - INFO - [PARSER] Valid product IDs: ['P060', 'P081', 'P089', 'P068', 'P123']...
+2025-10-14 13:55:44,299 - DEBUG - [PARSER] Line 1: buy, P060, 0.880
+2025-10-14 13:55:44,300 - DEBUG - [PARSER] Line 2: buy, P060, 0.870
+2025-10-14 13:55:44,300 - DEBUG - [PARSER] Line 3: buy, P060, 0.890
+2025-10-14 13:55:44,301 - DEBUG - [PARSER] Line 4: buy, P060, 0.860
+2025-10-14 13:55:44,301 - DEBUG - [PARSER] Line 5: buy, P060, 0.850
+2025-10-14 13:55:44,302 - DEBUG - [PARSER] Line 6: buy, P060, 0.900
+2025-10-14 13:55:44,302 - DEBUG - [PARSER] Line 7: buy, P060, 0.840
+2025-10-14 13:55:44,303 - DEBUG - [PARSER] Line 8: buy, P060, 0.910
+2025-10-14 13:55:44,304 - DEBUG - [PARSER] Line 9: buy, P060, 0.830
+2025-10-14 13:55:44,304 - DEBUG - [PARSER] Line 10: buy, P060, 0.920
+2025-10-14 13:55:44,305 - DEBUG - [PARSER] Line 11: buy, P060, 0.820
+2025-10-14 13:55:44,306 - DEBUG - [PARSER] Line 12: buy, P060, 0.930
+2025-10-14 13:55:44,306 - DEBUG - [PARSER] Line 13: buy, P060, 0.810
+2025-10-14 13:55:44,307 - DEBUG - [PARSER] Line 14: buy, P060, 0.940
+2025-10-14 13:55:44,308 - DEBUG - [PARSER] Line 15: buy, P060, 0.800
+2025-10-14 13:55:44,308 - DEBUG - [PARSER] Line 16: buy, P060, 0.950
+2025-10-14 13:55:44,309 - DEBUG - [PARSER] Line 17: buy, P060, 0.790
+2025-10-14 13:55:44,309 - DEBUG - [PARSER] Line 18: buy, P060, 0.960
+2025-10-14 13:55:44,310 - DEBUG - [PARSER] Line 19: buy, P060, 0.780
+2025-10-14 13:55:44,310 - DEBUG - [PARSER] Line 20: buy, P060, 0.970
+2025-10-14 13:55:44,311 - DEBUG - [PARSER] Line 21: buy, P060, 0.770
+2025-10-14 13:55:44,311 - DEBUG - [PARSER] Line 22: buy, P060, 0.980
+2025-10-14 13:55:44,312 - DEBUG - [PARSER] Line 23: buy, P060, 0.760
+2025-10-14 13:55:44,312 - DEBUG - [PARSER] Line 24: buy, P060, 0.990
+2025-10-14 13:55:44,313 - DEBUG - [PARSER] Line 25: buy, P060, 0.750
+2025-10-14 13:55:44,314 - DEBUG - [PARSER] Line 26: buy, P060, 1.000
+2025-10-14 13:55:44,314 - DEBUG - [PARSER] Line 27: buy, P068, 0.740
+2025-10-14 13:55:44,315 - DEBUG - [PARSER] Line 28: buy, P068, 0.730
+2025-10-14 13:55:44,315 - DEBUG - [PARSER] Line 29: buy, P068, 0.720
+2025-10-14 13:55:44,316 - DEBUG - [PARSER] Line 30: buy, P068, 0.710
+2025-10-14 13:55:44,317 - DEBUG - [PARSER] Line 31: buy, P068, 0.700
+2025-10-14 13:55:44,317 - DEBUG - [PARSER] Line 32: buy, P068, 0.690
+2025-10-14 13:55:44,317 - DEBUG - [PARSER] Line 33: buy, P068, 0.680
+2025-10-14 13:55:44,318 - DEBUG - [PARSER] Line 34: buy, P068, 0.670
+2025-10-14 13:55:44,319 - DEBUG - [PARSER] Line 35: buy, P068, 0.660
+2025-10-14 13:55:44,319 - DEBUG - [PARSER] Line 36: buy, P068, 0.650
+2025-10-14 13:55:44,320 - DEBUG - [PARSER] Line 37: buy, P068, 0.640
+2025-10-14 13:55:44,320 - DEBUG - [PARSER] Line 38: buy, P068, 0.630
+2025-10-14 13:55:44,321 - DEBUG - [PARSER] Line 39: buy, P068, 0.620
+2025-10-14 13:55:44,321 - DEBUG - [PARSER] Line 40: buy, P068, 0.610
+2025-10-14 13:55:44,322 - DEBUG - [PARSER] Line 41: buy, P068, 0.600
+2025-10-14 13:55:44,322 - DEBUG - [PARSER] Line 42: buy, P068, 0.590
+2025-10-14 13:55:44,323 - DEBUG - [PARSER] Line 43: buy, P068, 0.580
+2025-10-14 13:55:44,323 - DEBUG - [PARSER] Line 44: buy, P068, 0.570
+2025-10-14 13:55:44,324 - DEBUG - [PARSER] Line 45: buy, P068, 0.560
+2025-10-14 13:55:44,324 - DEBUG - [PARSER] Line 46: buy, P068, 0.550
+2025-10-14 13:55:44,325 - DEBUG - [PARSER] Line 47: buy, P068, 0.540
+2025-10-14 13:55:44,325 - DEBUG - [PARSER] Line 48: buy, P068, 0.530
+2025-10-14 13:55:44,326 - DEBUG - [PARSER] Line 49: buy, P068, 0.520
+2025-10-14 13:55:44,326 - DEBUG - [PARSER] Line 50: buy, P068, 0.510
+2025-10-14 13:55:44,327 - DEBUG - [PARSER] Line 51: not buy, None, 0.000
+2025-10-14 13:55:44,327 - DEBUG - [PARSER] Line 52: not buy, None, 0.000
+2025-10-14 13:55:44,327 - DEBUG - [PARSER] Line 53: not buy, None, 0.000
+2025-10-14 13:55:44,328 - DEBUG - [PARSER] Line 54: not buy, None, 0.000
+2025-10-14 13:55:44,328 - DEBUG - [PARSER] Line 55: not buy, None, 0.000
+2025-10-14 13:55:44,329 - DEBUG - [PARSER] Line 56: not buy, None, 0.000
+2025-10-14 13:55:44,329 - DEBUG - [PARSER] Line 57: not buy, None, 0.000
+2025-10-14 13:55:44,330 - DEBUG - [PARSER] Line 58: not buy, None, 0.000
+2025-10-14 13:55:44,331 - DEBUG - [PARSER] Line 59: not buy, None, 0.000
+2025-10-14 13:55:44,331 - DEBUG - [PARSER] Line 60: not buy, None, 0.000
+2025-10-14 13:55:44,332 - DEBUG - [PARSER] Line 61: not buy, None, 0.000
+2025-10-14 13:55:44,333 - DEBUG - [PARSER] Line 62: not buy, None, 0.000
+2025-10-14 13:55:44,333 - DEBUG - [PARSER] Line 63: not buy, None, 0.000
+2025-10-14 13:55:44,334 - DEBUG - [PARSER] Line 64: not buy, None, 0.000
+2025-10-14 13:55:44,334 - DEBUG - [PARSER] Line 65: not buy, None, 0.000
+2025-10-14 13:55:44,335 - DEBUG - [PARSER] Line 66: not buy, None, 0.000
+2025-10-14 13:55:44,335 - DEBUG - [PARSER] Line 67: not buy, None, 0.000
+2025-10-14 13:55:44,336 - DEBUG - [PARSER] Line 68: not buy, None, 0.000
+2025-10-14 13:55:44,336 - INFO - [PARSER] Successfully parsed 68 decisions from 68 lines
+2025-10-14 13:55:44,337 - DEBUG - [PARSER] Mapped agent agent_ph0y2pt4s -> buy
+2025-10-14 13:55:44,337 - DEBUG - [PARSER] Mapped agent agent_fcr6p446o -> buy
+2025-10-14 13:55:44,338 - DEBUG - [PARSER] Mapped agent agent_8ju3wxugf -> buy
+2025-10-14 13:55:44,338 - DEBUG - [PARSER] Mapped agent agent_54gayhtur -> buy
+2025-10-14 13:55:44,339 - DEBUG - [PARSER] Mapped agent agent_zsl64zovo -> buy
+2025-10-14 13:55:44,339 - DEBUG - [PARSER] Mapped agent agent_ao7nyormz -> buy
+2025-10-14 13:55:44,340 - DEBUG - [PARSER] Mapped agent agent_lbc4pt351 -> buy
+2025-10-14 13:55:44,340 - DEBUG - [PARSER] Mapped agent agent_efzbpwmcz -> buy
+2025-10-14 13:55:44,341 - DEBUG - [PARSER] Mapped agent agent_0a8wym65c -> buy
+2025-10-14 13:55:44,341 - DEBUG - [PARSER] Mapped agent agent_0b57u0yb0 -> buy
+2025-10-14 13:55:44,342 - DEBUG - [PARSER] Mapped agent agent_gl7i004my -> buy
+2025-10-14 13:55:44,342 - DEBUG - [PARSER] Mapped agent agent_f7yw5ee1y -> buy
+2025-10-14 13:55:44,342 - DEBUG - [PARSER] Mapped agent agent_70tf8452h -> buy
+2025-10-14 13:55:44,343 - DEBUG - [PARSER] Mapped agent agent_maynvksbd -> buy
+2025-10-14 13:55:44,343 - DEBUG - [PARSER] Mapped agent agent_5yf5hff81 -> buy
+2025-10-14 13:55:44,344 - DEBUG - [PARSER] Mapped agent agent_2ajbdr57j -> buy
+2025-10-14 13:55:44,344 - DEBUG - [PARSER] Mapped agent agent_lyv4pcf2i -> buy
+2025-10-14 13:55:44,345 - DEBUG - [PARSER] Mapped agent agent_c3c4sgmbs -> buy
+2025-10-14 13:55:44,345 - DEBUG - [PARSER] Mapped agent agent_igz7aawb0 -> buy
+2025-10-14 13:55:44,346 - DEBUG - [PARSER] Mapped agent agent_couqudr6a -> buy
+2025-10-14 13:55:44,346 - DEBUG - [PARSER] Mapped agent agent_1bzkguq7t -> buy
+2025-10-14 13:55:44,347 - DEBUG - [PARSER] Mapped agent agent_fql7o6zln -> buy
+2025-10-14 13:55:44,347 - DEBUG - [PARSER] Mapped agent agent_hatmk8coq -> buy
+2025-10-14 13:55:44,348 - DEBUG - [PARSER] Mapped agent agent_dnhwv9qe4 -> buy
+2025-10-14 13:55:44,348 - DEBUG - [PARSER] Mapped agent agent_inmn1pa7s -> buy
+2025-10-14 13:55:44,349 - DEBUG - [PARSER] Mapped agent agent_7coivov81 -> buy
+2025-10-14 13:55:44,349 - DEBUG - [PARSER] Mapped agent agent_t06jowrn6 -> buy
+2025-10-14 13:55:44,350 - DEBUG - [PARSER] Mapped agent agent_23nkvrcr8 -> buy
+2025-10-14 13:55:44,350 - DEBUG - [PARSER] Mapped agent agent_3jcgvx82c -> buy
+2025-10-14 13:55:44,351 - DEBUG - [PARSER] Mapped agent agent_g0fmor9ae -> buy
+2025-10-14 13:55:44,351 - DEBUG - [PARSER] Mapped agent agent_8m6syk7lu -> buy
+2025-10-14 13:55:44,352 - DEBUG - [PARSER] Mapped agent agent_isyevemr1 -> buy
+2025-10-14 13:55:44,352 - DEBUG - [PARSER] Mapped agent agent_ubevy1hy9 -> buy
+2025-10-14 13:55:44,353 - DEBUG - [PARSER] Mapped agent agent_7wd2nu6cj -> buy
+2025-10-14 13:55:44,354 - DEBUG - [PARSER] Mapped agent agent_0v9k436co -> buy
+2025-10-14 13:55:44,354 - DEBUG - [PARSER] Mapped agent agent_0v9pta367 -> buy
+2025-10-14 13:55:44,355 - DEBUG - [PARSER] Mapped agent agent_ftcrqv7r2 -> buy
+2025-10-14 13:55:44,355 - DEBUG - [PARSER] Mapped agent agent_5lguujhrp -> buy
+2025-10-14 13:55:44,356 - DEBUG - [PARSER] Mapped agent agent_9te05kzf9 -> buy
+2025-10-14 13:55:44,356 - DEBUG - [PARSER] Mapped agent agent_4w7juubb1 -> buy
+2025-10-14 13:55:44,356 - DEBUG - [PARSER] Mapped agent agent_eos6xafue -> buy
+2025-10-14 13:55:44,357 - DEBUG - [PARSER] Mapped agent agent_fxci366no -> buy
+2025-10-14 13:55:44,357 - DEBUG - [PARSER] Mapped agent agent_utopqrax3 -> buy
+2025-10-14 13:55:44,358 - DEBUG - [PARSER] Mapped agent agent_392ky7pt8 -> buy
+2025-10-14 13:55:44,358 - DEBUG - [PARSER] Mapped agent agent_exnhompmt -> buy
+2025-10-14 13:55:44,359 - DEBUG - [PARSER] Mapped agent agent_w6yc6tkdd -> buy
+2025-10-14 13:55:44,359 - DEBUG - [PARSER] Mapped agent agent_84x1r85bh -> buy
+2025-10-14 13:55:44,360 - DEBUG - [PARSER] Mapped agent agent_ms44jn0we -> buy
+2025-10-14 13:55:44,360 - DEBUG - [PARSER] Mapped agent agent_jc6kav4uk -> buy
+2025-10-14 13:55:44,361 - DEBUG - [PARSER] Mapped agent agent_hhd6dcfhl -> buy
+2025-10-14 13:55:44,361 - DEBUG - [PARSER] Mapped agent agent_n9o99wexj -> not buy
+2025-10-14 13:55:44,361 - DEBUG - [PARSER] Mapped agent agent_g2oyg62dr -> not buy
+2025-10-14 13:55:44,362 - DEBUG - [PARSER] Mapped agent agent_o6pm9sgsa -> not buy
+2025-10-14 13:55:44,362 - DEBUG - [PARSER] Mapped agent agent_xoobo1cho -> not buy
+2025-10-14 13:55:44,363 - DEBUG - [PARSER] Mapped agent agent_c4k97ao2z -> not buy
+2025-10-14 13:55:44,363 - DEBUG - [PARSER] Mapped agent agent_7itww49a7 -> not buy
+2025-10-14 13:55:44,363 - DEBUG - [PARSER] Mapped agent agent_rjqd0tiel -> not buy
+2025-10-14 13:55:44,364 - DEBUG - [PARSER] Mapped agent agent_l5bxlc2j4 -> not buy
+2025-10-14 13:55:44,364 - DEBUG - [PARSER] Mapped agent agent_6j46i6s9c -> not buy
+2025-10-14 13:55:44,364 - DEBUG - [PARSER] Mapped agent agent_18d6yglj8 -> not buy
+2025-10-14 13:55:44,365 - DEBUG - [PARSER] Mapped agent agent_uqlf1wkjt -> not buy
+2025-10-14 13:55:44,365 - DEBUG - [PARSER] Mapped agent agent_v0njuojdm -> not buy
+2025-10-14 13:55:44,366 - DEBUG - [PARSER] Mapped agent agent_9vnkepnnk -> not buy
+2025-10-14 13:55:44,366 - DEBUG - [PARSER] Mapped agent agent_7483qlvd2 -> not buy
+2025-10-14 13:55:44,366 - DEBUG - [PARSER] Mapped agent agent_9jp77iblx -> not buy
+2025-10-14 13:55:44,367 - DEBUG - [PARSER] Mapped agent agent_scbz5s98r -> not buy
+2025-10-14 13:55:44,367 - DEBUG - [PARSER] Mapped agent agent_wkgas1nh2 -> not buy
+2025-10-14 13:55:44,368 - DEBUG - [PARSER] Mapped agent agent_g0cngvjca -> not buy
+2025-10-14 13:55:44,368 - WARNING - [PARSER] No decision for agent agent_8yfq331sd, using default
+2025-10-14 13:55:44,368 - WARNING - [PARSER] No decision for agent agent_0r3l1x23b, using default
+2025-10-14 13:55:44,369 - WARNING - [PARSER] No decision for agent agent_m4bz3o0d0, using default
+2025-10-14 13:55:44,369 - WARNING - [PARSER] No decision for agent agent_v0vn3cg41, using default
+2025-10-14 13:55:44,370 - INFO - [PARSER] Final result: 72 decisions for 72 agents
+2025-10-14 13:55:44,370 - INFO - [PARSER] Summary: 50 buy, 22 skip, avg satisfaction: 0.524
+Completed clustered prediction: 439 decisions from 6 clusters
+2025-10-14 13:55:44,370 - INFO - Completed clustered prediction: 439 decisions from 6 clusters
+Clustered prediction completed: 439 decisions from 6 clusters
+2025-10-14 13:55:44,372 - INFO - Clustered prediction completed: 439 decisions from 6 clusters
+2025-10-14 13:55:44,372 - INFO - Successfully processed 439 decisions
+2025-10-14 13:55:44,373 - INFO - Prediction completed in 29.7s. Decisions: 439/439
+2025-10-14 13:55:44,389 - INFO - 127.0.0.1 - - [14/Oct/2025 13:55:44] "POST /predict HTTP/1.1" 200 -

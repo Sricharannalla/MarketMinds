@@ -1,0 +1,1028 @@
+[DEBUG] Price calc for P131: price=$65, normalized=0.650, sensitivity=0.400
+[DEBUG] Product P131 (Clothing, $65): score=0.893 (price=0.610, quality=1.235, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Agent agent_8ffl8nym4 decision: buy P060 (score=0.929, threshold=0.45)
+[DEBUG] Agent agent_1fsdmjcfh evaluating 10 products with comprehensive analysis
+[DEBUG] Price calc for P060: price=$45, normalized=0.450, sensitivity=0.600
+[DEBUG] Product P060 (Clothing, $45): score=0.750 (price=0.370, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P068: price=$50, normalized=0.500, sensitivity=0.600
+[DEBUG] Product P068 (Clothing, $50): score=0.730 (price=0.300, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P081: price=$50, normalized=0.500, sensitivity=0.600
+[DEBUG] Product P081 (Clothing, $50): score=0.730 (price=0.300, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P047: price=$55, normalized=0.550, sensitivity=0.600
+[DEBUG] Product P047 (Clothing, $55): score=0.710 (price=0.230, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P089: price=$55, normalized=0.550, sensitivity=0.600
+[DEBUG] Product P089 (Clothing, $55): score=0.710 (price=0.230, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P102: price=$55, normalized=0.550, sensitivity=0.600
+[DEBUG] Product P102 (Clothing, $55): score=0.710 (price=0.230, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P025: price=$60, normalized=0.600, sensitivity=0.600
+[DEBUG] Product P025 (Clothing, $60): score=0.689 (price=0.160, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P110: price=$60, normalized=0.600, sensitivity=0.600
+[DEBUG] Product P110 (Clothing, $60): score=0.689 (price=0.160, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P123: price=$60, normalized=0.600, sensitivity=0.600
+[DEBUG] Product P123 (Clothing, $60): score=0.689 (price=0.160, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P131: price=$65, normalized=0.650, sensitivity=0.600
+[DEBUG] Product P131 (Clothing, $65): score=0.669 (price=0.090, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Agent agent_1fsdmjcfh decision: buy P060 (score=0.750, threshold=0.45)
+[DEBUG] Agent agent_0r3l1x23b evaluating 10 products with comprehensive analysis
+[DEBUG] Price calc for P060: price=$45, normalized=0.450, sensitivity=0.700
+[DEBUG] Product P060 (Clothing, $45): score=0.707 (price=0.370, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P068: price=$50, normalized=0.500, sensitivity=0.700
+[DEBUG] Product P068 (Clothing, $50): score=0.687 (price=0.300, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P081: price=$50, normalized=0.500, sensitivity=0.700
+[DEBUG] Product P081 (Clothing, $50): score=0.687 (price=0.300, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P047: price=$55, normalized=0.550, sensitivity=0.700
+[DEBUG] Product P047 (Clothing, $55): score=0.600 (price=0.230, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P089: price=$55, normalized=0.550, sensitivity=0.700
+[DEBUG] Product P089 (Clothing, $55): score=0.600 (price=0.230, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P102: price=$55, normalized=0.550, sensitivity=0.700
+[DEBUG] Product P102 (Clothing, $55): score=0.600 (price=0.230, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P025: price=$60, normalized=0.600, sensitivity=0.700
+[DEBUG] Product P025 (Clothing, $60): score=0.581 (price=0.160, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P110: price=$60, normalized=0.600, sensitivity=0.700
+[DEBUG] Product P110 (Clothing, $60): score=0.581 (price=0.160, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P123: price=$60, normalized=0.600, sensitivity=0.700
+[DEBUG] Product P123 (Clothing, $60): score=0.581 (price=0.160, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P131: price=$65, normalized=0.650, sensitivity=0.700
+[DEBUG] Product P131 (Clothing, $65): score=0.563 (price=0.090, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Agent agent_0r3l1x23b decision: buy P060 (score=0.707, threshold=0.45)
+[DEBUG] Agent agent_b9h05xvmv evaluating 10 products with comprehensive analysis
+[DEBUG] Price calc for P060: price=$45, normalized=0.450, sensitivity=0.300
+[DEBUG] Product P060 (Clothing, $45): score=0.935 (price=0.730, quality=1.235, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P068: price=$50, normalized=0.500, sensitivity=0.300
+[DEBUG] Product P068 (Clothing, $50): score=0.926 (price=0.700, quality=1.235, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P081: price=$50, normalized=0.500, sensitivity=0.300
+[DEBUG] Product P081 (Clothing, $50): score=0.926 (price=0.700, quality=1.235, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P047: price=$55, normalized=0.550, sensitivity=0.300
+[DEBUG] Product P047 (Clothing, $55): score=0.917 (price=0.670, quality=1.235, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P089: price=$55, normalized=0.550, sensitivity=0.300
+[DEBUG] Product P089 (Clothing, $55): score=0.917 (price=0.670, quality=1.235, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P102: price=$55, normalized=0.550, sensitivity=0.300
+[DEBUG] Product P102 (Clothing, $55): score=0.917 (price=0.670, quality=1.235, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P025: price=$60, normalized=0.600, sensitivity=0.300
+[DEBUG] Product P025 (Clothing, $60): score=0.908 (price=0.640, quality=1.235, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P110: price=$60, normalized=0.600, sensitivity=0.300
+[DEBUG] Product P110 (Clothing, $60): score=0.908 (price=0.640, quality=1.235, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P123: price=$60, normalized=0.600, sensitivity=0.300
+[DEBUG] Product P123 (Clothing, $60): score=0.908 (price=0.640, quality=1.235, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P131: price=$65, normalized=0.650, sensitivity=0.300
+[DEBUG] Product P131 (Clothing, $65): score=0.899 (price=0.610, quality=1.235, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Agent agent_b9h05xvmv decision: buy P060 (score=0.935, threshold=0.45)
+[DEBUG] Agent agent_m32ax9kir evaluating 10 products with comprehensive analysis
+[DEBUG] Price calc for P060: price=$45, normalized=0.450, sensitivity=0.500
+[DEBUG] Product P060 (Clothing, $45): score=0.771 (price=0.370, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P068: price=$50, normalized=0.500, sensitivity=0.500
+[DEBUG] Product P068 (Clothing, $50): score=0.750 (price=0.300, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P081: price=$50, normalized=0.500, sensitivity=0.500
+[DEBUG] Product P081 (Clothing, $50): score=0.750 (price=0.300, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P047: price=$55, normalized=0.550, sensitivity=0.500
+[DEBUG] Product P047 (Clothing, $55): score=0.729 (price=0.230, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P089: price=$55, normalized=0.550, sensitivity=0.500
+[DEBUG] Product P089 (Clothing, $55): score=0.729 (price=0.230, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P102: price=$55, normalized=0.550, sensitivity=0.500
+[DEBUG] Product P102 (Clothing, $55): score=0.729 (price=0.230, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P025: price=$60, normalized=0.600, sensitivity=0.500
+[DEBUG] Product P025 (Clothing, $60): score=0.708 (price=0.160, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P110: price=$60, normalized=0.600, sensitivity=0.500
+[DEBUG] Product P110 (Clothing, $60): score=0.708 (price=0.160, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P123: price=$60, normalized=0.600, sensitivity=0.500
+[DEBUG] Product P123 (Clothing, $60): score=0.708 (price=0.160, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P131: price=$65, normalized=0.650, sensitivity=0.500
+[DEBUG] Product P131 (Clothing, $65): score=0.687 (price=0.090, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Agent agent_m32ax9kir decision: buy P060 (score=0.771, threshold=0.45)
+[DEBUG] Agent agent_1e28xjc0l evaluating 10 products with comprehensive analysis
+[DEBUG] Price calc for P060: price=$45, normalized=0.450, sensitivity=0.800
+[DEBUG] Product P060 (Clothing, $45): score=0.660 (price=0.100, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P068: price=$50, normalized=0.500, sensitivity=0.800
+[DEBUG] Product P068 (Clothing, $50): score=0.629 (price=0.000, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P081: price=$50, normalized=0.500, sensitivity=0.800
+[DEBUG] Product P081 (Clothing, $50): score=0.629 (price=0.000, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P047: price=$55, normalized=0.550, sensitivity=0.800
+[DEBUG] Product P047 (Clothing, $55): score=0.566 (price=0.000, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P089: price=$55, normalized=0.550, sensitivity=0.800
+[DEBUG] Product P089 (Clothing, $55): score=0.566 (price=0.000, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P102: price=$55, normalized=0.550, sensitivity=0.800
+[DEBUG] Product P102 (Clothing, $55): score=0.566 (price=0.000, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P025: price=$60, normalized=0.600, sensitivity=0.800
+[DEBUG] Product P025 (Clothing, $60): score=0.566 (price=0.000, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P110: price=$60, normalized=0.600, sensitivity=0.800
+[DEBUG] Product P110 (Clothing, $60): score=0.566 (price=0.000, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P123: price=$60, normalized=0.600, sensitivity=0.800
+[DEBUG] Product P123 (Clothing, $60): score=0.566 (price=0.000, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P131: price=$65, normalized=0.650, sensitivity=0.800
+[DEBUG] Product P131 (Clothing, $65): score=0.566 (price=0.000, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Agent agent_1e28xjc0l decision: buy P060 (score=0.660, threshold=0.45)
+[DEBUG] Agent agent_29t7af4ue evaluating 10 products with comprehensive analysis
+[DEBUG] Price calc for P060: price=$45, normalized=0.450, sensitivity=0.400
+[DEBUG] Product P060 (Clothing, $45): score=0.958 (price=0.730, quality=1.235, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P068: price=$50, normalized=0.500, sensitivity=0.400
+[DEBUG] Product P068 (Clothing, $50): score=0.949 (price=0.700, quality=1.235, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P081: price=$50, normalized=0.500, sensitivity=0.400
+[DEBUG] Product P081 (Clothing, $50): score=0.949 (price=0.700, quality=1.235, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P047: price=$55, normalized=0.550, sensitivity=0.400
+[DEBUG] Product P047 (Clothing, $55): score=0.939 (price=0.670, quality=1.235, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P089: price=$55, normalized=0.550, sensitivity=0.400
+[DEBUG] Product P089 (Clothing, $55): score=0.939 (price=0.670, quality=1.235, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P102: price=$55, normalized=0.550, sensitivity=0.400
+[DEBUG] Product P102 (Clothing, $55): score=0.939 (price=0.670, quality=1.235, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P025: price=$60, normalized=0.600, sensitivity=0.400
+[DEBUG] Product P025 (Clothing, $60): score=0.930 (price=0.640, quality=1.235, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P110: price=$60, normalized=0.600, sensitivity=0.400
+[DEBUG] Product P110 (Clothing, $60): score=0.930 (price=0.640, quality=1.235, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P123: price=$60, normalized=0.600, sensitivity=0.400
+[DEBUG] Product P123 (Clothing, $60): score=0.930 (price=0.640, quality=1.235, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P131: price=$65, normalized=0.650, sensitivity=0.400
+[DEBUG] Product P131 (Clothing, $65): score=0.921 (price=0.610, quality=1.235, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Agent agent_29t7af4ue decision: buy P060 (score=0.958, threshold=0.45)
+[DEBUG] Agent agent_x34ca8dyw evaluating 10 products with comprehensive analysis
+[DEBUG] Price calc for P060: price=$45, normalized=0.450, sensitivity=0.600
+[DEBUG] Product P060 (Clothing, $45): score=0.773 (price=0.370, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P068: price=$50, normalized=0.500, sensitivity=0.600
+[DEBUG] Product P068 (Clothing, $50): score=0.752 (price=0.300, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P081: price=$50, normalized=0.500, sensitivity=0.600
+[DEBUG] Product P081 (Clothing, $50): score=0.752 (price=0.300, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P047: price=$55, normalized=0.550, sensitivity=0.600
+[DEBUG] Product P047 (Clothing, $55): score=0.731 (price=0.230, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P089: price=$55, normalized=0.550, sensitivity=0.600
+[DEBUG] Product P089 (Clothing, $55): score=0.731 (price=0.230, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P102: price=$55, normalized=0.550, sensitivity=0.600
+[DEBUG] Product P102 (Clothing, $55): score=0.731 (price=0.230, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P025: price=$60, normalized=0.600, sensitivity=0.600
+[DEBUG] Product P025 (Clothing, $60): score=0.710 (price=0.160, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P110: price=$60, normalized=0.600, sensitivity=0.600
+[DEBUG] Product P110 (Clothing, $60): score=0.710 (price=0.160, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P123: price=$60, normalized=0.600, sensitivity=0.600
+[DEBUG] Product P123 (Clothing, $60): score=0.710 (price=0.160, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P131: price=$65, normalized=0.650, sensitivity=0.600
+[DEBUG] Product P131 (Clothing, $65): score=0.689 (price=0.090, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Agent agent_x34ca8dyw decision: buy P060 (score=0.773, threshold=0.45)
+[DEBUG] Agent agent_m4bz3o0d0 evaluating 10 products with comprehensive analysis
+[DEBUG] Price calc for P060: price=$45, normalized=0.450, sensitivity=0.700
+[DEBUG] Product P060 (Clothing, $45): score=0.744 (price=0.370, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P068: price=$50, normalized=0.500, sensitivity=0.700
+[DEBUG] Product P068 (Clothing, $50): score=0.722 (price=0.300, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P081: price=$50, normalized=0.500, sensitivity=0.700
+[DEBUG] Product P081 (Clothing, $50): score=0.722 (price=0.300, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P047: price=$55, normalized=0.550, sensitivity=0.700
+[DEBUG] Product P047 (Clothing, $55): score=0.631 (price=0.230, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P089: price=$55, normalized=0.550, sensitivity=0.700
+[DEBUG] Product P089 (Clothing, $55): score=0.631 (price=0.230, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P102: price=$55, normalized=0.550, sensitivity=0.700
+[DEBUG] Product P102 (Clothing, $55): score=0.631 (price=0.230, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P025: price=$60, normalized=0.600, sensitivity=0.700
+[DEBUG] Product P025 (Clothing, $60): score=0.612 (price=0.160, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P110: price=$60, normalized=0.600, sensitivity=0.700
+[DEBUG] Product P110 (Clothing, $60): score=0.612 (price=0.160, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P123: price=$60, normalized=0.600, sensitivity=0.700
+[DEBUG] Product P123 (Clothing, $60): score=0.612 (price=0.160, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P131: price=$65, normalized=0.650, sensitivity=0.700
+[DEBUG] Product P131 (Clothing, $65): score=0.592 (price=0.090, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Agent agent_m4bz3o0d0 decision: buy P060 (score=0.744, threshold=0.45)
+[DEBUG] Agent agent_0g9b220x8 evaluating 10 products with comprehensive analysis
+[DEBUG] Price calc for P060: price=$45, normalized=0.450, sensitivity=0.300
+[DEBUG] Product P060 (Clothing, $45): score=0.942 (price=0.730, quality=1.235, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P068: price=$50, normalized=0.500, sensitivity=0.300
+[DEBUG] Product P068 (Clothing, $50): score=0.933 (price=0.700, quality=1.235, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P081: price=$50, normalized=0.500, sensitivity=0.300
+[DEBUG] Product P081 (Clothing, $50): score=0.933 (price=0.700, quality=1.235, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P047: price=$55, normalized=0.550, sensitivity=0.300
+[DEBUG] Product P047 (Clothing, $55): score=0.924 (price=0.670, quality=1.235, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P089: price=$55, normalized=0.550, sensitivity=0.300
+[DEBUG] Product P089 (Clothing, $55): score=0.924 (price=0.670, quality=1.235, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P102: price=$55, normalized=0.550, sensitivity=0.300
+[DEBUG] Product P102 (Clothing, $55): score=0.924 (price=0.670, quality=1.235, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P025: price=$60, normalized=0.600, sensitivity=0.300
+[DEBUG] Product P025 (Clothing, $60): score=0.915 (price=0.640, quality=1.235, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P110: price=$60, normalized=0.600, sensitivity=0.300
+[DEBUG] Product P110 (Clothing, $60): score=0.915 (price=0.640, quality=1.235, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P123: price=$60, normalized=0.600, sensitivity=0.300
+[DEBUG] Product P123 (Clothing, $60): score=0.915 (price=0.640, quality=1.235, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P131: price=$65, normalized=0.650, sensitivity=0.300
+[DEBUG] Product P131 (Clothing, $65): score=0.905 (price=0.610, quality=1.235, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Agent agent_0g9b220x8 decision: buy P060 (score=0.942, threshold=0.45)
+[DEBUG] Agent agent_b22vnbrfn evaluating 10 products with comprehensive analysis
+[DEBUG] Price calc for P060: price=$45, normalized=0.450, sensitivity=0.500
+[DEBUG] Product P060 (Clothing, $45): score=0.802 (price=0.370, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P068: price=$50, normalized=0.500, sensitivity=0.500
+[DEBUG] Product P068 (Clothing, $50): score=0.780 (price=0.300, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P081: price=$50, normalized=0.500, sensitivity=0.500
+[DEBUG] Product P081 (Clothing, $50): score=0.780 (price=0.300, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P047: price=$55, normalized=0.550, sensitivity=0.500
+[DEBUG] Product P047 (Clothing, $55): score=0.759 (price=0.230, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P089: price=$55, normalized=0.550, sensitivity=0.500
+[DEBUG] Product P089 (Clothing, $55): score=0.759 (price=0.230, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P102: price=$55, normalized=0.550, sensitivity=0.500
+[DEBUG] Product P102 (Clothing, $55): score=0.759 (price=0.230, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P025: price=$60, normalized=0.600, sensitivity=0.500
+[DEBUG] Product P025 (Clothing, $60): score=0.737 (price=0.160, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P110: price=$60, normalized=0.600, sensitivity=0.500
+[DEBUG] Product P110 (Clothing, $60): score=0.737 (price=0.160, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P123: price=$60, normalized=0.600, sensitivity=0.500
+[DEBUG] Product P123 (Clothing, $60): score=0.737 (price=0.160, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P131: price=$65, normalized=0.650, sensitivity=0.500
+[DEBUG] Product P131 (Clothing, $65): score=0.715 (price=0.090, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Agent agent_b22vnbrfn decision: buy P060 (score=0.802, threshold=0.45)
+[DEBUG] Agent agent_ztrc0n4es evaluating 10 products with comprehensive analysis
+[DEBUG] Price calc for P060: price=$45, normalized=0.450, sensitivity=0.800
+[DEBUG] Product P060 (Clothing, $45): score=0.686 (price=0.100, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P068: price=$50, normalized=0.500, sensitivity=0.800
+[DEBUG] Product P068 (Clothing, $50): score=0.654 (price=0.000, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P081: price=$50, normalized=0.500, sensitivity=0.800
+[DEBUG] Product P081 (Clothing, $50): score=0.654 (price=0.000, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P047: price=$55, normalized=0.550, sensitivity=0.800
+[DEBUG] Product P047 (Clothing, $55): score=0.589 (price=0.000, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P089: price=$55, normalized=0.550, sensitivity=0.800
+[DEBUG] Product P089 (Clothing, $55): score=0.589 (price=0.000, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P102: price=$55, normalized=0.550, sensitivity=0.800
+[DEBUG] Product P102 (Clothing, $55): score=0.589 (price=0.000, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P025: price=$60, normalized=0.600, sensitivity=0.800
+[DEBUG] Product P025 (Clothing, $60): score=0.589 (price=0.000, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P110: price=$60, normalized=0.600, sensitivity=0.800
+[DEBUG] Product P110 (Clothing, $60): score=0.589 (price=0.000, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P123: price=$60, normalized=0.600, sensitivity=0.800
+[DEBUG] Product P123 (Clothing, $60): score=0.589 (price=0.000, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P131: price=$65, normalized=0.650, sensitivity=0.800
+[DEBUG] Product P131 (Clothing, $65): score=0.589 (price=0.000, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Agent agent_ztrc0n4es decision: buy P060 (score=0.686, threshold=0.45)
+[DEBUG] Agent agent_73v3pev7g evaluating 10 products with comprehensive analysis
+[DEBUG] Price calc for P060: price=$45, normalized=0.450, sensitivity=0.400
+[DEBUG] Product P060 (Clothing, $45): score=0.974 (price=0.730, quality=1.235, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P068: price=$50, normalized=0.500, sensitivity=0.400
+[DEBUG] Product P068 (Clothing, $50): score=0.964 (price=0.700, quality=1.235, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P081: price=$50, normalized=0.500, sensitivity=0.400
+[DEBUG] Product P081 (Clothing, $50): score=0.964 (price=0.700, quality=1.235, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P047: price=$55, normalized=0.550, sensitivity=0.400
+[DEBUG] Product P047 (Clothing, $55): score=0.955 (price=0.670, quality=1.235, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P089: price=$55, normalized=0.550, sensitivity=0.400
+[DEBUG] Product P089 (Clothing, $55): score=0.955 (price=0.670, quality=1.235, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P102: price=$55, normalized=0.550, sensitivity=0.400
+[DEBUG] Product P102 (Clothing, $55): score=0.955 (price=0.670, quality=1.235, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P025: price=$60, normalized=0.600, sensitivity=0.400
+[DEBUG] Product P025 (Clothing, $60): score=0.946 (price=0.640, quality=1.235, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P110: price=$60, normalized=0.600, sensitivity=0.400
+[DEBUG] Product P110 (Clothing, $60): score=0.946 (price=0.640, quality=1.235, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P123: price=$60, normalized=0.600, sensitivity=0.400
+[DEBUG] Product P123 (Clothing, $60): score=0.946 (price=0.640, quality=1.235, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P131: price=$65, normalized=0.650, sensitivity=0.400
+[DEBUG] Product P131 (Clothing, $65): score=0.936 (price=0.610, quality=1.235, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Agent agent_73v3pev7g decision: buy P060 (score=0.974, threshold=0.45)
+[DEBUG] Agent agent_gon7q4gmb evaluating 10 products with comprehensive analysis
+[DEBUG] Price calc for P060: price=$45, normalized=0.450, sensitivity=0.600
+[DEBUG] Product P060 (Clothing, $45): score=0.804 (price=0.370, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P068: price=$50, normalized=0.500, sensitivity=0.600
+[DEBUG] Product P068 (Clothing, $50): score=0.782 (price=0.300, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P081: price=$50, normalized=0.500, sensitivity=0.600
+[DEBUG] Product P081 (Clothing, $50): score=0.782 (price=0.300, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P047: price=$55, normalized=0.550, sensitivity=0.600
+[DEBUG] Product P047 (Clothing, $55): score=0.760 (price=0.230, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P089: price=$55, normalized=0.550, sensitivity=0.600
+[DEBUG] Product P089 (Clothing, $55): score=0.760 (price=0.230, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P102: price=$55, normalized=0.550, sensitivity=0.600
+[DEBUG] Product P102 (Clothing, $55): score=0.760 (price=0.230, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P025: price=$60, normalized=0.600, sensitivity=0.600
+[DEBUG] Product P025 (Clothing, $60): score=0.738 (price=0.160, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P110: price=$60, normalized=0.600, sensitivity=0.600
+[DEBUG] Product P110 (Clothing, $60): score=0.738 (price=0.160, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P123: price=$60, normalized=0.600, sensitivity=0.600
+[DEBUG] Product P123 (Clothing, $60): score=0.738 (price=0.160, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P131: price=$65, normalized=0.650, sensitivity=0.600
+[DEBUG] Product P131 (Clothing, $65): score=0.716 (price=0.090, quality=1.045, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Agent agent_gon7q4gmb decision: buy P060 (score=0.804, threshold=0.45)
+[DEBUG] Agent agent_v0vn3cg41 evaluating 10 products with comprehensive analysis
+[DEBUG] Price calc for P060: price=$45, normalized=0.450, sensitivity=0.700
+[DEBUG] Product P060 (Clothing, $45): score=0.751 (price=0.370, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P068: price=$50, normalized=0.500, sensitivity=0.700
+[DEBUG] Product P068 (Clothing, $50): score=0.729 (price=0.300, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P081: price=$50, normalized=0.500, sensitivity=0.700
+[DEBUG] Product P081 (Clothing, $50): score=0.729 (price=0.300, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P047: price=$55, normalized=0.550, sensitivity=0.700
+[DEBUG] Product P047 (Clothing, $55): score=0.636 (price=0.230, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P089: price=$55, normalized=0.550, sensitivity=0.700
+[DEBUG] Product P089 (Clothing, $55): score=0.636 (price=0.230, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P102: price=$55, normalized=0.550, sensitivity=0.700
+[DEBUG] Product P102 (Clothing, $55): score=0.636 (price=0.230, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P025: price=$60, normalized=0.600, sensitivity=0.700
+[DEBUG] Product P025 (Clothing, $60): score=0.617 (price=0.160, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P110: price=$60, normalized=0.600, sensitivity=0.700
+[DEBUG] Product P110 (Clothing, $60): score=0.617 (price=0.160, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P123: price=$60, normalized=0.600, sensitivity=0.700
+[DEBUG] Product P123 (Clothing, $60): score=0.617 (price=0.160, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Price calc for P131: price=$65, normalized=0.650, sensitivity=0.700
+[DEBUG] Product P131 (Clothing, $65): score=0.597 (price=0.090, quality=0.855, loyalty=1.000, freq=0.300, inv=0.500)
+[DEBUG] Agent agent_v0vn3cg41 decision: buy P060 (score=0.751, threshold=0.45)
+[INFO] BEFORE scenario completed - 439 decisions
+[INFO] Calling model for AFTER scenario - ALL 439 agents in single request
+[INFO] Sending to model: {
+  agent_profiles_count: 439,
+  products_count: 10,
+  market_context: '{"product_id":"P007","brand":"BrandA","price":52,"quality":0.9,"category":"Clothing"}'
+}
+[INFO] Model response received: {
+  decisions: [
+    {
+      action: 'buy',
+      agent_id: 'agent_uacefgj6',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 1',
+      satisfaction: 0.88
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_r8yt3bxun',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 2',
+      satisfaction: 0.87
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_w4sdy3a14',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 3',
+      satisfaction: 0.89
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_b7dh9cq79',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 4',
+      satisfaction: 0.86
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_nimlz3395',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 5',
+      satisfaction: 0.85
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_gf6olww94',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 6',
+      satisfaction: 0.87
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_u7sid898b',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 7',
+      satisfaction: 0.88
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_53evpbaw0',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 8',
+      satisfaction: 0.89
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_5p5fi2hq8',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 9',
+      satisfaction: 0.86
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_cxddp4zl1',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 10',
+      satisfaction: 0.87
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_g27psfh75',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 11',
+      satisfaction: 0.88
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_vin7s3iog',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 12',
+      satisfaction: 0.89
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_hb5ibg4ac',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 13',
+      satisfaction: 0.86
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_32i8l2kai',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 14',
+      satisfaction: 0.87
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_m3zhhcxfv',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 15',
+      satisfaction: 0.88
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_hq29jlwtu',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 16',
+      satisfaction: 0.89
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_p9yqhru2q',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 17',
+      satisfaction: 0.86
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_6qvz3aph4',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 18',
+      satisfaction: 0.87
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_pu5c32vb5',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 19',
+      satisfaction: 0.88
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_gxdo0alz7',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 20',
+      satisfaction: 0.89
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_bomzxv36v',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 21',
+      satisfaction: 0.86
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_bm93nad0a',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 22',
+      satisfaction: 0.87
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_m8owwk0zs',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 23',
+      satisfaction: 0.88
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_97nm5x2y8',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 24',
+      satisfaction: 0.89
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_ym3xil3jh',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 25',
+      satisfaction: 0.86
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_raq0uy1yp',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 26',
+      satisfaction: 0.87
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_fyn8d5967',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 27',
+      satisfaction: 0.88
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_26izynymx',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 28',
+      satisfaction: 0.89
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_pmc0e3r3a',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 29',
+      satisfaction: 0.86
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_8apyraqcu',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 30',
+      satisfaction: 0.87
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_z1ls9p8rr',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 31',
+      satisfaction: 0.88
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_206r2is8i',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 32',
+      satisfaction: 0.89
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_9c4anfbpa',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 33',
+      satisfaction: 0.86
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_7gvg1turw',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 34',
+      satisfaction: 0.87
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_3au6bde9t',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 35',
+      satisfaction: 0.88
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_no2lozcmg',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 36',
+      satisfaction: 0.89
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_8k5i0h2hv',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 37',
+      satisfaction: 0.86
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_n7dmtzzou',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 38',
+      satisfaction: 0.87
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_j4l1zvwcn',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 39',
+      satisfaction: 0.88
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_3uwqp8crp',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 40',
+      satisfaction: 0.89
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_23n8t1i8i',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 41',
+      satisfaction: 0.86
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_pbz11ztyv',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 42',
+      satisfaction: 0.87
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_1kdidopwb',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 43',
+      satisfaction: 0.88
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_cn07cmxoq',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 44',
+      satisfaction: 0.89
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_c78ryzhw9',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 45',
+      satisfaction: 0.86
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_de4mjpfec',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 46',
+      satisfaction: 0.87
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_t5os5r6xm',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 47',
+      satisfaction: 0.88
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_q4bwikljo',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 48',
+      satisfaction: 0.89
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_q1m3k8njv',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 49',
+      satisfaction: 0.86
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_00cx9h1us',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 50',
+      satisfaction: 0.87
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_wba22t1xb',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 51',
+      satisfaction: 0.88
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_8i4milk9s',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 52',
+      satisfaction: 0.89
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_bl85ilzgc',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 53',
+      satisfaction: 0.86
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_ujs7u76oa',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 54',
+      satisfaction: 0.87
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_niyxrekie',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 55',
+      satisfaction: 0.88
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_e6vnw3zrj',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 56',
+      satisfaction: 0.89
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_8c37ewhde',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 57',
+      satisfaction: 0.86
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_g10yvt1xg',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 58',
+      satisfaction: 0.87
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_3evmgexf9',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 59',
+      satisfaction: 0.88
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_6uylumcxu',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 60',
+      satisfaction: 0.89
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_vxyiss0x4',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 61',
+      satisfaction: 0.86
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_7d3hc2ste',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 62',
+      satisfaction: 0.87
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_t8lhf03g2',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 63',
+      satisfaction: 0.88
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_6snjfjx0t',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 64',
+      satisfaction: 0.89
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_h6oeuskhb',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 65',
+      satisfaction: 0.86
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_68ea5fj1f',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 66',
+      satisfaction: 0.87
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_i87car2f7',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 67',
+      satisfaction: 0.88
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_2l0jw6jdh',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 68',
+      satisfaction: 0.89
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_vk28qeikd',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 69',
+      satisfaction: 0.86
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_hkan2sfgw',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 70',
+      satisfaction: 0.87
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_wcxmb3shm',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 71',
+      satisfaction: 0.88
+    },
+    {
+      action: 'not buy',
+      agent_id: 'agent_eswm9e41j',
+      product_id: null,
+      rationale: 'No model output available',
+      satisfaction: 0
+    },
+    {
+      action: 'not buy',
+      agent_id: 'agent_1fsdmjcfh',
+      product_id: null,
+      rationale: 'No model output available',
+      satisfaction: 0
+    },
+    {
+      action: 'not buy',
+      agent_id: 'agent_x34ca8dyw',
+      product_id: null,
+      rationale: 'No model output available',
+      satisfaction: 0
+    },
+    {
+      action: 'not buy',
+      agent_id: 'agent_gon7q4gmb',
+      product_id: null,
+      rationale: 'No model output available',
+      satisfaction: 0
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_zfe97ge0p',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 1',
+      satisfaction: 0.92
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_fnjfk9vs5',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 2',
+      satisfaction: 0.91
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_9js8cjf3q',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 3',
+      satisfaction: 0.93
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_inw2zf4l6',
+      product_id: 'P068',
+      rationale: 'Cluster decision from line 4',
+      satisfaction: 0.9
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_p37efq5yw',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 5',
+      satisfaction: 0.94
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_qi20151l8',
+      product_id: 'P068',
+      rationale: 'Cluster decision from line 6',
+      satisfaction: 0.91
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_t2hoi1v2u',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 7',
+      satisfaction: 0.92
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_jzn13pr7z',
+      product_id: 'P068',
+      rationale: 'Cluster decision from line 8',
+      satisfaction: 0.93
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_aa8q3iybk',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 9',
+      satisfaction: 0.91
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_99gsi59gh',
+      product_id: 'P068',
+      rationale: 'Cluster decision from line 10',
+      satisfaction: 0.92
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_iyy0yiz23',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 11',
+      satisfaction: 0.94
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_pbxpkaae4',
+      product_id: 'P068',
+      rationale: 'Cluster decision from line 12',
+      satisfaction: 0.91
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_x82v949d2',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 13',
+      satisfaction: 0.93
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_2l96ah2cj',
+      product_id: 'P068',
+      rationale: 'Cluster decision from line 14',
+      satisfaction: 0.92
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_xrbmtlpr9',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 15',
+      satisfaction: 0.91
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_liu5qr3hk',
+      product_id: 'P068',
+      rationale: 'Cluster decision from line 16',
+      satisfaction: 0.93
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_wfv6oi5kw',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 17',
+      satisfaction: 0.92
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_mj5owd05f',
+      product_id: 'P068',
+      rationale: 'Cluster decision from line 18',
+      satisfaction: 0.91
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_zjqf8qnbx',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 19',
+      satisfaction: 0.94
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_dw70fdkr0',
+      product_id: 'P068',
+      rationale: 'Cluster decision from line 20',
+      satisfaction: 0.92
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_z5abxqqke',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 21',
+      satisfaction: 0.91
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_nzxw8vn27',
+      product_id: 'P068',
+      rationale: 'Cluster decision from line 22',
+      satisfaction: 0.93
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_fq6xg7i04',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 23',
+      satisfaction: 0.92
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_7jipf7qn3',
+      product_id: 'P068',
+      rationale: 'Cluster decision from line 24',
+      satisfaction: 0.91
+    },
+    {
+      action: 'buy',
+      agent_id: 'agent_0up9mknbf',
+      product_id: 'P060',
+      rationale: 'Cluster decision from line 25',
+      satisfaction: 0.94
+    },
+    ... 339 more items
+  ],
+  fallback_used: false,
+  model_used: 'gemini-2.5-pro',
+  processing_time: 29.7
+}
+[INFO] Model returned 439 decisions for 439 agents
+[INFO] Final results - Before sales: 19755, After sales: 18635, Sales change: -1120
